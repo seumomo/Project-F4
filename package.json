@@ -1,14 +1,13 @@
 {
   "name": "project-template",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "run-p watch server",
+    "sass": "sass src/scss:src/style",
+    "watch": "npm run sass -- --watch",
+    "server": "live-server src",
+    "clear": "rimraf src/style",
+    "build": "postcss src/style/index.css -o src/style/main.css"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "cssnano": "^6.0.1",
     "live-server": "^1.2.2",
