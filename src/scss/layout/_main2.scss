@@ -1,5 +1,33 @@
-@use "./../utils/color";
+@use "./../utils" as *;
 
-.section__title {
-  color: color.$white;
+.contentsContainer {
+  padding-left: rem(70px);
+}
+
+.favoritePro {
+  @include sectionTitle;
+
+  &__list {
+    @include grid(8);
+  }
+  &__container {
+    position: relative;
+  }
+  &__rank {
+    @include rank;
+  }
+  &__name {
+    @include whiteSpace;
+
+    display: inline-block;
+    max-width: calc(100% - 16px);
+    padding-left: rem(60px);
+
+    font-size: rem(21.3px);
+    line-height: 2.3;
+    color: $gray2;
+  }
+  &__redDot {
+    @include redDot;
+  }
 }

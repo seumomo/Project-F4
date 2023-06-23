@@ -1,1 +1,57 @@
-// mixin.scss
+@use "color" as *;
+@use "unit" as *;
+
+@mixin sectionTitle {
+  margin-bottom: rem(12px);
+
+  font-weight: bold;
+  font-size: rem(28px);
+  color: $white;
+}
+
+@mixin grid($column: 12) {
+  display: grid;
+  grid-template-columns: repeat($column, 240px);
+  grid-template-rows: rem(424px);
+  column-gap: rem(16px);
+}
+
+@mixin rank {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: rem(70px);
+  font-style: italic;
+  color: $white;
+}
+
+@mixin whiteSpace {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin redDot {
+  display: inline-block;
+  width: 8px;
+  height: 25px;
+  margin-top: 6px;
+  margin-left: 8px;
+
+  vertical-align: top;
+  background-image: url(./../../assets/icons/Frame_47.png);
+}
+
+@mixin flexbox(
+  $direction: row,
+  $justify: flex-start,
+  $items: stretch,
+  $wrap: nowrap
+) {
+  display: inline-flex;
+  flex-flow: $direction $wrap;
+  justify-content: $justify;
+  align-items: $items;
+}
