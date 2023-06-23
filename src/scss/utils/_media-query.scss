@@ -1,1 +1,19 @@
-// media-query.scss
+$break1: 320px;
+$break2: 768px;
+$break3: 1920px;
+
+@mixin mobile {
+  @media (min-width: #{$break1}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$break2}) and (max-width: #{$break3 - 1}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$break3}) {
+    @content;
+  }
+}
