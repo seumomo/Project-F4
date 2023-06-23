@@ -1,0 +1,5 @@
+@use "./../utils/color";
+
+.section__title {
+  color: color.$white;
+}
