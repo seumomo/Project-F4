@@ -420,6 +420,9 @@ figcaption {
   }
 }
 
+.favoritePro {
+  transition: all 0.5s;
+}
 @media (min-width: 1280px) and (max-width: 1920px) {
   .favoritePro {
     display: grid;
@@ -546,6 +549,9 @@ figcaption {
   }
 }
 
+.favoriteLive {
+  transition: all 0.5s;
+}
 @media (min-width: 1280px) and (max-width: 1920px) {
   .favoriteLive {
     display: grid;
@@ -663,6 +669,7 @@ figcaption {
 }
 
 figure:hover {
+  transition: all 0.5s;
   transform: scale(1.1);
 }
 
