@@ -1,1 +1,52 @@
-// mixin.scss
+@use "./unit" as *;
+
+@mixin flexbox(
+  $direction: row,
+  $justify: flex-start,
+  $items: stretch,
+  $wrap: nowrap
+) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  justify-content: $justify;
+  align-items: $items;
+}
+
+@mixin padding($paddingY,$paddingX){
+  padding-top: rem($paddingY);
+  padding-bottom: rem($paddingY);
+  padding-left: rem($paddingX);
+  padding-right: rem($paddingX);
+}
+
+@mixin margin($marginY,$marginX){
+  margin-top: rem($marginY);
+  margin-bottom: rem($marginY);
+  margin-left: rem($marginX);
+  margin-right: rem($marginX);
+}
+
+@mixin paddingX($paddingX){
+  padding-left: rem($paddingX);
+  padding-right: rem($paddingX);
+}
+
+@mixin paddingY($spacing){
+  padding-top: rem($spacing);
+  padding-bottom: rem($spacing);
+}
+
+@mixin marginX($spacing){
+  margin-left: rem($spacing);
+  margin-right: rem($spacing);
+}
+
+@mixin marginY($spacing){
+  margin-top: rem($spacing);
+  margin-bottom: rem($spacing);
+}
+
+// @mixin maxCenter(){
+//   max-width: rem(1920px);
+//   margin: auto;
+// }
