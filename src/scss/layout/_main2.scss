@@ -4,60 +4,126 @@ body {
   overflow-x: hidden;
   background: $black;
 }
-.contentsContainer {
-  padding-left: rem(70px);
+figcaption {
+  position: relative;
 }
+.contentsContainer {
+  margin: 0 auto;
+
+  @include desktop {
+    max-width: rem(1920px);
+    padding: 0 rem(70px) rem(36px) rem(70px);
+  }
+  @include tablet {
+    max-width: rem(1279px);
+    padding: 0 rem(40px) rem(28px) rem(40px);
+  }
+  @include mobile {
+    max-width: rem(767px);
+    padding: 0 rem(8px) rem(16px) rem(8px);
+  }
+}
+
 .section__title {
   @include sectionTitle;
 }
+
 .rank {
   @include rank;
 }
-.favoritePro {
-  @include grid(8, 240px);
 
-  &__container {
-    position: relative;
+.favoritePro {
+  @include desktop {
+    @include grid(8, 240px);
+  }
+  @include tablet {
+    @include grid(8, 130px);
+  }
+  @include mobile {
+    @include grid(8, 92px);
   }
 
   &__name {
-    @include whiteSpace;
-
     display: inline-block;
-    max-width: calc(100% - 16px);
-    padding-left: rem(60px);
-
-    font-size: rem(21.3px);
     line-height: 2.3;
     color: $gray2;
+
+    @include desktop {
+      max-width: calc(100% - 16px);
+      padding-left: rem(60px);
+      font-size: rem(21.3px);
+    }
+    @include tablet {
+      max-width: calc(100% - 10px);
+      padding-left: rem(37px);
+      font-size: rem(12px);
+    }
+    @include mobile {
+      max-width: calc(100% - 8px);
+      padding-left: rem(29px);
+      font-size: rem(10px);
+    }
+    @include whiteSpace;
   }
+
   &__redDot {
     @include redDot;
   }
 }
 
 .favoriteLive {
-  @include grid(6, 345px);
+  @include desktop {
+    @include grid(6, 345px);
+  }
+  @include tablet {
+    @include grid(6, 225px);
+  }
+  @include mobile {
+    @include grid(6, 145px);
+  }
 
-  &__container {
-    position: relative;
-  }
   &__list {
-    margin-top: rem(10px);
+    @include desktop {
+      margin-top: rem(10px);
+    }
+    @include tablet {
+      margin-top: rem(6px);
+    }
+    @include mobile {
+      margin-top: rem(2px);
+    }
   }
+
   &__studio,
   &__name,
   &__per {
-    padding-left: rem(58px);
     line-height: 1.5;
+
+    @include desktop {
+      padding-left: rem(58px);
+    }
+    @include tablet {
+      padding-left: rem(40px);
+      font-size: rem(12px);
+    }
+    @include mobile {
+      padding-left: rem(30px);
+      font-size: rem(10px);
+    }
   }
+
   &__studio {
-    font-size: rem(21.3px);
     color: $gray2;
+
+    @include desktop {
+      font-size: rem(21.3px);
+    }
   }
+
   &__name {
     color: $gray3;
   }
+
   &__per {
     color: $gray5;
   }

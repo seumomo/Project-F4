@@ -1,6 +1,7 @@
 $break1: 320px;
 $break2: 768px;
 $break3: 1280px;
+$break4: 1920px;
 
 @mixin mobile {
   @media (min-width: #{$break1}) and (max-width: #{$break2 - 1}) {
@@ -8,12 +9,12 @@ $break3: 1280px;
   }
 }
 @mixin tablet {
-  @media (min-width: #{$break2}) and (max-width: #{$break3}) {
+  @media (min-width: #{$break2}) and (max-width: #{$break3 - 1}) {
     @content;
   }
 }
 @mixin desktop {
-  @media (min-width: #{$break3 + 1}) and (max-width: 1920px) {
+  @media (min-width: #{$break3}) and (max-width: #{$break4}) {
     @content;
   }
 }
