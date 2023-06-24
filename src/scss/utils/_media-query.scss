@@ -9,12 +9,12 @@ $break4: 1920px;
   }
 }
 @mixin tablet {
-  @media (min-width: #{$break2}) and (max-width: #{$break3}) {
+  @media (min-width: #{$break2}) and (max-width: #{$break3 - 1}) {
     @content;
   }
 }
 @mixin desktop {
-  @media (min-width: #{$break3 + 1}) and (max-width: #{$break4}) {
+  @media (min-width: #{$break3}) and (max-width: #{$break4}) {
     @content;
   }
 }
