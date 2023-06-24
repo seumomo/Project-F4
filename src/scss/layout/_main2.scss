@@ -3,19 +3,19 @@
 .contentsContainer {
   padding-left: rem(70px);
 }
-
-.favoritePro {
+.section__title {
   @include sectionTitle;
+}
+.rank {
+  @include rank;
+}
+.favoritePro {
+  @include grid(8, 240px);
 
-  &__list {
-    @include grid(8);
-  }
   &__container {
     position: relative;
   }
-  &__rank {
-    @include rank;
-  }
+
   &__name {
     @include whiteSpace;
 
@@ -29,5 +29,32 @@
   }
   &__redDot {
     @include redDot;
+  }
+}
+
+.favoriteLive {
+  @include grid(6, 345px);
+
+  &__container {
+    position: relative;
+  }
+  &__list {
+    margin-top: rem(10px);
+  }
+  &__studio,
+  &__name,
+  &__per {
+    padding-left: rem(58px);
+    line-height: 1.5;
+  }
+  &__studio {
+    font-size: rem(21.3px);
+    color: $gray2;
+  }
+  &__name {
+    color: $gray3;
+  }
+  &__per {
+    color: $gray5;
   }
 }

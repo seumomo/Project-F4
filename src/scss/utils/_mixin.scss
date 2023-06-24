@@ -9,9 +9,9 @@
   color: $white;
 }
 
-@mixin grid($column: 12) {
+@mixin grid($column: 12, $imageSize) {
   display: grid;
-  grid-template-columns: repeat($column, 240px);
+  grid-template-columns: repeat($column, $imageSize);
   grid-template-rows: rem(424px);
   column-gap: rem(16px);
 }
@@ -35,10 +35,10 @@
 
 @mixin redDot {
   display: inline-block;
-  width: 8px;
-  height: 25px;
-  margin-top: 6px;
-  margin-left: 8px;
+  width: rem(8px);
+  height: rem(25px);
+  margin-top: rem(6px);
+  margin-left: rem(8px);
 
   vertical-align: top;
   background-image: url(./../../assets/icons/Frame_47.png);

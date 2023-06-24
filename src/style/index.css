@@ -337,7 +337,6 @@ body {
   font: inherit;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   background-color: #fff;
-  overflow: hidden;
 }
 
 /* 유연한 미디어 */
@@ -376,22 +375,14 @@ legend {
   padding-left: 4.375rem;
 }
 
-.favoritePro {
+.section__title {
   margin-bottom: 0.75rem;
   font-weight: bold;
   font-size: 1.75rem;
   color: #ffffff;
 }
-.favoritePro__list {
-  display: grid;
-  grid-template-columns: repeat(8, 240px);
-  grid-template-rows: 26.5rem;
-  column-gap: 1rem;
-}
-.favoritePro__container {
-  position: relative;
-}
-.favoritePro__rank {
+
+.rank {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -399,6 +390,16 @@ legend {
   font-size: 4.375rem;
   font-style: italic;
   color: #ffffff;
+}
+
+.favoritePro {
+  display: grid;
+  grid-template-columns: repeat(8, 240px);
+  grid-template-rows: 26.5rem;
+  column-gap: 1rem;
+}
+.favoritePro__container {
+  position: relative;
 }
 .favoritePro__name {
   white-space: nowrap;
@@ -413,12 +414,39 @@ legend {
 }
 .favoritePro__redDot {
   display: inline-block;
-  width: 8px;
-  height: 25px;
-  margin-top: 6px;
-  margin-left: 8px;
+  width: 0.5rem;
+  height: 1.5625rem;
+  margin-top: 0.375rem;
+  margin-left: 0.5rem;
   vertical-align: top;
   background-image: url(./../../assets/icons/Frame_47.png);
+}
+
+.favoriteLive {
+  display: grid;
+  grid-template-columns: repeat(6, 345px);
+  grid-template-rows: 26.5rem;
+  column-gap: 1rem;
+}
+.favoriteLive__container {
+  position: relative;
+}
+.favoriteLive__list {
+  margin-top: 0.625rem;
+}
+.favoriteLive__studio, .favoriteLive__name, .favoriteLive__per {
+  padding-left: 3.625rem;
+  line-height: 1.5;
+}
+.favoriteLive__studio {
+  font-size: 1.33125rem;
+  color: #c4c4c4;
+}
+.favoriteLive__name {
+  color: #a6a6a6;
+}
+.favoriteLive__per {
+  color: #6b6b6b;
 }
 
 /*# sourceMappingURL=index.css.map */
