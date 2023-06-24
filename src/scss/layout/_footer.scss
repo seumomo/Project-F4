@@ -1,17 +1,17 @@
 @use "./../utils" as *;
 // @use "./../base" as *;
 
-@mixin containerPaddingX{
+@mixin containerPaddingX($top: 0, $bottom: 0){
   @include mobile {
-    padding: 0 rem(8px);
+    padding: rem($top) rem(8px) rem($bottom);
   }
 
   @include tablet{
-    padding: 0 rem(40px);
+    padding: rem($top) rem(40px) rem($bottom);
   }
 
   @include desktop{
-    padding: 0 rem(70px);
+    padding: rem($top) rem(70px) rem($bottom);
   }
 }
 
@@ -92,19 +92,60 @@ body{
   }
 }
 
+.footer{
+    @include mobile{
+      @include containerPaddingX(52px, 82px);
+
+    }
+
+    @include tablet{
+      @include containerPaddingX(70px, 100px);
+
+    }
+
+    @include desktop{
+      @include containerPaddingX(140px, 170px);
+    }
+
+}
+
+// footer info
 .info{
   border-bottom: 1px solid $gray8;
   @include flexbox($justify:space-between);
-  margin-top: rem(140px);
-  padding-bottom: rem(14px);
+
+  @include mobile{
+    padding: 0 0 rem(12px);
+  }
+
+  @include tablet{
+    padding: rem(12px) 0 rem(16px);
+  }
+
+  @include desktop{
+    padding: 0 0 rem(27px);
+  }
+
 
   &__notice a{
     @include flexbox($justify:space-between);
+
   }
 
   &__noticeTitle{
     color: $gray5;
-    padding-right: rem(20px);
+
+    @include mobile{
+      padding-right: rem(4px);
+    }
+
+    @include tablet{
+      padding-right: rem(20px);
+    }
+
+    @include desktop{
+      padding-right: rem(20px);
+    }
   }
 
   &__noticeContent{
@@ -113,6 +154,7 @@ body{
 }
 
 .infoLink{
+
   @include flexbox($justify:space-between);
 
   &__click{
@@ -137,6 +179,15 @@ body{
   &__divider{
     color: $gray5;
   }
+
+  @include mobile{
+    position: relative;
+    right: 9999px;
+    // visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
 }
 
 .corpArea{
@@ -144,9 +195,38 @@ body{
   @include paddingY(24px);
   color: $gray2;
 
-  &__list{
-    padding-right: rem(36px);
+  @include mobile{
+    @include flexbox($direction: column);
+
+    margin: rem(12px) 0;
+
+    gap: 4px;
   }
+
+  @include tablet{
+    margin: rem(16px) 0 rem(12px);
+
+    gap: 20px;
+  }
+
+  @include desktop{
+    margin: rem(27px) 0 rem(24px);
+
+    &__list{
+      gap: 36px;
+    }
+  }
+}
+
+// 사업정보
+.address{
+  @include mobile{
+    position: relative;
+    right: 9999px;
+    width: 0;
+    height: 0;
+  }
+
 }
 
 .address__box{
