@@ -369,10 +369,12 @@ legend {
 .header {
   width: 100%;
   background: #000000;
+  background: linear-gradient(#000000, rgba(0, 0, 0, 0.7));
   color: #ffffff;
 }
 .header__inner {
   width: 90%;
+  height: 6.25rem;
   margin: auto;
   display: flex;
   align-items: center;
@@ -380,17 +382,25 @@ legend {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .header__inner {
-    padding: 0.625rem 0;
+    height: 2.375rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1919px) {
   .header__inner {
-    padding: 1rem 0;
+    height: 3.5rem;
   }
 }
-@media (min-width: 1920px) {
-  .header__inner {
-    height: 6.25rem;
+.header .logo {
+  max-width: 8.25rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .header .logo {
+    width: 2.875rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1919px) {
+  .header .logo {
+    width: 4.8125rem;
   }
 }
 .header .menuWrap {
@@ -402,11 +412,28 @@ legend {
 .header .menu {
   width: 31.5625rem;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .header .menu {
+    overflow: hidden;
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+}
 .header .menu__list {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.3125rem;
+}
+@media (min-width: 768px) and (max-width: 1919px) {
+  .header .menu__list {
+    font-size: 0.75rem;
+  }
 }
 .header .menu__link {
   display: inline-block;
@@ -417,14 +444,25 @@ legend {
 }
 .header .subMenu {
   display: flex;
+  justify-content: space-between;
+  width: 7.5rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .header .subMenu {
+    width: 3.25rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1919px) {
+  .header .subMenu {
+    width: 4.5rem;
+  }
 }
 .header .subMenu__search {
-  width: 100%;
-  height: auto;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 30%;
   border: none;
-  background: transparent url(/assets/icons/Search.png) no-repeat;
+}
+.header .subMenu__profile {
+  width: 30%;
 }
 
 /*# sourceMappingURL=index.css.map */

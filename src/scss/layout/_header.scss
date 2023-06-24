@@ -3,25 +3,31 @@
 .header{
   width: 100%;
   background: $black;
+  background: linear-gradient($black,rgba(0,0,0,0.7));
   color: $white;
   &__inner{
     width: 90%;
+    height: rem(100px);
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     @include mobile {
-      padding: rem(10px) 0;
+      height: rem(38px);
     }
     @include tablet {
-      padding: rem(16px) 0;
-    }
-    @include desktop {
-      height: rem(100px);
+      height: rem(56px);
     }
   }
 
   .logo{
+    max-width:rem(132px);
+    @include mobile {
+      width: rem(46px);
+    }
+    @include tablet {
+      width: rem(77px);
+    }
 
   }
 
@@ -34,11 +40,19 @@
 
     .menu{
       width: rem(505px);
+      @include mobile {
+        @include a11yHidden;
+      }
       &__list{
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-size: rem(21px);
+        @include tablet {
+          font-size: rem(12px);
+        }
+
       }
       &__link{
         display: inline-block;
@@ -51,65 +65,24 @@
 
   .subMenu{
     display: flex;
-    &__search{
-      width: 100%;
-      height: auto;
-      width: rem(40px);
-      height: rem(40px);
-      border: none;
-      background: transparent url(/assets/icons/Search.png) no-repeat;
+    justify-content: space-between;
+    width: rem(120px);
+    @include mobile {
+      width: rem(52px);
     }
+    @include tablet {
+      width: rem(72px);
+    }
+    &__search{
+      width: 30%;
+      border: none;
+    }
+    &__profile{
+      width: 30%;
+    }
+
     
   }
 }
 
-
-
-//   .logo{
-//     @include mobile {
-//       width: 15%;
-//     }
-//   }
-
- 
-//   .menuWrap{
-//     max-width: rem(690px);
-//     display: flex;
-//     gap: rem(50px);
-//   }
-//   .logo{
-//     width: 15%;
-//   }
-//   .menu{
-//     width: rem(505px);
-//     &__list{
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
-//       @include mobile {
-//         @include a11yHidden;
-//       }
-//       &__img{
-//         vertical-align:middle;
-//         margin-right: rem(10px);
-//       }
-//     }
-//   }
-
-//   .subMenu{
-//     display: flex;
-//     &__search{
-//       width: rem(40px);
-//       height: rem(40px);
-//       border: none;
-//       background: transparent url(/assets/icons/Search.png) no-repeat;
-//       margin-right: rem(16px);
-//     }
-//     &____profile{
-//       width: 100%;
-//     }
-//   }
-  
-
-//   }
   
