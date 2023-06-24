@@ -1,1 +1,115 @@
-// header.scss
+@use "./../utils" as *;
+
+.header{
+  width: 100%;
+  background: $black;
+  color: $white;
+  &__inner{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mobile {
+      padding: rem(10px) 0;
+    }
+    @include tablet {
+      padding: rem(16px) 0;
+    }
+    @include desktop {
+      height: rem(100px);
+    }
+  }
+
+  .logo{
+
+  }
+
+  .menuWrap{
+    width: rem(690px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+    .menu{
+      width: rem(505px);
+      &__list{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__link{
+        display: inline-block;
+        &__img{
+          vertical-align: middle;
+          margin-right: rem(10px);
+        }
+      }
+    }
+
+  .subMenu{
+    display: flex;
+    &__search{
+      width: 100%;
+      height: auto;
+      width: rem(40px);
+      height: rem(40px);
+      border: none;
+      background: transparent url(/assets/icons/Search.png) no-repeat;
+    }
+    
+  }
+}
+
+
+
+//   .logo{
+//     @include mobile {
+//       width: 15%;
+//     }
+//   }
+
+ 
+//   .menuWrap{
+//     max-width: rem(690px);
+//     display: flex;
+//     gap: rem(50px);
+//   }
+//   .logo{
+//     width: 15%;
+//   }
+//   .menu{
+//     width: rem(505px);
+//     &__list{
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       @include mobile {
+//         @include a11yHidden;
+//       }
+//       &__img{
+//         vertical-align:middle;
+//         margin-right: rem(10px);
+//       }
+//     }
+//   }
+
+//   .subMenu{
+//     display: flex;
+//     &__search{
+//       width: rem(40px);
+//       height: rem(40px);
+//       border: none;
+//       background: transparent url(/assets/icons/Search.png) no-repeat;
+//       margin-right: rem(16px);
+//     }
+//     &____profile{
+//       width: 100%;
+//     }
+//   }
+  
+
+//   }
+  

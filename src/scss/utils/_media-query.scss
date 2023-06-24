@@ -3,7 +3,7 @@ $break2: 768px;
 $break3: 1920px;
 
 @mixin mobile {
-  @media (min-width: #{$break1}) {
+  @media (min-width: #{$break1}) and (max-width: #{$break2 - 1}){
     @content;
   }
 }

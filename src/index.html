@@ -4,32 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OttTaing</title>
-    <link
-      rel="stylesheet"
-      as="style"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css"
-    />
+    <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
     <link rel="stylesheet" href="/style/index.css" />
   </head>
 
   <body>
     <!-- 1번 -->
     <header class="header">
-      <h1 class="logo">
-        <a href=""><img src="" alt="TAING" /></a>
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="">실시간</a></li>
-          <li><a href="">TV프로그램</a></li>
-          <li><a href="">영화</a></li>
-          <li><a href="">Paramount+</a></li>
-        </ul>
-      </nav>
-      <div>
-        <button>검색하기</button>
-        <a href="">프로필 전환/편집</a>
+      <div class="header__inner">
+        <div class="menuWrap">
+          <h1 class="logo">
+            <a href="/"><img src="/assets/icons/logo.png" alt="TAING" /></a>
+          </h1>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li>
+                <a href="/" class="menu__link">
+                  <img class="menu__link__img" src="/assets/icons/Live.png" alt=""/>실시간
+                </a>
+              </li>
+              <li><a href="/">TV프로그램</a></li>
+              <li><a href="/">영화</a></li>
+              <li><a href="/"><img src="/assets/icons/group.png" alt="Paramount+" /></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="subMenu">
+          <button class="subMenu__search" type="button" aria-label="검색하기"></button>
+          <a class="subMenu__profile" href="/"><img src="/assets/icons/Profile.png" alt="프로필 전환 및 편집" /></a>
+        </div>
       </div>
     </header>
 
