@@ -4,9 +4,11 @@ body {
   overflow-x: hidden;
   background: $black;
 }
+
 figcaption {
   position: relative;
 }
+
 .contentsContainer {
   margin: 0 auto;
 
@@ -26,10 +28,6 @@ figcaption {
 
 .section__title {
   @include sectionTitle;
-}
-
-.rank {
-  @include rank;
 }
 
 .favoritePro {
@@ -127,4 +125,12 @@ figcaption {
   &__per {
     color: $gray5;
   }
+}
+
+figure:hover {
+  transform: scale(1.1);
+}
+
+.rank {
+  @include rank;
 }

@@ -420,30 +420,6 @@ figcaption {
   }
 }
 
-.rank {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-family: "Noto Sans KR", sans-serif;
-  font-style: italic;
-  color: #ffffff;
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .rank {
-    font-size: 4.375rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1279px) {
-  .rank {
-    font-size: 2.875rem;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .rank {
-    font-size: 2.125rem;
-  }
-}
-
 @media (min-width: 1280px) and (max-width: 1920px) {
   .favoritePro {
     display: grid;
@@ -544,7 +520,7 @@ figcaption {
 }
 @media (min-width: 1280px) and (max-width: 1920px) {
   .favoritePro__redDot {
-    background: url("/src/assets/icons/Frame_47.png") no-repeat;
+    background: url("/assets/icons/Frame_47.png") no-repeat;
     width: 0.5rem;
     height: 0.5rem;
     margin-left: 0.5rem;
@@ -553,7 +529,7 @@ figcaption {
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .favoritePro__redDot {
-    background: url("/src/assets/tablet/icons/Frame_47.png") no-repeat 0 -3px;
+    background: url("/assets/tablet/icons/Frame_47.png") no-repeat 0 -3px;
     width: 0.375rem;
     height: 0.375rem;
     margin-left: 0.25rem;
@@ -562,7 +538,7 @@ figcaption {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .favoritePro__redDot {
-    background: url("/src/assets/mobile/icons/Frame_47.png") no-repeat 0 -4px;
+    background: url("/assets/mobile/icons/Frame_47.png") no-repeat 0 -4px;
     width: 0.25rem;
     height: 0.25rem;
     margin-left: 0.25rem;
@@ -684,6 +660,34 @@ figcaption {
 }
 .favoriteLive__per {
   color: #6b6b6b;
+}
+
+figure:hover {
+  transform: scale(1.1);
+}
+
+.rank {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: italic;
+  color: #ffffff;
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .rank {
+    font-size: 4.375rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .rank {
+    font-size: 2.875rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .rank {
+    font-size: 2.125rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
