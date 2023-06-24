@@ -1,5 +1,9 @@
 @use "./../utils" as *;
 
+body {
+  overflow-x: hidden;
+  background: $black;
+}
 .contentsContainer {
   padding-left: rem(70px);
 }

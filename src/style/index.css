@@ -337,7 +337,6 @@ body {
   font: inherit;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   background-color: #fff;
-  overflow-x: hidden;
 }
 
 /* 유연한 미디어 */
@@ -356,10 +355,6 @@ iframe {
   height: 100%;
 }
 
-body {
-  background: #000000;
-}
-
 /* Accessibility Styles */
 .a11yHidden,
 legend {
@@ -370,6 +365,11 @@ legend {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+body {
+  overflow-x: hidden;
+  background: #000000;
 }
 
 .contentsContainer {

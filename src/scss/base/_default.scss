@@ -7,7 +7,6 @@ body {
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   background-color: #fff;
-  overflow-x: hidden;
 }
 
 /* 유연한 미디어 */
@@ -24,8 +23,4 @@ video {
 iframe {
   width: 100%;
   height: 100%;
-}
-
-body {
-  background: $black;
 }
