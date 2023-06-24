@@ -1,1 +1,179 @@
-// footer.scss
+@use "./../utils" as *;
+// @use "./../base" as *;
+
+@mixin containerPaddingX{
+  @include mobile {
+    padding: 0 rem(8px);
+  }
+
+  @include tablet{
+    padding: 0 rem(40px);
+  }
+
+  @include desktop{
+    padding: 0 rem(70px);
+  }
+}
+
+body{
+  background: $black;
+  margin: 0 auto;
+
+}
+
+.article__banner{
+  @include containerPaddingX();
+
+  text-align: center;
+  @include margin(36px, 0);
+
+  @include mobile {
+    @include margin(16px, 0);
+  }
+
+  @include tablet{
+    @include margin(28px, 0);
+  }
+
+}
+
+// 이벤트 색션
+.article{
+  
+  &__eventTitle{
+    @include containerPaddingX();
+
+    color: $white;
+    font-size: rem(30px);
+    font-weight: 700;
+    margin-bottom: rem(12px);
+
+
+    @include mobile {
+      margin-bottom: rem(8px);
+    }
+
+    @include tablet{
+    margin-bottom: rem(8px);
+    }
+  }
+
+  &__event{
+    @include containerPaddingX();
+
+    @include mobile{
+      gap: rem(8px);
+    } 
+
+    @include desktop{
+      gap: rem(16px);
+    } 
+
+    overflow: hidden;
+    @include flexbox();
+
+    img{
+      @include mobile{
+        width: 145px;
+        max-width: 145px;
+      }
+
+      @include tablet{
+        width: 214px;
+        max-width: 214px;
+      }
+
+      @include desktop{
+        width: 346px;
+        max-width: 346px;
+      }
+    }
+
+  }
+}
+
+.info{
+  border-bottom: 1px solid $gray8;
+  @include flexbox($justify:space-between);
+  margin-top: rem(140px);
+  padding-bottom: rem(14px);
+
+  &__notice a{
+    @include flexbox($justify:space-between);
+  }
+
+  &__noticeTitle{
+    color: $gray5;
+    padding-right: rem(20px);
+  }
+
+  &__noticeContent{
+    color: $gray2;
+  }
+}
+
+.infoLink{
+  @include flexbox($justify:space-between);
+
+  &__click{
+    @include flexbox($justify:space-between);
+  }
+  
+  &__brand a{
+    // 믹스인으로 변경
+    color: $gray2;
+    padding-right: 15px;
+  }
+
+  &__group{
+    color: $gray2;
+    padding-left: 15px;
+  }
+
+  &__plusbtn{
+    padding-left: 15px;
+  }
+
+  &__divider{
+    color: $gray5;
+  }
+}
+
+.corpArea{
+  @include flexbox();
+  @include paddingY(24px);
+  color: $gray2;
+
+  &__list{
+    padding-right: rem(36px);
+  }
+}
+
+.address__box{
+  display: block;
+  color: $gray5;
+}
+
+.customer,
+.mail,
+.center{
+  text-decoration: underline;
+}
+
+.divider{
+  color: $gray8;
+}
+
+.footer__sns{
+  width: rem(268px);
+  @include flexbox($justify: space-between);
+  gap: rem(20px);
+  @include marginY(24px);
+}
+
+.copyrignt{
+  display: inline-block;
+  color: $gray5;
+  // 밑에 공간 어떻게?
+  margin-bottom: rem(170px);
+}
