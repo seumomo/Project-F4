@@ -1,23 +1,33 @@
 @use "./../utils" as *;
 
 .header{
+  position: fixed;
+  top: 0;left: 0;
+  z-index: 100;
   width: 100%;
+  height: rem(100px);
   background: $black;
-  background: linear-gradient($black,rgba(0,0,0,0.7));
+  @include mobile {
+    background: linear-gradient($black,rgba(0,0,0,0.5));
+  }
+  @include tablet {
+    background: linear-gradient($black,rgba(0,0,0,0.5));
+  }
   color: $white;
+  transition: 0.5s;
+  @include mobile {
+    height: rem(38px);
+    transition: 0.5s;
+  }
+  @include tablet {
+    height: rem(56px);
+    transition: 0.5s;
+  }
   &__inner{
     width: 90%;
-    height: rem(100px);
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @include mobile {
-      height: rem(38px);
-    }
-    @include tablet {
-      height: rem(56px);
-    }
+    height: 100%;
+    @include autoMargin;
+    @include flexbox(row,space-between,center,nowrap);
   }
 
   .logo{
@@ -28,26 +38,28 @@
     @include tablet {
       width: rem(77px);
     }
-
   }
 
   .menuWrap{
-    width: rem(690px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // width: rem(690px);
+    @include flexbox(row,space-between,center,nowrap);
+    gap: rem(52px);
+    @include tablet {
+      gap: rem(28px);
+    }
   }
 
     .menu{
       width: rem(505px);
+      @include tablet {
+        width: rem(388px);
+      }
       @include mobile {
         @include a11yHidden;
       }
       &__list{
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flexbox(row,space-between,center,nowrap);
         font-size: rem(21px);
         @include tablet {
           font-size: rem(12px);
@@ -64,8 +76,7 @@
     }
 
   .subMenu{
-    display: flex;
-    justify-content: space-between;
+    @include flexbox(row,space-between,center,nowrap);
     width: rem(120px);
     @include mobile {
       width: rem(52px);
@@ -80,9 +91,5 @@
     &__profile{
       width: 30%;
     }
-
-    
   }
 }
-
-  

@@ -1,1 +1,118 @@
-// home.scss
+@use "./../utils" as *;
+
+.visual{
+  @include poa;
+  width: 100%;
+  margin-top: rem(100px);
+  @include mobile {
+    margin-top: 0;
+  }
+  @include tablet {
+    margin-top: 0;
+  }
+  &__banner{
+    width: 100%;
+    &__list{
+      @include poaLeftTop; 
+      width: 100vw;
+      height: 0;
+      padding-top: calc(855px/1920px*100%);
+      background: url(/assets/images/banner_img.png) no-repeat;
+      background-size: contain;
+    }
+  }
+  &__banner::before{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 0;
+    padding-top: calc(855px/1920px*100%);
+  }
+
+  &__summary{
+    width: 90%;
+    z-index: 50;
+    @include poaLeftTop($l:4%,$t:70%);
+    color: $white;
+
+    &__content{
+      font-size: rem(28px);
+      @include mobile {
+        font-size: rem(12px);
+      }
+      @include tablet {
+        font-size: rem(16px);
+      }
+    }
+
+    .more{
+      display: block;
+      width: rem(221px);
+      height: rem(78px);
+      border: 1px solid $white;
+      border-radius: rem(4px);
+      font-size: rem(21px);
+      text-align: center;
+      line-height: rem(78px);
+      @include poaRightTop($r:0,$t:rem(-30px));
+
+      @include tablet {
+        width: rem(128px);
+        height: rem(44px);
+        line-height: rem(44px);
+        font-size: rem(12px);
+      }
+      @include mobile {
+        font-size: rem(12px);
+        width: rem(64px);
+        height: rem(27px);
+        line-height: rem(27px);
+      }
+    }
+  }
+
+  &__paging{
+    @include poaLeftTop($l:4%,$t:77%);
+    z-index: 50;
+    &__play{
+      color: $white;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: rem(8px);
+    }
+    &__btn{
+      display: inline-block;
+      width: rem(8px);
+      height: rem(8px);
+      border-radius: 50%;
+      background:rgba(255,255,255,0.5);
+      margin-right: rem(4px);
+    }
+    .on{
+      background: $white;
+    }
+  }
+
+  &__btn{
+    .button{
+      border: 0;
+      background: transparent;
+      @include poaCenterY;
+    }
+
+    &__i{
+      font-size: rem(70px);
+      @include tablet {
+        font-size: rem(40px);
+      }
+      @include mobile {
+        font-size: rem(14px);
+      }
+      color: rgba(255,255,255,0.5);
+    }
+
+    &__prev{left: 0;}
+    &__next{right: 0;}
+  }
+
+  }

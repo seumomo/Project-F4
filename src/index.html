@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OttTaing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" as="style" crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
     <link rel="stylesheet" href="/style/index.css" />
@@ -13,10 +14,12 @@
     <!-- 1번 -->
     <header class="header">
       <div class="header__inner">
+
         <div class="menuWrap">
           <h1 class="logo">
             <a href="/"><img src="/assets/icons/logo.png" alt="TAING" /></a>
           </h1>
+
           <nav class="menu">
             <ul class="menu__list">
               <li>
@@ -26,7 +29,11 @@
               </li>
               <li><a href="/">TV프로그램</a></li>
               <li><a href="/">영화</a></li>
-              <li><a href="/"><img src="/assets/icons/group.png" alt="Paramount+" /></a></li>
+              <li>
+                <a href="/" class="menu__link">
+                  <img src="/assets/icons/group.png" alt="Paramount+" />
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -39,40 +46,47 @@
             <img src="/assets/icons/Profile.png" alt="프로필 전환 및 편집" />
           </a>
         </div>
+
       </div>
     </header>
 
     <!-- 1번 -->
     <!-- 백그라운드 처리 -->
-    <section class="visual">
-      <ul>
-        <li>
-          드라마1
-          <p>드라마1 설명</p>
-        </li>
-        <li>
-          재벌집 막내아들
-          <p>인생 2회차를 사는 판타지 드라마</p>
-        </li>
-        <li>
-          드라마3
-          <p>드라마3 설명</p>
-        </li>
-        <li>
-          드라마4
-          <p>드라마4 설명</p>
-        </li>
+    <section class="visual" area-label="광고">
+
+      <div class="visual__summary">
+        <h2 class="a11yHidden">재벌집 막내아들</h2>
+        <p class="visual__summary__content">인생 2회차를 사는 판타지 드라마</p>
+        <p>
+          <a class="more" href="/">자세히 보기</a>
+        </p>
+      </div>
+
+      <ul class="visual__banner">
+        <li class="visual__banner__list"></li>
+        <li class="visual__banner__list"></li>
+        <li class="visual__banner__list"></li>
+        <li class="visual__banner__list"></li>
       </ul>
 
-      <ul>
-        <li><span></span></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul class="visual__paging">
+        <li class="visual__paging__play">
+          <i class="xi-pause"></i>
+        </li>
+        <li class="visual__paging__btn"></li>
+        <li class="visual__paging__btn on"></li>
+        <li class="visual__paging__btn"></li>
+        <li class="visual__paging__btn"></li>
       </ul>
 
-      <a href="">자세히보기</a>
+      <div class="visual__btn">
+        <button class="button visual__btn__prev">
+          <i class="xi-angle-left-thin visual__btn__i"></i>
+        </button>
+        <button class="button visual__btn__next">
+          <i class="xi-angle-right-thin visual__btn__i"></i>
+        </button>
+      </div>
     </section>
 
     <!-- 2번 -->
