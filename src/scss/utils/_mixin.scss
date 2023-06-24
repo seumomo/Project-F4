@@ -65,21 +65,21 @@
   display: inline-block;
 
   @include desktop {
-    background: url(./../../assets/icons/Frame_47.png) no-repeat;
+    background: url("/src/assets/icons/Frame_47.png") no-repeat;
     width: rem(8px);
     height: rem(8px);
     margin-left: rem(8px);
     margin-bottom: rem(30px);
   }
   @include tablet {
-    background: url(./../../assets/tablet/icons/Frame_47.png) no-repeat 0 -3px;
+    background: url("/src/assets/tablet/icons/Frame_47.png") no-repeat 0 -3px;
     width: rem(6px);
     height: rem(6px);
     margin-left: rem(4px);
     margin-bottom: rem(17px);
   }
   @include mobile {
-    background: url(./../../assets/mobile/icons/Frame_47.png) no-repeat 0 -4px;
+    background: url("/src/assets/mobile/icons/Frame_47.png") no-repeat 0 -4px;
     width: rem(4px);
     height: rem(4px);
     margin-left: rem(4px);
