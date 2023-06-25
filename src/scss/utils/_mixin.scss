@@ -42,3 +42,18 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+
+@mixin containerPadding($top: 0, $right: 0){
+  @include mobile {
+    padding: rem($top) rem(8px) rem(16px) rem($right);
+  }
+
+  @include tablet{
+    padding: rem($top) rem(40px) rem(28px) rem($right);
+  }
+
+  @include desktop{
+    padding: rem($top) rem(70px) rem(36px) rem($right);
+  }
+}

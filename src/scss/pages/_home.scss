@@ -1,32 +1,19 @@
 @use "./../utils" as *;
 
 .visual{
-  @include poa;
   width: 100%;
-  margin-top: rem(100px);
+  height: 0;
+  padding-top: calc(855px/1920px*100%);
+  position: relative;
+  top: rem(100px);
+  margin-bottom: rem(100px);
   @include mobile {
-    margin-top: 0;
+    top: 0;
+    margin-bottom: 0;
   }
   @include tablet {
-    margin-top: 0;
-  }
-  &__banner{
-    width: 100%;
-    &__list{
-      @include poaLeftTop; 
-      width: 100vw;
-      height: 0;
-      padding-top: calc(855px/1920px*100%);
-      background: url(/assets/images/banner_img.png) no-repeat;
-      background-size: contain;
-    }
-  }
-  &__banner::before{
-    display: block;
-    content: "";
-    width: 100%;
-    height: 0;
-    padding-top: calc(855px/1920px*100%);
+    top: 0;
+    margin-bottom: 0;
   }
 
   &__summary{
@@ -34,7 +21,7 @@
     z-index: 50;
     @include poaLeftTop($l:4%,$t:70%);
     color: $white;
-
+  
     &__content{
       font-size: rem(28px);
       @include mobile {
@@ -44,7 +31,7 @@
         font-size: rem(16px);
       }
     }
-
+  
     .more{
       display: block;
       width: rem(221px);
@@ -55,12 +42,12 @@
       text-align: center;
       line-height: rem(78px);
       @include poaRightTop($r:0,$t:rem(-30px));
-
+  
       @include tablet {
         width: rem(128px);
         height: rem(44px);
-        line-height: rem(44px);
         font-size: rem(12px);
+        line-height: rem(44px);
       }
       @include mobile {
         font-size: rem(12px);
@@ -68,6 +55,17 @@
         height: rem(27px);
         line-height: rem(27px);
       }
+    }
+  }
+  &__banner{
+    width: 100%;
+    &__list{
+      width: 100vw;
+      height: 0;
+      padding-top: calc(855px/1920px*100%);
+      background: url(/assets/images/banner_img.png) no-repeat;
+      background-size: contain;
+      @include poaLeftTop(); 
     }
   }
 
@@ -114,5 +112,6 @@
     &__prev{left: 0;}
     &__next{right: 0;}
   }
+
 
   }

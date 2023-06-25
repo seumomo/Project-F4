@@ -373,30 +373,20 @@ legend {
   z-index: 100;
   width: 100%;
   height: 6.25rem;
-  background: #000000;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
   color: #ffffff;
-  transition: 0.5s;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .header {
-    background: linear-gradient(#000000, rgba(0, 0, 0, 0.5));
-  }
-}
-@media (min-width: 768px) and (max-width: 1279px) {
-  .header {
-    background: linear-gradient(#000000, rgba(0, 0, 0, 0.5));
-  }
+  transition: 0.3s;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .header {
     height: 2.375rem;
-    transition: 0.5s;
+    transition: 0.3s;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .header {
     height: 3.5rem;
-    transition: 0.5s;
+    transition: 0.3s;
   }
 }
 .header__inner {
@@ -499,39 +489,24 @@ legend {
 }
 
 .visual {
-  position: absolute;
   width: 100%;
-  margin-top: 6.25rem;
+  height: 0;
+  padding-top: 44.53125%;
+  position: relative;
+  top: 6.25rem;
+  margin-bottom: 6.25rem;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .visual {
-    margin-top: 0;
+    top: 0;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .visual {
-    margin-top: 0;
+    top: 0;
+    margin-bottom: 0;
   }
-}
-.visual__banner {
-  width: 100%;
-}
-.visual__banner__list {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 0;
-  padding-top: 44.53125%;
-  background: url(/assets/images/banner_img.png) no-repeat;
-  background-size: contain;
-}
-.visual__banner::before {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 0;
-  padding-top: 44.53125%;
 }
 .visual__summary {
   width: 90%;
@@ -571,8 +546,8 @@ legend {
   .visual__summary .more {
     width: 8rem;
     height: 2.75rem;
-    line-height: 2.75rem;
     font-size: 0.75rem;
+    line-height: 2.75rem;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -582,6 +557,19 @@ legend {
     height: 1.6875rem;
     line-height: 1.6875rem;
   }
+}
+.visual__banner {
+  width: 100%;
+}
+.visual__banner__list {
+  width: 100vw;
+  height: 0;
+  padding-top: 44.53125%;
+  background: url(/assets/images/banner_img.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .visual__paging {
   position: absolute;
