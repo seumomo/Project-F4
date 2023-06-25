@@ -61,7 +61,18 @@
   }
 }
 
-// @mixin maxCenter(){
-//   max-width: rem(1920px);
-//   margin: auto;
+// @mixin grid($column: 12, $imageWidth) {
+//   display: grid;
+//   grid-template-columns: repeat($column, $imageWidth);
+//   grid-template-rows: auto;
+
+//   @include desktop {
+//     column-gap: rem(16px);
+//   }
+//   @include tablet {
+//     column-gap: rem(8px);
+//   }
+//   @include mobile {
+//     column-gap: rem(8px);
+//   }
 // }

@@ -21,7 +21,7 @@ body{
 
 }
 
-// 이벤트 색션
+// 이벤트 섹션
 .article{
   margin: 0 auto;
   
@@ -36,10 +36,14 @@ body{
 
     @include mobile {
       margin-bottom: rem(8px);
+      font-size: rem(12.003px);
+      font-weight: 700;
     }
 
     @include tablet{
     margin-bottom: rem(8px);
+    font-size: rem(16px);
+    font-weight: 700;
     }
   }
 
@@ -54,6 +58,8 @@ body{
       gap: rem(16px);
     } 
 
+    // display: grid;
+    // @include grid($column:6, $imageWidth:346px);
     overflow: hidden;
     @include flexbox();
 
@@ -115,6 +121,14 @@ body{
   &__notice a{
     @include flexbox($justify:space-between);
 
+    @include mobile{
+      font-size: rem(12.003px);
+    }
+
+    @include tablet{
+      font-size: rem(12.003px);
+    }
+
   }
 
   &__noticeTitle{
@@ -135,6 +149,10 @@ body{
 
   &__noticeContent{
     color: $gray2;
+
+    @include tablet{
+      font-size: rem(12.003px);
+    }
   }
 }
 
@@ -149,6 +167,10 @@ body{
   &__brand a{
     color: $gray2;
     padding-right: 15px;
+
+    @include tablet{
+      font-size: rem(12.003px);
+    }
   }
 
   &__group{
@@ -165,9 +187,7 @@ body{
   }
 
   @include mobile{
-    position: fixed;
-    top: -9999px;
-    left: -9999px;
+    display: none;
   }
 
 }
@@ -193,14 +213,30 @@ body{
     margin: rem(27px) 0 rem(24px);
       gap: 36px;
     }
+
+  &__list{
+    @include mobile{
+      font-size: rem(12.003px);
+    }
+
+    @include tablet{
+      font-size: rem(12.003px);
+    }
+  }
   }
 
 // 사업정보
 .address{
   @include mobile{
-    position: fixed;
-    top: -9999px;
-    left: -9999px;
+    display: none;
+  }
+
+  @include mobile{
+    font-size: rem(12.003px);
+  }
+
+  @include tablet{
+    font-size: rem(12.003px);
   }
 }
 
