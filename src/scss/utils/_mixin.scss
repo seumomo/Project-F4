@@ -127,3 +127,15 @@
     height: vw(78px);
   }
 }
+
+@mixin sectionMarginBottom {
+  @include desktop {
+    margin-bottom: 36px;
+  }
+  @include tablet {
+    margin-bottom: 28px;
+  }
+  @include mobile {
+    margin-bottom: 16px;
+  }
+}

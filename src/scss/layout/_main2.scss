@@ -6,8 +6,7 @@ body {
 }
 
 .contentsContainer {
-  margin-bottom: vw(36px);
-
+  @include sectionMarginBottom;
   @include containerPaddingX;
 
   figure {
