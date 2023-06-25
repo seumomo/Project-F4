@@ -6,32 +6,55 @@
   font-weight: bold;
   color: $white;
 
-  @include desktop {
-    margin-bottom: rem(12px);
-    font-size: rem(28px);
-  }
+  margin-bottom: rem(12px);
+  font-size: vw(28.4px);
+
   @include tablet {
     margin-bottom: rem(8px);
+    font-size: vw(16px, $tablet);
   }
   @include mobile {
     margin-bottom: rem(4px);
-    font-size: rem(12px);
+    font-size: vw(12px, $mobile);
   }
 }
 
-@mixin grid($column: 12, $imageWidth) {
+@mixin grid($column, $imageWidth) {
   display: grid;
-  grid-template-columns: repeat($column, $imageWidth);
   grid-template-rows: auto;
+  grid-template-columns: repeat($column, vw($imageWidth));
+  column-gap: rem(16px);
+}
+
+@mixin whiteSpace {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin flexbox(
+  $direction: row,
+  $justify: flex-start,
+  $items: stretch,
+  $wrap: nowrap
+) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  justify-content: $justify;
+  align-items: $items;
+}
+
+@mixin containerPaddingX($top: 0, $bottom: 0) {
+  @include mobile {
+    margin: rem($top) rem(8px) rem($bottom);
+  }
+
+  @include tablet {
+    padding: rem($top) rem(40px) rem($bottom);
+  }
 
   @include desktop {
-    column-gap: rem(16px);
-  }
-  @include tablet {
-    column-gap: rem(8px);
-  }
-  @include mobile {
-    column-gap: rem(8px);
+    padding: rem($top) rem(70px) rem($bottom);
   }
 }
 
@@ -44,57 +67,63 @@
   font-style: italic;
   color: $white;
 
-  @include desktop {
-    font-size: rem(70px);
-  }
+  font-size: 3.6458333333333335vw;
+
   @include tablet {
-    font-size: rem(46px);
+    font-size: vw(46px, $tablet);
   }
   @include mobile {
-    font-size: rem(34px);
+    font-size: vw(34px, $mobile);
   }
-}
-
-@mixin whiteSpace {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 @mixin redDot {
   display: inline-block;
 
   @include desktop {
-    background: url("/src/assets/icons/Frame_47.png") no-repeat;
-    width: rem(8px);
-    height: rem(8px);
-    margin-left: rem(8px);
-    margin-bottom: rem(30px);
+    background: url("./../assets/icons/Frame_47.png") no-repeat;
+    background-size: vw(8px), vw(8px);
+    width: vw(8px);
+    height: vw(8px);
+    margin-top: vw(8px);
+    vertical-align: top;
   }
   @include tablet {
-    background: url("/src/assets/tablet/icons/Frame_47.png") no-repeat 0 -3px;
-    width: rem(6px);
-    height: rem(6px);
-    margin-left: rem(4px);
-    margin-bottom: rem(17px);
+    background: url("./../assets/tablet/icons/Frame_47.png") no-repeat 0
+      vw(-3px, $tablet);
+    background-size: vw(6px, $tablet), vw(6px, $tablet);
+    width: vw(6px, $tablet);
+    height: vw(6px, $tablet);
+    margin-bottom: vw(17px, $tablet);
   }
   @include mobile {
-    background: url("/src/assets/mobile/icons/Frame_47.png") no-repeat 0 -4px;
-    width: rem(4px);
-    height: rem(4px);
-    margin-left: rem(4px);
-    margin-bottom: rem(15px);
+    background: url("./../assets/mobile/icons/Frame_47.png") no-repeat 0
+      vw(-4px, $mobile);
+    background-size: vw(4px, $mobile), vw(4px, $mobile);
+    width: vw(4px, $mobile);
+    height: vw(4px, $mobile);
+    margin-bottom: vw(15px, $mobile);
   }
 }
 
-@mixin flexbox(
-  $direction: row,
-  $justify: flex-start,
-  $items: stretch,
-  $wrap: nowrap
-) {
-  display: inline-flex;
-  flex-flow: $direction $wrap;
-  justify-content: $justify;
-  align-items: $items;
+@mixin ageLimit {
+  background: url(./../../assets/icons/Age_Limit.png) no-repeat;
+  position: absolute;
+  top: vw(5px);
+  right: vw(5px);
+
+  background-size: vw(30px), vw(30px);
+  width: vw(30px);
+  height: vw(30px);
+
+  @include tablet {
+    background-size: vw(40px), vw(40px);
+    width: vw(40px);
+    height: vw(40px);
+  }
+  @include mobile {
+    background-size: vw(78px), vw(78px);
+    width: vw(78px);
+    height: vw(78px);
+  }
 }
