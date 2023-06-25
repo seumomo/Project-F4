@@ -573,6 +573,7 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: stretch;
+  padding: 0;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .info__notice a {
@@ -632,9 +633,14 @@ body {
     font-size: 0.7501875rem;
   }
 }
-.infoLink__group {
+.infoLink__group a {
   color: #c4c4c4;
   padding-left: 15px;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .infoLink__group a {
+    font-size: 0.7501875rem;
+  }
 }
 .infoLink__plusbtn {
   padding-left: 15px;
