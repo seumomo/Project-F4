@@ -260,6 +260,15 @@ body{
   @include flexbox($justify: space-between);
   gap: rem(20px);
   @include marginY(24px);
+
+  @include mobile{
+    width: rem(120px);
+    gap: rem(8px);
+  }
+
+  @include desktop{
+    gap: rem(8px);
+  }
 }
 
 .copyrignt{

@@ -731,6 +731,17 @@ body {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer__sns {
+    width: 7.5rem;
+    gap: 0.5rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .footer__sns {
+    gap: 0.5rem;
+  }
+}
 
 .copyrignt {
   display: inline-block;
