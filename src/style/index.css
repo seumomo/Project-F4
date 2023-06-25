@@ -751,5 +751,16 @@ body {
   display: inline-block;
   color: #6b6b6b;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .copyrignt {
+    width: 14.5rem;
+    font-size: 0.7501875rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .copyrignt {
+    font-size: 0.7501875rem;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

@@ -275,4 +275,13 @@ body{
 .copyrignt{
   display: inline-block;
   color: $gray5;
+
+  @include mobile{
+    width: rem(232px);
+    font-size: rem(12.003px);
+  }
+
+  @include tablet{
+    font-size: rem(12.003px);
+  }
 }
