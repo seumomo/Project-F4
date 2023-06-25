@@ -97,13 +97,13 @@ body{
     @include desktop{
       @include containerPaddingX(140px, 170px);
     }
-
 }
 
 // footer info
 .info{
   border-bottom: 1px solid $gray8;
   @include flexbox($justify:space-between);
+  align-items: center;
 
   @include mobile{
     padding: 0 0 rem(12px);
@@ -117,10 +117,8 @@ body{
     padding: 0 0 rem(27px);
   }
 
-
   &__notice a{
     @include flexbox($justify:space-between);
-    padding: 0;
 
     @include mobile{
       font-size: rem(12.003px);
@@ -164,7 +162,7 @@ body{
   &__click{
     @include flexbox($justify:space-between);
   }
-  
+
   &__brand a{
     color: $gray2;
     padding-right: 15px;
@@ -177,6 +175,8 @@ body{
   &__group a{
     color: $gray2;
     padding-left: 15px;
+    // vertical-align: center;
+
     @include tablet{
       font-size: rem(12.003px);
     }
@@ -188,6 +188,7 @@ body{
 
   &__divider{
     color: $gray5;
+    font-size: rem(12.003px);
   }
 
   @include mobile{

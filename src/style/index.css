@@ -552,6 +552,7 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: stretch;
+  align-items: center;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .info {
@@ -573,7 +574,6 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: stretch;
-  padding: 0;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .info__notice a {
@@ -647,6 +647,7 @@ body {
 }
 .infoLink__divider {
   color: #6b6b6b;
+  font-size: 0.7501875rem;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .infoLink {
