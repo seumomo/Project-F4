@@ -1,4 +1,5 @@
 @use "./unit" as *;
+@use "./media-query" as *;
 
 @mixin flexbox(
   $direction: row,
@@ -44,6 +45,20 @@
 @mixin marginY($spacing){
   margin-top: rem($spacing);
   margin-bottom: rem($spacing);
+}
+
+@mixin containerPaddingX($top: 0, $bottom: 0){
+  @include mobile {
+    padding: rem($top) rem(8px) rem($bottom);
+  }
+
+  @include tablet{
+    padding: rem($top) rem(40px) rem($bottom);
+  }
+
+  @include desktop{
+    padding: rem($top) rem(70px) rem($bottom);
+  }
 }
 
 // @mixin maxCenter(){
