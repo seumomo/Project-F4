@@ -199,7 +199,7 @@ body{
 
   @include mobile{
     @include flexbox($direction: column);
-
+    @include paddingY(0px);
     margin: rem(12px) 0;
     gap: 4px;
   }
@@ -264,6 +264,7 @@ body{
   @include mobile{
     width: rem(120px);
     gap: rem(8px);
+    @include marginY(12px);
   }
 
   @include desktop{
