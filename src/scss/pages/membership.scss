@@ -1,0 +1,149 @@
+@use "./../utils" as *;
+@use "./../base" as *;
+
+body {
+  @include autoMargin;
+  background-color: $black;
+}
+
+.login.loginContainer{
+  margin-top: rem(170px);
+}
+
+.login {
+
+
+  &__title {
+    color: $white;
+    font-size: 37.897px;
+    font-weight: 700;
+    text-align: center;
+    @include autoMargin;
+  }
+
+  &__container {
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__input[type="id"],
+  [type="password"] {
+    color: $gray6;
+    font-size: rem(28.43px);
+    width: rem(732px);
+    height: rem(96px);
+    background-color: $dark-bg-2;
+    outline: none;
+    border: 0;
+    padding-left: rem(10px);
+    gap: rem(15px);
+
+  }
+
+  &__input[type="id"]{
+    margin-top: rem(60px);
+  }
+
+  .checkboxContainer{
+    margin-top: rem(16px);
+    margin-bottom: rem(32px);
+    
+  }
+
+
+ 
+  &__pwd{
+
+    position: relative;
+  }
+  &__secret{
+    position: absolute;
+    bottom: rem(30px);
+    right:rem(24px);
+  }
+  
+
+
+  &__minibox {
+    background-color: $gray6;
+    appearance: none;
+    border-radius: 50%;
+    width: rem(26px);
+    height: rem(26px);
+    padding: 3px;
+    border: 0px solid #999;
+
+  }
+
+  &__checkboxLabel {
+    color: $gray5;
+    font-size: rem(21.328px);
+    font-weight: 600;
+
+  }
+
+  &__button {
+    color: $gray6;
+    width: rem(732px);
+    height: rem(96px);
+    background-color: #FF153C;
+    border-radius: 4px;
+    outline: none;
+    border: 0;
+    padding-left: rem(10px);
+
+    font-size: rem(28.43px);
+    font-weight: 600;
+    color: $white;
+
+  }
+
+
+}
+
+
+.search__id {
+
+  color: $gray3;
+  font-size: rem(21.328px);
+  
+
+}
+
+.search__pwd {
+  
+  color: $gray3;
+  font-size: rem(21.328px);
+
+
+}
+
+.search__find{
+  width: rem(732px);
+  margin-top: rem(42px);
+  display: flex;
+  @include autoMargin;
+  justify-content: space-around;
+}
+
+.search__join{
+  width: rem(732px);
+  margin-top: rem(44px);
+  display: flex;
+  @include autoMargin;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__no {
+  color: $gray5;
+  font-size: rem(21.328px);
+}
+
+.search__new {
+  color: $gray3;
+  font-size: rem(21.328px);
+}

@@ -1032,4 +1032,122 @@ body {
   right: 0;
 }
 
+body {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+}
+
+.login.loginContainer {
+  margin-top: 10.625rem;
+}
+
+.login__title {
+  color: #ffffff;
+  font-size: 37.897px;
+  font-weight: 700;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login__container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.login__input[type=id],
+.login [type=password] {
+  color: #565656;
+  font-size: 1.776875rem;
+  width: 45.75rem;
+  height: 6rem;
+  background-color: #212121;
+  outline: none;
+  border: 0;
+  padding-left: 0.625rem;
+  gap: 0.9375rem;
+}
+.login__input[type=id] {
+  margin-top: 3.75rem;
+}
+.login .checkboxContainer {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.login__pwd {
+  position: relative;
+}
+.login__secret {
+  position: absolute;
+  bottom: 1.875rem;
+  right: 1.5rem;
+}
+.login__minibox {
+  background-color: #565656;
+  appearance: none;
+  border-radius: 50%;
+  width: 1.625rem;
+  height: 1.625rem;
+  padding: 3px;
+  border: 0px solid #999;
+}
+.login__checkboxLabel {
+  color: #6b6b6b;
+  font-size: 1.333rem;
+  font-weight: 600;
+}
+.login__button {
+  color: #565656;
+  width: 45.75rem;
+  height: 6rem;
+  background-color: #FF153C;
+  border-radius: 4px;
+  outline: none;
+  border: 0;
+  padding-left: 0.625rem;
+  font-size: 1.776875rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.search__id {
+  color: #a6a6a6;
+  font-size: 1.333rem;
+}
+
+.search__pwd {
+  color: #a6a6a6;
+  font-size: 1.333rem;
+}
+
+.search__find {
+  width: 45.75rem;
+  margin-top: 2.625rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+}
+
+.search__join {
+  width: 45.75rem;
+  margin-top: 2.75rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__no {
+  color: #6b6b6b;
+  font-size: 1.333rem;
+}
+
+.search__new {
+  color: #a6a6a6;
+  font-size: 1.333rem;
+}
+
 /*# sourceMappingURL=index.css.map */
