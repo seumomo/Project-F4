@@ -418,6 +418,7 @@ iframe {
   font-size: 1.776875rem;
   color: #898989;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .or {
