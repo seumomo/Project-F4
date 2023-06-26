@@ -1,13 +1,13 @@
 @use "./../utils" as *;
 
 .header{
+  width: 100%;
   position: fixed;
   top: 0;left: 0;
-  z-index: 100;
-  width: 100%;
-  height: rem(100px);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.00) 100%);
+  z-index: 100;
   color: $white;
+  height: rem(100px);
   transition: 0.3s;
   @include mobile {
     height: rem(38px);
@@ -17,6 +17,8 @@
     height: rem(56px);
     transition: 0.3s;
   }
+  // overflow: hidden;
+  
   &__inner{
     width: 90%;
     height: 100%;
@@ -45,6 +47,7 @@
 
     .menu{
       width: rem(505px);
+      color: $gray2;
       @include tablet {
         width: rem(388px);
       }
@@ -86,4 +89,8 @@
       width: 30%;
     }
   }
+}
+
+.searchFormWrap{
+  display: none;
 }

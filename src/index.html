@@ -40,14 +40,95 @@
 
         <div class="subMenu">
           <a class="subMenu__search" href="/" type="button">
-            <img src="./assets/icons/Search.png" alt="검색하기" />
+            <img src="/assets/icons/Search.png" alt="검색하기" />
           </a>
           <a class="subMenu__profile" href="/">
             <img src="/assets/icons/Profile.png" alt="프로필 전환 및 편집" />
           </a>
         </div>
-
       </div>
+
+      <div class="searchFormWrap">
+
+        <form action="/" method="get" class="form">
+          <fieldset>
+            <legend>검색/찾기</legend>
+            <label for="search" class="a11yHidden" aria-hidden="true">TV프로그램, 영화 제목 및 출연진으로 검색해보세요</label>
+            <input type="text" id="search" placeholder="TV프로그램, 영화 제목 및 출연진으로 검색해보세요" class="form__searchInput" />
+            <button type="submit" class="form__searchBtn">
+              <img src="/assets/icons/Search.png" alt="검색하기" />
+            </button>
+          </fieldset>
+        </form>
+
+        <div class="searchWord">
+          <div class="searchWord__recent">
+            <h2 class="searchWord__recent__title">최근 검색어</h2>
+            <ul class="searchWord__recent__list">
+              <li>검색 내역이 없습니다.</li>
+            </ul>
+          </div>
+          <div class="searchWord__popular">
+            <h2 class="searchWord__popular__title">실시간 인기 검색어</h2>
+            <ol class="searchWord__popular__list">
+              <li>
+                <a href="/">
+                  <span class="accent-red" aria-hidden="true">1</span>재벌집 막내아들
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span class="accent-red" aria-hidden="true">2</span>미스터트롯2: 새로운 전설의 시작
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span class="accent-red" aria-hidden="true">3</span>유 퀴즈 온 더 블럭
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span class="accent-red" aria-hidden="true">4</span>대행사
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span class="accent-red" aria-hidden="true">5</span>SHOW ME THE MONEY 11
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span class="accent-red" aria-hidden="true">6</span>미씽: 그들이 있었다2
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span class="accent-red" aria-hidden="true">7</span>술꾼도시여자들2
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span class="accent-red" aria-hidden="true">8</span>캐나다 체크인
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span class="accent-red" aria-hidden="true">9</span>미씽: 그들이 있었다 - 그들을 ‘다만나다
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span class="accent-red" aria-hidden="true">10</span>술꾼도시여자들
+                </a>
+              </li>
+              <li aria-hidden="true">
+                <time class="time">2022.12.24 오전 03:04 기준</time>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
     </header>
 
     <!-- 1번 -->
