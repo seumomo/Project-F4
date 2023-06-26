@@ -139,3 +139,84 @@
     margin-bottom: 16px;
   }
 }
+
+@mixin padding($paddingY, $paddingX) {
+  padding-top: rem($paddingY);
+  padding-bottom: rem($paddingY);
+  padding-left: rem($paddingX);
+  padding-right: rem($paddingX);
+}
+
+@mixin margin($marginY, $marginX) {
+  margin-top: rem($marginY);
+  margin-bottom: rem($marginY);
+  margin-left: rem($marginX);
+  margin-right: rem($marginX);
+}
+
+@mixin paddingX($paddingX) {
+  padding-left: rem($paddingX);
+  padding-right: rem($paddingX);
+}
+
+@mixin paddingY($spacing) {
+  padding-top: rem($spacing);
+  padding-bottom: rem($spacing);
+}
+
+@mixin marginX($spacing) {
+  margin-left: rem($spacing);
+  margin-right: rem($spacing);
+}
+
+@mixin marginY($spacing) {
+  margin-top: rem($spacing);
+  margin-bottom: rem($spacing);
+}
+
+@mixin autoMargin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin poa {
+  position: absolute;
+}
+
+@mixin poaLeftTop($l: 0, $t: 0) {
+  @include poa;
+  top: $t;
+  left: $l;
+}
+
+@mixin poaRightTop($r: 0, $t: 0) {
+  @include poa;
+  top: $t;
+  right: $r;
+}
+
+@mixin poaCenterY() {
+  @include poa;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin poaCenterX() {
+  @include poa;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin containerPadding($top: 0, $right: 0) {
+  @include mobile {
+    padding: rem($top) rem(8px) rem(16px) rem($right);
+  }
+
+  @include tablet {
+    padding: rem($top) rem(40px) rem(28px) rem($right);
+  }
+
+  @include desktop {
+    padding: rem($top) rem(70px) rem(36px) rem($right);
+  }
+}
