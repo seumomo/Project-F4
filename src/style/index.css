@@ -369,6 +369,7 @@ legend {
 
 body {
   background-color: #000000;
+  overflow-x: hidden;
 }
 
 .contentsContainer {
@@ -424,6 +425,25 @@ body {
   }
 }
 
+span {
+  display: block;
+}
+
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .content__text {
+    font-size: 1.33125rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .content__text {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .content__text {
+    font-size: 0.75rem;
+  }
+}
 .content__box {
   margin-top: 0.75rem;
 }
@@ -432,26 +452,24 @@ body {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  overflow: hidden;
-  /*
-      @include desktop {
-        width: rem(1920px);
-
-      }
-
-      @include tablet {
-        width: rem(768px);
-
-      }
-
-      @include mobile {
-        width: rem(320px);
-      }
-  */
 }
 .content__list a {
-  font-size: 0.6rem;
   color: #c4c4c4;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .content__list {
+    width: 150vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .content__list {
+    width: 125vw;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .content__list {
+    width: 105vw;
+  }
 }
 .content__list li:nth-child(3) {
   position: relative;
@@ -469,10 +487,24 @@ body {
   left: initial;
 }
 .content__item {
-  width: 15rem;
   padding-right: 1rem;
 }
 
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .vod__text {
+    font-size: 1.33125rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .vod__text {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .vod__text {
+    font-size: 0.75rem;
+  }
+}
 .vod__box {
   margin-top: 0.75rem;
 }
@@ -481,12 +513,24 @@ body {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  width: 105vw;
-  overflow: hidden;
 }
 .vod__list a {
-  font-size: 0.6rem;
   color: #c4c4c4;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .vod__list {
+    width: 280vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .vod__list {
+    width: 180vw;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .vod__list {
+    width: 120vw;
+  }
 }
 .vod__item {
   width: 21.5625rem;
@@ -498,7 +542,7 @@ body {
   left: initial;
 }
 .vod__item .vod__icon {
-  width: 3rem;
+  width: 5rem;
   position: absolute;
   top: 3px;
   right: initial;
@@ -506,7 +550,7 @@ body {
   left: 3px;
 }
 .vod__episode span {
-  font-size: 0.3rem;
+  font-size: 1rem;
 }
 
 .original__box {
@@ -517,52 +561,25 @@ body {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  overflow: hidden;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .original__list {
+    width: 280vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .original__list {
+    width: 180vw;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .original__list {
+    width: 120vw;
+  }
 }
 .original__item {
   width: 17.8125rem;
   padding-right: 1rem;
 }
-
-/*
-    @include mobile {
-      background-color: pink;
-      .content__img--lg{
-        display: none;
-      .content__img--md{
-        display: none;
-      }
-      .content__img--sm {
-        display: flex;
-        width: 25%;
-      }
-    }
-    @include desktop {
-      background-color: plum;
-      .content__img--lg {
-        display: flex;
-        width: 12.5rem;
-      }
-      .content__img--md{
-        display: none;
-      }
-      .content__img--sm {
-        display: none;
-      }
-    }
-    @include tablet {
-      background-color: skyblue;
-      .content__img--lg {
-        display: none;
-      }
-      .content__img--md{
-        width: 16.6%;
-        display: flex;
-      }
-      .content__img--sm {
-        display: none;
-      }
-    }
-    */
 
 /*# sourceMappingURL=index.css.map */

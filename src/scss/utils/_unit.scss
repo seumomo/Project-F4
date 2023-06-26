@@ -14,3 +14,14 @@ $rootUnit: 16px !default;
   $removeBase: removeUnit($base);
   @return math.div($removeValue, $removeBase) * 1rem;
 }
+
+
+
+$desktop: 1920;
+$tablet: 768;
+$mobile: 320;
+
+@function vw($value, $device: $desktop) {
+  $removeValue: removeUnit($value);
+  @return math.div($removeValue, $device) * 1vw * 100;
+}

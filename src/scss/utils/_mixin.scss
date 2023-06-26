@@ -88,6 +88,13 @@
 
 
 
+
+
+
+
+
+
+
 @mixin posCenterX($pos: absolute) {
   @include pos;
   left: 50%;
@@ -109,19 +116,8 @@
 
 @mixin textDeco {
   a{
-    font-size: 0.6rem;
-    color: $gray2
+    color: $gray2;
   }
+ 
 }
 
-
-@mixin fontDeco{
-  font-size: 1rem;
-  color: $white;
-  font-weight: 500;
-}
-
-@mixin fontMini{
-  display: i;
-  font-size: 0.3rem;
-}

@@ -1,63 +1,94 @@
 @use "./../utils" as *;
 @use "sass:math";
 
-body{
+body {
   background-color: $black;
+  overflow-x: hidden;
 }
 
 
-.contentsContainer{
+.contentsContainer {
   @include containerPaddingX;
   @include sectionTitle;
   @include sectionMarginBottom;
+
+}
+
+span {
+  display: block;
 }
 
 .content {
-  &__box{
+  &__text {
+    @include desktop {
+      font-size: rem(21.3px);
+    }
+
+    @include tablet {
+      font-size: rem(12px);
+    }
+
+    @include mobile {
+      font-size: rem(12px);
+    }
+  }
+
+  &__box {
     margin-top: rem(12px);
   }
 
   &__list {
     @include flexbox;
     @include textDeco;
-    overflow: hidden;
 
-/*
-    @include desktop {
-      width: rem(1920px);
-
+    @include mobile {
+      width: 150vw;
     }
 
     @include tablet {
-      width: rem(768px);
-
+      width: 125vw;
     }
 
-    @include mobile {
-      width: rem(320px);
+    @include desktop {
+      width: 105vw;
+
     }
-*/
 
     li:nth-child(3) {
       @include pos($pos: relative);
 
       .Age-Limit {
-        width: 1rem;
+        width: rem(16px);
         @include pos($t: 5px, $r: 20px);
       }
     }
   }
 
   &__item {
-    width: rem(240px);
+    //width: rem(240px);
     padding-right: rem(16px);
+
   }
 
 }
 
 
 .vod {
-  &__box{
+  &__text {
+    @include desktop {
+      font-size: rem(21.3px);
+    }
+
+    @include tablet {
+      font-size: rem(12px);
+    }
+
+    @include mobile {
+      font-size: rem(12px);
+    }
+  }
+
+  &__box {
     margin-top: rem(12px);
   }
 
@@ -65,8 +96,23 @@ body{
   &__list {
     @include flexbox;
     @include textDeco;
-    width: 105vw;
-    overflow: hidden;
+
+    @include mobile {
+      width: 280vw;
+
+    }
+
+    @include tablet {
+      width: 180vw;
+
+
+    }
+
+    @include desktop {
+      width: 120vw;
+
+    }
+
   }
 
   &__item {
@@ -75,7 +121,7 @@ body{
     @include pos($pos: relative);
 
     .vod__icon {
-      width: 3rem;
+      width: 5rem;
       @include pos($t: 3px, $l: 3px);
     }
 
@@ -83,7 +129,7 @@ body{
 
   &__episode {
     span {
-      font-size: 0.3rem;
+      font-size: rem(16px);
     }
   }
 
@@ -91,15 +137,30 @@ body{
 
 
 .original {
-  &__box{
+  &__box {
     margin-top: rem(12px);
   }
 
 
   &__list {
     @include flexbox;
-  
-    overflow: hidden;
+
+    @include mobile {
+      width: 280vw;
+
+    }
+
+    @include tablet {
+      width: 180vw;
+
+
+    }
+
+    @include desktop {
+      width: 120vw;
+
+    }
+
   }
 
   &__item {
@@ -107,47 +168,3 @@ body{
     padding-right: rem(16px);
   }
 }
-
-
-
-
-/*
-    @include mobile {
-      background-color: pink;
-      .content__img--lg{
-        display: none;
-      .content__img--md{
-        display: none;
-      }
-      .content__img--sm {
-        display: flex;
-        width: 25%;
-      }
-    }
-    @include desktop {
-      background-color: plum;
-      .content__img--lg {
-        display: flex;
-        width: 12.5rem;
-      }
-      .content__img--md{
-        display: none;
-      }
-      .content__img--sm {
-        display: none;
-      }
-    }
-    @include tablet {
-      background-color: skyblue;
-      .content__img--lg {
-        display: none;
-      }
-      .content__img--md{
-        width: 16.6%;
-        display: flex;
-      }
-      .content__img--sm {
-        display: none;
-      }
-    }
-    */
