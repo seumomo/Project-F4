@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>템플릿 페이지</title>
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
+</head>
+<header>
+  <h1 class="logo"><a href="/"></a></h1>
+</header>
+
+<main class="findId">
+  <div class="useEmail">
+    <h2 class="useEmail__title">아이디 찾기</h2>
+    <span class="useEmail__find">이메일로 찾기</span>
+    <span class="useEmail__inputEmail">가입 시 등록한 이메일을 입력해주세요.</span>
+    <form action="#" class="useEmail__form">
+      <fieldset>
+        <legend>이메일 폼</legend>
+        <div class="useEmail__Id">
+          <label for="userEmail" class="a11yHidden">이메일</label>
+          <input type="email" id="userEmail" name="userEmail" required placeholder="이메일" />
+        </div>
+        <button type="submit" class="useEmail__check">확인</button>
+      </fieldset>
+    </form>
+  </div>
+  <div class="or">또는</div>
+  <div class="useId">
+    <h3 class="useId__identity">본인인증으로 찾기</h3>
+    <span class="useId__possible">이미 본인인증 완료된 계정에 한하여 아이디 찾기가 가능합니다.</span>
+    <div class="useId__identityBtn"><a href="/">본인인증하기</a></div>
+  </div>
+</main>
+
+<body>
+
+</body>
+
+</html>
