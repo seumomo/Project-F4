@@ -49,6 +49,7 @@ body{
 
   &__event{
     @include containerPaddingX();
+    gap: rem(8px);
 
     @include mobile{
       gap: rem(8px);

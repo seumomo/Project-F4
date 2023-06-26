@@ -450,6 +450,7 @@ body {
   }
 }
 .article__event {
+  gap: 0.5rem;
   overflow: hidden;
   display: flex;
   flex-flow: row nowrap;
