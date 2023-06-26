@@ -91,6 +91,77 @@
   }
 }
 
-.searchFormWrap{
-  display: none;
+
+
+
+
+// 검색
+.header{
+
+  .searchFormWrap{
+    display: none;
+    background: $dark-bg-1;
+    padding-top: rem(55px);
+    width: 90%;
+    margin: auto;
+    height: rem(890px);
+  }
+  .form{
+    width: rem(1480px);
+    margin: auto;
+    position: relative;
+    &__searchInput{
+      width: rem(1480px);
+      outline: none;
+      border: 0;
+      border-bottom: 1px solid $white;
+      background: transparent;
+      font-size: rem(37px);
+      color: $gray7;
+      padding: rem(15px) 0;
+  
+    }
+    &__searchBtn{
+      border: 0;
+      background: transparent;
+      position: absolute;
+      top: rem(15px);right: 0;
+      cursor: pointer;
+    }
+  }
+  .searchWord{
+    width: rem(1480px);
+    margin: auto;
+    margin-top: rem(100px);
+    display: flex;
+    gap: rem(60px);
+    font-size: rem(21px);
+    color: $gray3;
+    &__recent{
+      width: 50%;
+    }
+    &__popular{
+      width: 50%;
+
+      border-left: 1px solid $gray8;
+      padding-left: rem(60px);
+      &__list{
+        display: flex;
+        flex-direction: column;
+        gap: rem(16px);
+      }
+    } 
+  }
+  .searchWord [class*="__title"]{
+    font-size: rem(28px);
+    margin-bottom: rem(36px);
+  }
+  .accent-red{
+    color: $red-1;
+    font-weight: 700;
+  }
+  .time{
+    color: $gray5;
+  }
+  
 }
