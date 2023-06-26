@@ -454,12 +454,26 @@ body {
   left: initial;
 }
 .content__list li:nth-child(3) .Age-Limit {
-  width: 1.5625vw;
   position: absolute;
-  top: 5px;
-  right: 20px;
-  bottom: initial;
-  left: initial;
+  top: 0.5208333333vw;
+  right: 1.5625vw;
+  background-size: 1.5625vw, 1.5625vw;
+  width: 1.5625vw;
+  height: 1.5625vw;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .content__list li:nth-child(3) .Age-Limit {
+    background-size: 2.0833333333vw, 2.0833333333vw;
+    width: 2.0833333333vw;
+    height: 2.0833333333vw;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .content__list li:nth-child(3) .Age-Limit {
+    background-size: 4.0625vw, 4.0625vw;
+    width: 4.0625vw;
+    height: 4.0625vw;
+  }
 }
 .content__text {
   display: block;
@@ -647,7 +661,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .original__item {
-    width: 48%;
+    width: 40%;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {

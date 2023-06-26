@@ -44,8 +44,24 @@ body {
       @include pos($pos: relative);
 
       .Age-Limit {
+        position: absolute;
+        top: vw(10px);
+        right: vw(30px);
+      
+        background-size: vw(30px), vw(30px);
         width: vw(30px);
-        @include pos($t: 5px, $r: 20px);
+        height: vw(30px);
+      
+        @include tablet {
+          background-size: vw(40px), vw(40px);
+          width: vw(40px);
+          height: vw(40px);
+        }
+        @include mobile {
+          background-size: vw(78px), vw(78px);
+          width: vw(78px);
+          height: vw(78px);
+        }
       }
     }
   }
@@ -223,7 +239,7 @@ body {
 
     }
     @include mobile {
-      width: 48%
+      width: 40%
 
     }
     @include tablet {
