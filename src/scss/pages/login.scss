@@ -1,0 +1,99 @@
+@use "./../utils" as *;
+@use "./../base" as *;
+
+.findId{
+  width: 100%;
+  background: black;
+  padding-top: rem(70px);
+
+}
+
+.useEmail{
+  width: rem(732px);
+  @include autoMargin();
+
+  &__title{
+    font-size: rem(37.897px);
+    color: $white;
+    text-align: center;
+    margin-bottom: rem(60px);
+    font-weight: 700;
+  }
+
+  &__find{
+    display: block;
+    font-size: rem(28.43px);
+    color: $white;
+    font-weight: 600;
+    margin-bottom: rem(4px);
+  }
+
+  &__inputEmail{
+    display: block;
+    font-size: rem(28.43px);
+    color: $gray4;
+    margin-bottom: rem(24px);
+    font-weight: 600;
+  }
+
+  &__Id input{
+    width: rem(732px);
+    height: rem(96px);
+    font-size: rem(28.43px);
+    padding-left: rem(24px);
+    margin-bottom: rem(36px);
+    background: $dark-bg-2;
+    border: 1px solid $dark-bg-2;
+    color: $gray6;
+    border-radius: 4px;
+  }
+
+  &__check{
+    width: rem(732px);
+    height: rem(86px);
+    background: $gray7;
+    font-size: rem(28.43px);
+    color: $gray4;
+    border-radius: 4px;
+  }
+}
+
+.or{
+  height: rem(156px);
+  font-size: rem(16px);
+  color: $gray7;
+  text-align: center;
+}
+
+.useId{
+  width: rem(732px);
+  @include autoMargin();
+  padding-bottom: rem(140px);
+
+  &__identity{
+    font-size: rem(28.43px);
+    color: $white;
+    font-weight: 600;
+    margin-bottom: rem(4px);
+  }
+
+  &__possible{
+    display: block;
+    color: $gray4;
+    font-size: rem(21.328px);
+    font-weight: 600;
+    margin-bottom: rem(36px);
+  }
+
+  &__identityBtn{
+    background: $white;
+    color: $black;
+    font-size: rem(28.43px);
+    font-weight: 600;
+    text-align: center;
+  }
+  &__identityBtn a{
+    display: block;
+    @include paddingY(21.5px);
+  }
+}
