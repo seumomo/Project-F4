@@ -1,3 +1,6 @@
+@use "./unit" as *;
+@use "./media-query" as *;
+
 @mixin flexbox(
   $direction: row,
   $justify: flex-start,
@@ -10,6 +13,71 @@
   align-items: $items;
 }
 
+<<<<<<< HEAD
+@mixin padding($paddingY,$paddingX){
+  padding-top: rem($paddingY);
+  padding-bottom: rem($paddingY);
+  padding-left: rem($paddingX);
+  padding-right: rem($paddingX);
+}
+
+@mixin margin($marginY,$marginX){
+  margin-top: rem($marginY);
+  margin-bottom: rem($marginY);
+  margin-left: rem($marginX);
+  margin-right: rem($marginX);
+}
+
+@mixin paddingX($paddingX){
+  padding-left: rem($paddingX);
+  padding-right: rem($paddingX);
+}
+
+@mixin paddingY($spacing){
+  padding-top: rem($spacing);
+  padding-bottom: rem($spacing);
+}
+
+@mixin marginX($spacing){
+  margin-left: rem($spacing);
+  margin-right: rem($spacing);
+}
+
+@mixin marginY($spacing){
+  margin-top: rem($spacing);
+  margin-bottom: rem($spacing);
+}
+
+@mixin containerPaddingX($top: 0, $bottom: 0){
+  @include mobile {
+    padding: rem($top) rem(8px) rem($bottom);
+  }
+
+  @include tablet{
+    padding: rem($top) rem(40px) rem($bottom);
+  }
+
+  @include desktop{
+    padding: rem($top) rem(70px) rem($bottom);
+  }
+}
+
+// @mixin grid($column: 12, $imageWidth) {
+//   display: grid;
+//   grid-template-columns: repeat($column, $imageWidth);
+//   grid-template-rows: auto;
+
+//   @include desktop {
+//     column-gap: rem(16px);
+//   }
+//   @include tablet {
+//     column-gap: rem(8px);
+//   }
+//   @include mobile {
+//     column-gap: rem(8px);
+//   }
+// }
+=======
 @mixin autoMargin{
   margin-left: auto;
   margin-right: auto;
@@ -57,3 +125,4 @@
     padding: rem($top) rem(70px) rem(36px) rem($right);
   }
 }
+>>>>>>> develop
