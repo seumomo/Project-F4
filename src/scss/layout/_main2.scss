@@ -32,10 +32,9 @@ body {
   @include mobile {
     column-gap: 8;
   }
-
   &__list {
     flex-shrink: 0;
-    width: 13.808975834292289%;
+    width: 13.483%;
 
     @include tablet {
       width: 18.8953488372093%;

@@ -81,7 +81,7 @@
   display: inline-block;
 
   @include desktop {
-    background: url("/src/assets/icons/Frame_47.png") no-repeat;
+    background: url("./../assets/icons/Frame_47.png") no-repeat;
     background-size: vw(8px), vw(8px);
     width: vw(8px);
     height: vw(8px);
@@ -89,7 +89,7 @@
     vertical-align: top;
   }
   @include tablet {
-    background: url("/src/assets/tablet/icons/Frame_47.png") no-repeat 0
+    background: url("./../assets/tablet/icons/Frame_47.png") no-repeat 0
       vw(-3px, $tablet);
     background-size: vw(6px, $tablet), vw(6px, $tablet);
     width: vw(6px, $tablet);
@@ -97,7 +97,7 @@
     margin-bottom: vw(17px, $tablet);
   }
   @include mobile {
-    background: url("/src/assets/mobile/icons/Frame_47.png") no-repeat 0
+    background: url("./../assets/mobile/icons/Frame_47.png") no-repeat 0
       vw(-4px, $mobile);
     background-size: vw(4px, $mobile), vw(4px, $mobile);
     width: vw(4px, $mobile);
@@ -107,7 +107,7 @@
 }
 
 @mixin ageLimit {
-  background: url("/src/assets/icons/Age_Limit.png") no-repeat;
+  background: url("./../assets/icons/Age_Limit.png") no-repeat;
   position: absolute;
   top: vw(5px);
   right: vw(5px);
