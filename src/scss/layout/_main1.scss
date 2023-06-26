@@ -1,0 +1,153 @@
+@use "./../utils" as *;
+@use "sass:math";
+
+body{
+  background-color: $black;
+}
+
+
+.contentsContainer{
+  @include containerPaddingX;
+  @include sectionTitle;
+  @include sectionMarginBottom;
+}
+
+.content {
+  &__box{
+    margin-top: rem(12px);
+  }
+
+  &__list {
+    @include flexbox;
+    @include textDeco;
+    overflow: hidden;
+
+/*
+    @include desktop {
+      width: rem(1920px);
+
+    }
+
+    @include tablet {
+      width: rem(768px);
+
+    }
+
+    @include mobile {
+      width: rem(320px);
+    }
+*/
+
+    li:nth-child(3) {
+      @include pos($pos: relative);
+
+      .Age-Limit {
+        width: 1rem;
+        @include pos($t: 5px, $r: 20px);
+      }
+    }
+  }
+
+  &__item {
+    width: rem(240px);
+    padding-right: rem(16px);
+  }
+
+}
+
+
+.vod {
+  &__box{
+    margin-top: rem(12px);
+  }
+
+
+  &__list {
+    @include flexbox;
+    @include textDeco;
+    width: 105vw;
+    overflow: hidden;
+  }
+
+  &__item {
+    width: rem(345px);
+    padding-right: rem(16px);
+    @include pos($pos: relative);
+
+    .vod__icon {
+      width: 3rem;
+      @include pos($t: 3px, $l: 3px);
+    }
+
+  }
+
+  &__episode {
+    span {
+      font-size: 0.3rem;
+    }
+  }
+
+}
+
+
+.original {
+  &__box{
+    margin-top: rem(12px);
+  }
+
+
+  &__list {
+    @include flexbox;
+  
+    overflow: hidden;
+  }
+
+  &__item {
+    width: rem(285px);
+    padding-right: rem(16px);
+  }
+}
+
+
+
+
+/*
+    @include mobile {
+      background-color: pink;
+      .content__img--lg{
+        display: none;
+      .content__img--md{
+        display: none;
+      }
+      .content__img--sm {
+        display: flex;
+        width: 25%;
+      }
+    }
+    @include desktop {
+      background-color: plum;
+      .content__img--lg {
+        display: flex;
+        width: 12.5rem;
+      }
+      .content__img--md{
+        display: none;
+      }
+      .content__img--sm {
+        display: none;
+      }
+    }
+    @include tablet {
+      background-color: skyblue;
+      .content__img--lg {
+        display: none;
+      }
+      .content__img--md{
+        width: 16.6%;
+        display: flex;
+      }
+      .content__img--sm {
+        display: none;
+      }
+    }
+    */

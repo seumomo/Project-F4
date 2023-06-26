@@ -1,1 +1,127 @@
 // mixin.scss
+@use "sass:math";
+@use "./unit" as *;
+@use "./media-query" as *;
+@use "color" as *;
+
+
+
+@mixin containerPaddingX($top: 0, $bottom: 0){
+  @include mobile {
+    padding: rem($top) rem(8px) rem($bottom);
+  }
+
+  @include tablet{
+    padding: rem($top) rem(40px) rem($bottom);
+  }
+
+  @include desktop{
+    padding: rem($top) rem(70px) rem($bottom);
+  }
+}
+
+@mixin sectionTitle {
+  font-weight: bold;
+  color: $white;
+
+  @include desktop {
+    margin-bottom: rem(12px);
+    font-size: rem(28px);
+  }
+  @include tablet {
+    margin-bottom: rem(8px);
+    font-size: rem(16px);
+  }
+  @include mobile {
+    margin-bottom: rem(4px);
+    font-size: rem(12px);
+  }
+}
+
+@mixin sectionMarginBottom {
+  @include desktop {
+    margin-bottom: 36px;
+  }
+  @include tablet {
+    margin-bottom: 28px;
+  }
+  @include mobile {
+    margin-bottom: 16px;
+  }
+}
+
+@mixin paddingY($paddingY: 0) {
+  padding-top: rem($paddingY);
+  padding-bottom: rem($paddingY);
+}
+
+@mixin paddingX($paddingX: 0) {
+  padding-left: rem($paddingX);
+  padding-right: rem($paddingX);
+}
+
+// margin 관련 믹스인
+@mixin marginY($marginY: 0) {
+  margin-top: rem($marginY);
+  margin-bottom: rem($marginY);
+}
+
+@mixin marginX($marginX: 0) {
+  margin-left: rem($marginX);
+  margin-right: rem($marginX);
+}
+
+@mixin autoMargin($marginX: auto) {
+  margin-left: $marginX;
+  margin-right: $marginX;
+}
+
+// Position 관련 믹스인
+@mixin pos($pos: absolute, $t: initial, $r: initial, $b: initial, $l: initial) {
+  position: $pos;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+}
+
+
+
+
+@mixin posCenterX($pos: absolute) {
+  @include pos;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin posCenterY() {
+  @include pos;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@mixin posCenter($pos: absolute) {
+  @include pos;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+@mixin textDeco {
+  a{
+    font-size: 0.6rem;
+    color: $gray2
+  }
+}
+
+
+@mixin fontDeco{
+  font-size: 1rem;
+  color: $white;
+  font-weight: 500;
+}
+
+@mixin fontMini{
+  display: i;
+  font-size: 0.3rem;
+}
