@@ -1,1 +1,59 @@
-// mixin.scss
+@mixin flexbox(
+  $direction: row,
+  $justify: flex-start,
+  $items: stretch,
+  $wrap: nowrap
+) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  justify-content: $justify;
+  align-items: $items;
+}
+
+@mixin autoMargin{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin poa{
+  position: absolute;
+}
+
+@mixin poaLeftTop($l:0,$t:0){
+  @include poa;
+  top: $t;
+  left: $l;
+}
+
+@mixin poaRightTop($r:0,$t:0){
+  @include poa;
+  top: $t;
+  right: $r;
+}
+
+@mixin poaCenterY(){
+  @include poa;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin poaCenterX(){
+  @include poa;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+@mixin containerPadding($top: 0, $right: 0){
+  @include mobile {
+    padding: rem($top) rem(8px) rem(16px) rem($right);
+  }
+
+  @include tablet{
+    padding: rem($top) rem(40px) rem(28px) rem($right);
+  }
+
+  @include desktop{
+    padding: rem($top) rem(70px) rem(36px) rem($right);
+  }
+}

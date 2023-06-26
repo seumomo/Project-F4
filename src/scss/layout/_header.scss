@@ -1,1 +1,96 @@
-// header.scss
+@use "./../utils" as *;
+
+.header{
+  width: 100%;
+  position: fixed;
+  top: 0;left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.00) 100%);
+  z-index: 100;
+  color: $white;
+  height: rem(100px);
+  transition: 0.3s;
+  @include mobile {
+    height: rem(38px);
+    transition: 0.3s;
+  }
+  @include tablet {
+    height: rem(56px);
+    transition: 0.3s;
+  }
+  // overflow: hidden;
+  
+  &__inner{
+    width: 90%;
+    height: 100%;
+    @include autoMargin;
+    @include flexbox(row,space-between,center,nowrap);
+  }
+
+  .logo{
+    max-width:rem(132px);
+    @include mobile {
+      width: rem(46px);
+    }
+    @include tablet {
+      width: rem(77px);
+    }
+  }
+
+  .menuWrap{
+    // width: rem(690px);
+    @include flexbox(row,space-between,center,nowrap);
+    gap: rem(52px);
+    @include tablet {
+      gap: rem(28px);
+    }
+  }
+
+    .menu{
+      width: rem(505px);
+      color: $gray2;
+      @include tablet {
+        width: rem(388px);
+      }
+      @include mobile {
+        @include a11yHidden;
+      }
+      &__list{
+        width: 100%;
+        @include flexbox(row,space-between,center,nowrap);
+        font-size: rem(21px);
+        @include tablet {
+          font-size: rem(12px);
+        }
+
+      }
+      &__link{
+        display: inline-block;
+        &__img{
+          vertical-align: middle;
+          margin-right: rem(10px);
+        }
+      }
+    }
+
+  .subMenu{
+    @include flexbox(row,space-between,center,nowrap);
+    width: rem(120px);
+    @include mobile {
+      width: rem(52px);
+    }
+    @include tablet {
+      width: rem(72px);
+    }
+    &__search{
+      width: 30%;
+      border: none;
+    }
+    &__profile{
+      width: 30%;
+    }
+  }
+}
+
+.searchFormWrap{
+  display: none;
+}
