@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAING SIGN UP</title>
+    <link rel="stylesheet" href="/src/style/membership.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo"><a href="/"></a></h1>
+    </header>
+
+    <h2 class="membership">티빙 회원가입</h2>
+    <p class="membership__text">
+      아이디와 이메일로 간편하게 티빙을 시작하세요!
+    </p>
+    <form action="/">
+      <fieldset>
+        <legend class="a11yHidden">회원가입</legend>
+        <div class="inputId">
+          <label for="inputId__box" class="a11yHidden"
+            >아이디를 입력하세요</label
+          >
+          <input
+            type="text"
+            required
+            name="id"
+            pattern="^(?=.*[A-Za-z])(?=.*[0-9]).{6,12}$"
+            placeholder="아이디"
+            class="inputId__box" />
+          <p class="inputId__text">
+            영문 대문자 또는 소문자, 숫자 조합 6~12자리
+          </p>
+        </div>
+        <div class="inputPw">
+          <label for="inputPw__box" class="a11yHidden"
+            >비밀번호를 입력하세요</label
+          >
+          <input
+            type="password"
+            required
+            name="password"
+            pattern="^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[~!@#$%^&*]).{8,15}$"
+            placeholder="비밀번호"
+            class="inputPw__box" />
+          <p class="inputPw__text">
+            영문, 숫자, 특수문자(~!@#$%^&amp;*) 조합 8~15자리
+          </p>
+        </div>
+        <div class="inputPwAgain">
+          <label for="intputPwAgain__box" class="a11yHidden">
+            비밀번호를 한 번 더 입력하세요
+          </label>
+          <input
+            type="password"
+            required
+            name="password"
+            pattern="^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[~!@#$%^&*]).{8,15}$"
+            placeholder="비밀번호"
+            class="intputPwAgain__box" />
+        </div>
+        <div class="inputEmail">
+          <label for="inputEmail__box" class="a11yHidden"
+            >이메일을 입력하세요</label
+          >
+          <input
+            type="email"
+            required
+            name="email"
+            placeholder="이메일"
+            class="inputEmail__box" />
+        </div>
+        <input type="checkbox" name="allCheck" class="checkList" /><label
+          for="checkList"
+          >모두 동의합니다</label
+        >
+        <ul class="checkList__List">
+          <li>
+            <input type="checkbox" class="checkList__item" /><label for=""
+              >만 14세 이상입니다.</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" required class="checkList__item" /><label
+              for=""
+              >[필수] 서비스 이용약관 동의</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" required class="checkList__item" /><label
+              for=""
+              >[필수] 개인정보 수집 및 서비스 활용 동의</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" required class="checkList__item" /><label
+              for=""
+              >[필수] 채널 홈페이지 개인정보 제 3자 제공동의</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" class="checkList__item" /><label for=""
+              >[선택] 개인정보 제 3자 제공동의</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" class="checkList__item" /><label for=""
+              >[선택] 개인정보 수집 및 서비스 활용 동의</label
+            >
+            <ul>
+              <li>
+                <input type="checkbox" class="checkList__item" /><label for=""
+                  >[선택] 마케팅 정보 SMS 수신동의</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" class="checkList__item" /><label for=""
+                  >[선택] 마케팅 정보 이메일 수신동의</label
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <button class="signUpBtn">가입하기</button>
+      </fieldset>
+    </form>
+    <!-- <main class="findId">
+      <div class="useEmail">
+        <h2 class="useEmail__title">아이디 찾기</h2>
+        <span class="useEmail__find">이메일로 찾기</span>
+        <span class="useEmail__inputEmail"
+          >가입 시 등록한 이메일을 입력해주세요.</span
+        >
+        <form action="#" class="useEmail__form">
+          <fieldset>
+            <legend>이메일 폼</legend>
+            <div class="useEmail__Id">
+              <label for="userEmail" class="a11yHidden">이메일</label>
+              <input
+                type="email"
+                id="userEmail"
+                name="userEmail"
+                required
+                placeholder="이메일" />
+            </div>
+            <button type="submit" class="useEmail__check">확인</button>
+          </fieldset>
+        </form>
+      </div>
+      <div class="or">또는</div>
+      <div class="useId">
+        <h3 class="useId__identity">본인인증으로 찾기</h3>
+        <span class="useId__possible"
+          >이미 본인인증 완료된 계정에 한하여 아이디 찾기가 가능합니다.</span
+        >
+        <div class="useId__identityBtn"><a href="/">본인인증하기</a></div>
+      </div>
+    </main> -->
+  </body>
+</html>

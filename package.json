@@ -2,7 +2,7 @@
   "name": "project-template",
   "scripts": {
     "start": "run-p watch server",
-    "sass": "sass src/scss:src/style",
+    "sass": "sass src/scss/pages/membership.scss src/style/membership.css",
     "watch": "npm run sass -- --watch",
     "server": "live-server src",
     "clear": "rimraf src/style",
