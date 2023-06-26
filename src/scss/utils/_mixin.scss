@@ -13,7 +13,6 @@
   align-items: $items;
 }
 
-<<<<<<< HEAD
 @mixin padding($paddingY,$paddingX){
   padding-top: rem($paddingY);
   padding-bottom: rem($paddingY);
@@ -77,7 +76,6 @@
 //     column-gap: rem(8px);
 //   }
 // }
-=======
 @mixin autoMargin{
   margin-left: auto;
   margin-right: auto;
@@ -125,4 +123,3 @@
     padding: rem($top) rem(70px) rem(36px) rem($right);
   }
 }
->>>>>>> develop
