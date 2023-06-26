@@ -30,11 +30,11 @@
   }
   @include tablet {
     margin-bottom: rem(8px);
-    font-size: vw(16px);
+    font-size: vw(16px,$tablet);
   }
   @include mobile {
     margin-bottom: rem(4px);
-    font-size: vw(12px);
+    font-size: vw(12px,$mobile);
   }
 }
 

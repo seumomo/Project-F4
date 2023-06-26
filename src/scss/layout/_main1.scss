@@ -12,7 +12,7 @@ body {
   @include sectionMarginBottom;
 }
 
-.section__Title{
+.section__Title {
   @include sectionTitle;
 }
 
@@ -25,6 +25,7 @@ body {
   &__list {
     display: flex;
 
+    /*
     @include mobile {
       width: 235vw;
     }
@@ -37,6 +38,7 @@ body {
       width: 105vw;
 
     }
+    */
 
     li:nth-child(3) {
       @include pos($pos: relative);
@@ -52,21 +54,41 @@ body {
     display: block;
     @include whiteSpace;
     @include textDeco;
+
     @include desktop {
       font-size: rem(21.3px);
     }
 
     @include tablet {
-      font-size: vw(12px);
+      font-size: vw(12px,$tablet);
     }
 
     @include mobile {
-      font-size: vw(12px);
+      font-size: vw(12px,$mobile);
     }
   }
 
   &__item {
     padding-right: rem(16px);
+    @include mobile {
+      padding-right: rem(8px); 
+    }
+    @include tablet {
+      padding-right: rem(8px); 
+    }
+
+
+    flex-shrink: 0;
+    
+      width: 13.483%;
+
+      @include tablet {
+        width: 18.8953488372093%;
+      }
+      @include mobile {
+        width: 31.944444444444443%;
+      }
+
   }
 
 }
@@ -78,10 +100,11 @@ body {
     margin-top: rem(12px);
   }
 
-  
+
   &__list {
     display: flex;
     @include textDeco;
+    /*
 
     @include mobile {
       width: 235vw;
@@ -94,7 +117,7 @@ body {
     @include desktop {
       width: 105vw;
     }
-
+*/
   }
 
 
@@ -102,22 +125,40 @@ body {
     display: block;
     @include whiteSpace;
     @include textDeco;
+
     @include desktop {
-      font-size: rem(21.3px);
+      font-size: rem(21.328px);
     }
 
     @include tablet {
-      font-size: vw(12px);
+      font-size: vw(12px,$tablet);
     }
 
     @include mobile {
-      font-size: vw(12px);
+      font-size: vw(12px,$mobile);
     }
   }
 
   &__item {
     padding-right: rem(16px);
+    @include mobile {
+      padding-right: rem(8px); 
+    }
+    @include tablet {
+      padding-right: rem(8px); 
+    }
     @include pos($pos: relative);
+
+
+    flex-shrink: 0;
+    width: 19.491525423728813%;
+
+    @include tablet {
+      width: 31.96022727272727%;
+    }
+    @include mobile {
+      width: 48.986486486486484%;
+    }
 
     .vod__icon {
       width: vw(96px);
@@ -128,15 +169,15 @@ body {
 
   &__episode {
     @include desktop {
-      font-size: rem(16px);
+      font-size: vw(16px);
     }
 
     @include tablet {
-      font-size: vw(10px);
+      font-size: vw(10px,$tablet);
     }
 
     @include mobile {
-      font-size: vw(10px);
+      font-size: vw(10px,$mobile);
     }
   }
 
@@ -152,7 +193,7 @@ body {
 
   &__list {
     display: flex;
-
+/*
     @include mobile {
       width: 235vw;
     }
@@ -162,13 +203,35 @@ body {
     }
 
     @include desktop {
-      width: 105vw;
+      width: 6.154385%
 
     }
+    */
   }
 
   &__item {
-
+    flex-shrink: 0;
     padding-right: rem(16px);
+    @include mobile {
+      padding-right: rem(8px); 
+    }
+    @include tablet {
+      padding-right: rem(8px); 
+    }
+    @include desktop {
+      width: 17.18%
+
+    }
+    @include mobile {
+      width: 48%
+
+    }
+    @include tablet {
+      width: 25.5%
+
+    }
+
+
+
   }
 }
