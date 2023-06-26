@@ -61,11 +61,31 @@
 }
 
 .or{
-  height: rem(156px);
+  height: rem(16px);
   font-size: rem(16px);
   color: $gray7;
-  text-align: center;
+  @include flexbox($justify: center, $items: center);
+  @include paddingY(78px);
+
+  p{
+    min-width: rem(48px);
+    color: $gray7;
+    text-align: center;
+  }
 }
+
+.or::after,
+.or::before{
+  content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: $dark-bg-2;
+}
+
+
+
 
 .useId{
   width: rem(732px);

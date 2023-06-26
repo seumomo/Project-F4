@@ -422,10 +422,30 @@ iframe {
 }
 
 .or {
-  height: 9.75rem;
+  height: 1rem;
   font-size: 1rem;
   color: #404040;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4.875rem;
+  padding-bottom: 4.875rem;
+}
+.or p {
+  min-width: 3rem;
+  color: #404040;
   text-align: center;
+}
+
+.or::after,
+.or::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #212121;
 }
 
 .useId {
