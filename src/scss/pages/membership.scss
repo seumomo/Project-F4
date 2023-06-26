@@ -1,3 +1,91 @@
+@use "../base" as *;
+@use "../utils" as *;
+
 body {
-  background: blue;
+  background: $black;
+}
+
+.container {
+  div {
+    width: 732px;
+    margin-bottom: 34px;
+    @include autoMargin;
+  }
+
+  [class*="box"] {
+    // @include inputBox;
+    width: 100%;
+    height: 96px;
+    padding-left: 24px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 28.43px;
+    color: $gray6;
+    background: #212121;
+  }
+
+  [class*="text"] {
+    // @include inputBox__text;
+    line-height: 160%;
+    font-size: 21.328px;
+    display: block;
+    color: $gray5;
+  }
+}
+
+.membership {
+  margin: 140px 0 28px 0;
+  text-align: center;
+  color: $white;
+  font-size: 37.897px;
+
+  &__text {
+    margin-bottom: 60px;
+    text-align: center;
+    color: $gray4;
+    font-size: 28.43px;
+  }
+}
+
+.inputPw {
+  position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 30px;
+    right: 30px;
+    width: 36px;
+    height: 36px;
+    background: url(/src/assets/icons/Input.png) no-repeat;
+    background-size: contain;
+  }
+}
+
+.subcontainer {
+  width: 732px;
+  @include autoMargin;
+}
+
+.checkList {
+  font-size: 21.328px;
+  font-weight: 600;
+  color: $gray3;
+  margin-bottom: 34px;
+
+  &__item {
+    font-size: 21.328px;
+    font-weight: 600;
+    color: $gray5;
+    margin-bottom: 16px;
+    height: 150%;
+    &__sons {
+      margin-left: 36px;
+    }
+  }
+}
+
+.sign-up-box {
+  margin-top: 20px;
 }
