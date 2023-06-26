@@ -26,15 +26,15 @@
 
   @include desktop {
     margin-bottom: rem(12px);
-    font-size: rem(28px);
+    font-size: vw(28px);
   }
   @include tablet {
     margin-bottom: rem(8px);
-    font-size: rem(16px);
+    font-size: vw(16px);
   }
   @include mobile {
     margin-bottom: rem(4px);
-    font-size: rem(12px);
+    font-size: vw(12px);
   }
 }
 
@@ -49,6 +49,13 @@
     margin-bottom: 16px;
   }
 }
+
+@mixin whiteSpace {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 
 @mixin paddingY($paddingY: 0) {
   padding-top: rem($paddingY);
@@ -115,9 +122,9 @@
 
 
 @mixin textDeco {
-  a{
+  
     color: $gray2;
-  }
+  
  
 }
 

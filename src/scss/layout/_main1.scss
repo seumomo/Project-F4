@@ -9,44 +9,28 @@ body {
 
 .contentsContainer {
   @include containerPaddingX;
-  @include sectionTitle;
   @include sectionMarginBottom;
-
 }
 
-span {
-  display: block;
+.section__Title{
+  @include sectionTitle;
 }
+
 
 .content {
-  &__text {
-    @include desktop {
-      font-size: rem(21.3px);
-    }
-
-    @include tablet {
-      font-size: rem(12px);
-    }
-
-    @include mobile {
-      font-size: rem(12px);
-    }
-  }
-
   &__box {
     margin-top: rem(12px);
   }
 
   &__list {
-    @include flexbox;
-    @include textDeco;
+    display: flex;
 
     @include mobile {
-      width: 150vw;
+      width: 235vw;
     }
 
     @include tablet {
-      width: 125vw;
+      width: 140vw;
     }
 
     @include desktop {
@@ -58,78 +42,101 @@ span {
       @include pos($pos: relative);
 
       .Age-Limit {
-        width: rem(16px);
+        width: vw(30px);
         @include pos($t: 5px, $r: 20px);
       }
     }
   }
 
-  &__item {
-    //width: rem(240px);
-    padding-right: rem(16px);
+  &__text {
+    display: block;
+    @include whiteSpace;
+    @include textDeco;
+    @include desktop {
+      font-size: rem(21.3px);
+    }
 
+    @include tablet {
+      font-size: vw(12px);
+    }
+
+    @include mobile {
+      font-size: vw(12px);
+    }
+  }
+
+  &__item {
+    padding-right: rem(16px);
   }
 
 }
 
 
 .vod {
-  &__text {
-    @include desktop {
-      font-size: rem(21.3px);
-    }
-
-    @include tablet {
-      font-size: rem(12px);
-    }
-
-    @include mobile {
-      font-size: rem(12px);
-    }
-  }
 
   &__box {
     margin-top: rem(12px);
   }
 
-
+  
   &__list {
-    @include flexbox;
+    display: flex;
     @include textDeco;
 
     @include mobile {
-      width: 280vw;
-
+      width: 235vw;
     }
 
     @include tablet {
-      width: 180vw;
-
-
+      width: 140vw;
     }
 
     @include desktop {
-      width: 120vw;
-
+      width: 105vw;
     }
 
   }
 
+
+  &__text {
+    display: block;
+    @include whiteSpace;
+    @include textDeco;
+    @include desktop {
+      font-size: rem(21.3px);
+    }
+
+    @include tablet {
+      font-size: vw(12px);
+    }
+
+    @include mobile {
+      font-size: vw(12px);
+    }
+  }
+
   &__item {
-    width: rem(345px);
     padding-right: rem(16px);
     @include pos($pos: relative);
 
     .vod__icon {
-      width: 5rem;
+      width: vw(96px);
       @include pos($t: 3px, $l: 3px);
     }
 
   }
 
   &__episode {
-    span {
+    @include desktop {
       font-size: rem(16px);
+    }
+
+    @include tablet {
+      font-size: vw(10px);
+    }
+
+    @include mobile {
+      font-size: vw(10px);
     }
   }
 
@@ -137,34 +144,31 @@ span {
 
 
 .original {
+
   &__box {
     margin-top: rem(12px);
   }
 
 
   &__list {
-    @include flexbox;
+    display: flex;
 
     @include mobile {
-      width: 280vw;
-
+      width: 235vw;
     }
 
     @include tablet {
-      width: 180vw;
-
-
+      width: 140vw;
     }
 
     @include desktop {
-      width: 120vw;
+      width: 105vw;
 
     }
-
   }
 
   &__item {
-    width: rem(285px);
+
     padding-right: rem(16px);
   }
 }
