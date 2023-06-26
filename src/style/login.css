@@ -414,6 +414,7 @@ iframe {
   width: 45.75rem;
   height: 5.375rem;
   background: #404040;
+  border: 1px solid #404040;
   font-size: 1.776875rem;
   color: #898989;
   border-radius: 4px;
