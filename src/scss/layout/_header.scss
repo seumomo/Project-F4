@@ -95,23 +95,34 @@
 // 검색
 
   .searchFormWrap{
-    // display: none;
     width: 100%;
     height: rem(890px);
     padding-top: rem(52px);
     @include tablet {
       height: rem(535px);
       padding-top: rem(28px);
+      top: rem(56px);
     }
     @include mobile {
       height: rem(535px);
       padding-top: rem(28px);
+      top: rem(38px);
     }
     background: $dark-bg-1;
-    position: relative;
+    position: absolute;
+    top: rem(100px);left: 0;
+    z-index: 80;
+    transform: translateY(-120%);
+    transition: 0.3s;
+    opacity: 0;
   }
   .is--active{
-    display: block;
+    transform: translateY(0%);
+    transition: 0.3s;
+    opacity: 1;
+  }
+  .bg--gray{
+    background: $dark-bg-1;
   }
 
   .form{
@@ -195,9 +206,6 @@
     }
     &__popular{
       width: 45%;
-
-      // border-left: 1px solid $gray8;
-      // padding-left: rem(60px);
       &__list{
         display: flex;
         flex-direction: column;
@@ -238,7 +246,3 @@
   .time{
     color: $gray5;
   }
-  
-.is-active{
-  display: block;
-}
