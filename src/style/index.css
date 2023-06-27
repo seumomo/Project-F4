@@ -712,7 +712,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .contentsContainer {
-    margin-bottom: 16px;
+    margin-bottom: 50px;
   }
 }
 
@@ -730,6 +730,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .section__Title {
+    margin-top: 50px;
     margin-bottom: 0.25rem;
     font-size: 3.75vw;
   }
@@ -996,7 +997,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .contentsContainer {
-    margin-bottom: 16px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1035,6 +1036,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .sectionTitle {
+    margin-top: 50px;
     margin-bottom: 0.25rem;
     font-size: 3.75vw;
   }

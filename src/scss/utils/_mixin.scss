@@ -14,6 +14,7 @@
     font-size: vw(16px, $tablet);
   }
   @include mobile {
+    margin-top: 50px;
     margin-bottom: rem(4px);
     font-size: vw(12px, $mobile);
   }
@@ -136,7 +137,7 @@
     margin-bottom: 28px;
   }
   @include mobile {
-    margin-bottom: 16px;
+    margin-bottom: 50px;
   }
 }
 
@@ -221,7 +222,6 @@
   }
 }
 
-
 @mixin pos($pos: absolute, $t: initial, $r: initial, $b: initial, $l: initial) {
   position: $pos;
   top: $t;
@@ -230,8 +230,5 @@
   left: $l;
 }
 @mixin textDeco {
-
-    color: $gray2;
-
- 
+  color: $gray2;
 }
