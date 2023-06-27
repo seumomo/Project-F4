@@ -4,7 +4,7 @@
     "start": "run-p watch server",
     "sass": "sass src/scss:src/style",
     "watch": "npm run sass -- --watch",
-    "server": "live-server src/views/membership.html",
+    "server": "live-server src",
     "clear": "rimraf src/style",
     "build": "postcss src/style/index.css -o src/style/main.css"
   },
