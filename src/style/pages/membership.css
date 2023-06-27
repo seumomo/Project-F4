@@ -346,7 +346,6 @@ a {
 }
 
 body {
-  font: inherit;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   background-color: #fff;
 }
@@ -379,7 +378,7 @@ body {
 
 .login__title {
   color: #ffffff;
-  font-size: 37.897px;
+  font-size: 2.3685625rem;
   font-weight: 700;
   text-align: center;
   margin-left: auto;
@@ -391,6 +390,18 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .login__container {
+    margin-left: 11rem;
+    margin-right: 11rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .login__container {
+    margin-left: 0.96875rem;
+    margin-right: 0.96875rem;
+  }
+}
 .login__input[type=id],
 .login [type=password] {
   color: #565656;
@@ -401,10 +412,10 @@ body {
   outline: none;
   border: 0;
   padding-left: 0.625rem;
-  gap: 0.9375rem;
 }
 .login__input[type=id] {
   margin-top: 3.75rem;
+  margin-bottom: 0.9375rem;
 }
 .login .checkboxContainer {
   margin-top: 1rem;
@@ -433,7 +444,6 @@ body {
   font-weight: 600;
 }
 .login__button {
-  color: #565656;
   width: 45.75rem;
   height: 6rem;
   background-color: #FF153C;
@@ -450,39 +460,75 @@ body {
   color: #a6a6a6;
   font-size: 1.333rem;
 }
-
 .search__pwd {
   color: #a6a6a6;
   font-size: 1.333rem;
 }
-
 .search__find {
-  width: 45.75rem;
+  width: 25rem;
   margin-top: 2.625rem;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-around;
 }
-
 .search__join {
   width: 45.75rem;
   margin-top: 2.75rem;
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  justify-content: space-around;
+}
+.search__no {
+  color: #6b6b6b;
+  font-size: 1.333rem;
+}
+.search__new {
+  color: #a6a6a6;
+  font-size: 1.333rem;
+}
+
+/*
+.search__id {
+
+  color: $gray3;
+  font-size: rem(21.328px);
+
+}
+
+.search__pwd {
+
+  color: $gray3;
+  font-size: rem(21.328px);
+}
+
+.search__find{
+  width: rem(732px);
+  margin-top: rem(42px);
+  display: flex;
+  @include autoMargin;
+  justify-content: space-around;
+}
+
+.search__join{
+  width: rem(732px);
+  margin-top: rem(44px);
+  display: flex;
+  @include autoMargin;
   justify-content: center;
   align-items: center;
 }
 
 .search__no {
-  color: #6b6b6b;
-  font-size: 1.333rem;
+  color: $gray5;
+  font-size: rem(21.328px);
 }
 
 .search__new {
-  color: #a6a6a6;
-  font-size: 1.333rem;
+  color: $gray3;
+  font-size: rem(21.328px);
 }
+*/
 
 /*# sourceMappingURL=membership.css.map */

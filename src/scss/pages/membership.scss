@@ -6,27 +6,35 @@ body {
   background-color: $black;
 }
 
-.login.loginContainer{
+.login.loginContainer {
   margin-top: rem(170px);
 }
 
-.login {
 
-
+.login {  
   &__title {
     color: $white;
-    font-size: 37.897px;
+    font-size: rem(37.897px);
     font-weight: 700;
     text-align: center;
     @include autoMargin;
   }
 
   &__container {
-
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+
+    @include tablet{
+      margin-left: rem(176px);
+      margin-right: rem(176px);
+
+    }
+    @include mobile{
+      margin-left: rem(15.5px);
+      margin-right: rem(15.5px);
+    }
   }
 
   &__input[type="id"],
@@ -39,33 +47,30 @@ body {
     outline: none;
     border: 0;
     padding-left: rem(10px);
-    gap: rem(15px);
-
   }
 
-  &__input[type="id"]{
+  &__input[type="id"] {
     margin-top: rem(60px);
+    margin-bottom: rem(15px);
   }
-
-  .checkboxContainer{
-    margin-top: rem(16px);
-    margin-bottom: rem(32px);
-    
-  }
-
 
  
-  &__pwd{
 
+  .checkboxContainer {
+    margin-top: rem(16px);
+    margin-bottom: rem(32px);
+  }
+
+
+  &__pwd {
     position: relative;
   }
-  &__secret{
+
+  &__secret {
     position: absolute;
     bottom: rem(30px);
-    right:rem(24px);
+    right: rem(24px);
   }
-  
-
 
   &__minibox {
     background-color: $gray6;
@@ -86,7 +91,6 @@ body {
   }
 
   &__button {
-    color: $gray6;
     width: rem(732px);
     height: rem(96px);
     background-color: #FF153C;
@@ -105,20 +109,60 @@ body {
 }
 
 
+.search {
+  &__id {
+    color: $gray3;
+    font-size: rem(21.328px);
+  }
+
+  &__pwd {
+    color: $gray3;
+    font-size: rem(21.328px);
+  }
+
+  &__find{
+    width: rem(400px);
+    margin-top: rem(42px);
+    display: flex;
+    @include autoMargin;
+    justify-content: space-around;
+    
+  }
+
+  &__join{
+    width: rem(732px);
+    margin-top: rem(44px);
+    display: flex;
+    @include autoMargin;
+    justify-content: space-around;
+  }
+  
+  &__no {
+    color: $gray5;
+    font-size: rem(21.328px);
+  }
+  
+  &__new {
+    color: $gray3;
+    font-size: rem(21.328px);
+  }
+
+
+}
+
+
+/*
 .search__id {
 
   color: $gray3;
   font-size: rem(21.328px);
   
-
 }
 
 .search__pwd {
   
   color: $gray3;
   font-size: rem(21.328px);
-
-
 }
 
 .search__find{
@@ -147,3 +191,4 @@ body {
   color: $gray3;
   font-size: rem(21.328px);
 }
+*/
