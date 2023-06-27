@@ -220,3 +220,18 @@
     padding: rem($top) rem(70px) rem(36px) rem($right);
   }
 }
+
+
+@mixin pos($pos: absolute, $t: initial, $r: initial, $b: initial, $l: initial) {
+  position: $pos;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+}
+@mixin textDeco {
+
+    color: $gray2;
+
+ 
+}
