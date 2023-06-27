@@ -1,5 +1,4 @@
-@use "../base" as *;
-@use "../utils" as *;
+@use "./../utils/" as *;
 
 body {
   background: $black;
@@ -20,13 +19,6 @@ body {
     color: $gray4;
   }
 
-  div {
-    width: 732px;
-    margin-bottom: 34px;
-
-    @include autoMargin;
-  }
-
   [class*="box"] {
     width: 100%;
     height: 96px;
@@ -38,17 +30,21 @@ body {
     font-size: 28.43px;
     color: $gray6;
     background: #212121;
-    // @include inputBox;
   }
 
   [class*="text"] {
-    display: block;
-
     font-size: 21.328px;
     line-height: 160%;
     color: $gray5;
-    // @include inputBox__text;
   }
+}
+
+.signUpForm {
+  width: 732px;
+
+  @include autoMargin;
+  @include flexbox(column);
+  row-gap: 34px;
 }
 
 .inputId__text,
@@ -68,19 +64,45 @@ body {
     width: 36px;
     height: 36px;
 
-    background: url(/src/assets/icons/Input.png) no-repeat;
+    background: url(/assets/icons/Input.png) no-repeat;
     background-size: contain;
   }
 }
 
-.allCheckContainer {
+.checkList {
   position: relative;
+
+  @include flexbox(column);
+  row-gap: 12px;
+
+  .allCheckContainer {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    padding-left: 38px;
+    font-weight: 600;
+  }
 }
 
 .appearance-none {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+#allAgree {
+  color: $gray3;
+}
+
+.allCheckBoxDefault {
+  background: url("/assets/icons/roundcheck.png") no-repeat;
+  background-position: left;
+}
+
+.allCheckBox:checked + label {
+  background: url("/assets/icons/roundchecked.svg") no-repeat;
+  background-position: left;
 
   position: absolute;
   top: 4px;
@@ -88,61 +110,34 @@ body {
   height: 26px;
 }
 
-.allCheck {
-  width: max-content;
-
-  font-size: 21.328px;
-  font-weight: 600;
-  color: $gray3;
-}
-
-.allCheckBoxDefault {
-  background: url("/src/assets/icons/roundcheck.png") no-repeat;
+.checkBoxDefault {
+  background: url("/assets/icons/Check.png") no-repeat;
   background-position: left;
 }
 
-.allCheckBox:checked + label {
-  background: url("/src/assets/icons/roundchecked.svg") no-repeat;
-  background-position: left;
-}
-
-.checkList {
-  padding-left: 38px;
-  font-weight: 600;
-
-  &__all {
-    font-weight: 600;
-  }
-  &__item {
-    height: 32px;
-    margin-bottom: 13px;
-  }
-
-  &__text {
-  }
-}
-
-// .appearance-none + label {
-//   background: url("/src/assets/icons/roundchecked.svg") no-repeat;
-//   background-position: left;
-// }
-
-.checkBox {
-  background: url("/src/assets/icons/Check.png") no-repeat;
+.checkBox:checked + label {
+  background: url("/assets/icons/checked.svg") no-repeat;
   background-position: left;
 
-  &:checked {
-    background: url("/src/assets/icons/checked.svg") no-repeat;
-    background-position: left;
-  }
+  position: absolute;
+  top: 4px;
+  width: 26px;
+  height: 26px;
 }
 
-.subCheckList {
-  margin-left: 36px;
+.secondList {
+  margin-top: 13px;
+
+  & :nth-child(2) {
+    margin-top: 12px;
+  }
 }
 
 .sign-up-box {
-  padding: 24px;
+  padding-right: 24px;
   cursor: pointer;
-  margin-top: 20px;
+}
+
+.sonList {
+  margin-left: 36px;
 }

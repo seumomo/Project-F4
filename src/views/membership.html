@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TAING SIGN UP</title>
-    <link rel="stylesheet" href="./../style/membership.css" />
+    <link rel="stylesheet" href="/style/index.css" />
     <link
       rel="stylesheet"
       as="style"
@@ -21,8 +21,9 @@
       <p class="signupContainer__text">
         아이디와 이메일로 간편하게 티빙을 시작하세요!
       </p>
+
       <form action="/">
-        <fieldset>
+        <fieldset class="signUpForm">
           <legend class="a11yHidden">회원가입 양식</legend>
           <div class="inputId">
             <label for="inputId__box" class="a11yHidden"
@@ -61,7 +62,7 @@
             <input
               type="password"
               required
-              name="password"
+              name="passwordAgain"
               placeholder="비밀번호"
               class="intputPwAgain__box"
               pattern="^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[~!@#$%^&*]).{8,15}$" />
@@ -77,79 +78,92 @@
               placeholder="이메일"
               class="inputEmail__box" />
           </div>
-          <div class="checkListContainer">
-            <div class="allCheckContainer">
+
+          <ul class="checkList">
+            <li class="allCheckContainer">
               <input
                 type="checkbox"
                 name="allCheck"
                 class="allCheckBox appearance-none" /><label
-                for="checkList"
-                class="checkList allCheck allCheckBoxDefault"
+                for="allCheckBox"
+                class="checkList__text allCheck allCheckBoxDefault"
+                id="allAgree"
                 >모두 동의합니다</label
               >
-            </div>
-            <ul class="checkList__list">
-              <li class="checkList__item">
-                <input type="checkbox" class="appearance-none" /><label
-                  for="checkList__item"
-                  class="checkList checkList__text checkBox"
-                  >만 14세 이상입니다.</label
-                >
-              </li>
-              <li class="checkList__item">
-                <input type="checkbox" required class="appearance-none" /><label
-                  for="checkList__item"
-                  class="checkList checkList__text checkBox"
-                  >[필수] 서비스 이용약관 동의</label
-                >
-              </li>
-              <li class="checkList__item">
-                <input type="checkbox" required class="appearance-none" /><label
-                  for="checkList__item"
-                  class="checkList checkList__text checkBox"
-                  >[필수] 개인정보 수집 및 서비스 활용 동의</label
-                >
-              </li>
-              <li class="checkList__item">
-                <input type="checkbox" required class="appearance-none" /><label
-                  for="checkList__item"
-                  class="checkList checkList__text checkBox"
-                  >[필수] 채널 홈페이지 개인정보 제 3자 제공동의</label
-                >
-              </li>
-              <li class="checkList__item">
-                <input type="checkbox" class="appearance-none" /><label
-                  for="checkList__item"
-                  class="checkList checkList__text checkBox"
-                  >[선택] 개인정보 제 3자 제공동의</label
-                >
-              </li>
-              <li class="checkList__item">
-                <input type="checkbox" class="appearance-none" /><label
-                  for="checkList__item"
-                  class="checkList checkList__text checkBox"
-                  >[선택] 개인정보 수집 및 서비스 활용 동의</label
-                >
-                <ul>
-                  <li class="checkList__item">
-                    <input type="checkbox" class="appearance-none" /><label
-                      for="checkList__item"
-                      class="checkList checkList__text checkList__sons checkBox"
-                      >[선택] 마케팅 정보 SMS 수신동의</label
-                    >
-                  </li>
-                  <li class="checkList__item">
-                    <input type="checkbox" class="appearance-none" /><label
-                      for="checkList__item"
-                      class="checkList checkList__text checkList__sons checkBox"
-                      >[선택] 마케팅 정보 이메일 수신동의</label
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <button class="sign-up-box">가입하기</button>
-          </div>
+            </li>
+            <li>
+              <input type="checkbox" class="checkBox appearance-none" /><label
+                for="checkBox"
+                class="checkList__text checkBoxDefault"
+                >만 14세 이상입니다.</label
+              >
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                required
+                class="checkBox appearance-none" /><label
+                for="checkBox"
+                class="checkList__text checkBoxDefault"
+                >[필수] 서비스 이용약관 동의</label
+              >
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                required
+                class="checkBox appearance-none" /><label
+                for="checkBox"
+                class="checkList__text checkBoxDefault"
+                >[필수] 개인정보 수집 및 서비스 활용 동의</label
+              >
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                required
+                class="checkBox appearance-none" /><label
+                for="checkBox"
+                class="checkList__text checkBoxDefault"
+                >[필수] 채널 홈페이지 개인정보 제 3자 제공동의</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" class="checkBox appearance-none" /><label
+                for="checkBox"
+                class="checkList__text checkBoxDefault"
+                >[선택] 개인정보 제 3자 제공동의</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" class="checkBox appearance-none" /><label
+                for="checkBox"
+                class="checkList__text checkBoxDefault"
+                >[선택] 개인정보 수집 및 서비스 활용 동의</label
+              >
+              <ul class="secondList">
+                <li>
+                  <input
+                    type="checkbox"
+                    class="checkBox appearance-none" /><label
+                    for="checkBox"
+                    class="checkList__text checkBoxDefault sonList"
+                    >[선택] 마케팅 정보 SMS 수신동의</label
+                  >
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    class="checkBox appearance-none" /><label
+                    for="checkBox"
+                    class="checkList__text checkBoxDefault sonList"
+                    >[선택] 마케팅 정보 이메일 수신동의</label
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="sign-up-box">가입하기</button>
         </fieldset>
       </form>
     </main>
