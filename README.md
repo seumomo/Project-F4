@@ -37,7 +37,7 @@
 
 ## 메인 페이지
 
-!(/assets/images/TAING.png)
+!(./assets/images/TAING.png)
 
 ### 구역 분배
 
