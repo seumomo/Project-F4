@@ -29,27 +29,15 @@
     font-weight: 700;
 
     @include mobile{
-    display: none;
+    font-size: rem(16px);
+    font-weight: 700;
+    margin-bottom: rem(28px);
     }
 
     @include tablet{
       width: rem(416px);
       font-size: rem(28.43px);
       margin-bottom: rem(24px);
-    }
-  }
-
-  &__mobileTitle{
-    display: none;
-
-    @include mobile{
-      display: block;
-      width: rem(288px);
-      margin-bottom: rem(28px);
-      color: $white;
-      font-size: rem(16px);
-      font-weight: 700;
-      text-align: center;  
     }
   }
 
