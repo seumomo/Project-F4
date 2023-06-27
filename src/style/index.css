@@ -1750,6 +1750,7 @@ body {
 .findId {
   width: 100%;
   background: #000000;
+  line-height: 230%;
 }
 
 .useEmail {
@@ -1762,12 +1763,14 @@ body {
   .useEmail {
     width: 18rem;
     padding-top: 1.75rem;
+    line-height: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .useEmail {
     width: 26rem;
     padding-top: 2.75rem;
+    line-height: 150%;
   }
 }
 .useEmail__title {
@@ -3084,17 +3087,20 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 4.375rem;
+  line-height: 270%;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .usePw {
     width: 18rem;
     padding-top: 1.75rem;
+    line-height: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .usePw {
     width: 26rem;
     padding-top: 2.75rem;
+    line-height: 150%;
   }
 }
 .usePw__title {
