@@ -1,10 +1,8 @@
 # **멋쟁이 사자처럼 프론트엔드 스쿨 6기<br>HTML/CSS 프로젝트**
 
-<center>[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter)](https://hits.seeyoufarm.com)</center>
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter)](https://hits.seeyoufarm.com)
 
 # OTT TAING 구현하기
-
----
 
 ## **목표 및 기간**
 
@@ -26,7 +24,7 @@
 
 ## **팀 구성**
 
-!(/assets/images/main.jpg)
+!(/src/assets/images/main.jpg)
 
 ### 팀 이름 : F4
 
