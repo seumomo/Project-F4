@@ -3,7 +3,8 @@
 body{
   color: $white;
 }
-.meetTaing{
+.startTaing{
+
   &__bgWrap{
     position: relative;
   }
@@ -17,5 +18,64 @@ body{
       width: 100vw;
     }
   }
-  text-align: center;
+  
+  &__text{
+    position: absolute;
+    top: rem(260px);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    @include tablet {
+      top: rem(155px);
+    }
+    @include mobile {}
+
+    &__strong{
+      font-size: rem(50px);
+      font-weight: 700;
+      line-height: 140%;
+      @include tablet {
+        font-size: rem(21px);
+
+      }
+    }
+
+    &__p{
+      font-size: rem(28px);
+      font-weight: 600;
+      line-height: 150%;
+      @include tablet {
+        font-size: rem(12px);
+      }
+    }   
+  }
+
+  &__link{
+    display: inline-block;
+    width: rem(506px);
+    height: rem(80px);
+    line-height: rem(80px);
+    background: $red-2;
+    border-radius: rem(4px);
+    font-size: rem(28px);
+    font-weight: 600;
+    position: relative;
+    margin-top: rem(60px);
+    @include tablet {
+      width: rem(283px);
+      height: rem(48px);
+      line-height: rem(48px);
+      font-size: rem(16px);
+      margin-top: rem(28px);
+    }
+
+    &__icon{
+      position: absolute;
+      top: 0;
+      left: rem(8px);
+      @include tablet {
+        width: rem(36px);
+      }
+    }
+  }
 }
