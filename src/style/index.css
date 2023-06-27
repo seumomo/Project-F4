@@ -1067,7 +1067,7 @@ body {
     margin-right: 0.96875rem;
   }
 }
-.login__input[type=id],
+.login__input[type=email],
 .login [type=password] {
   color: #565656;
   font-size: 1.776875rem;
@@ -1078,7 +1078,7 @@ body {
   border: 0;
   padding-left: 0.625rem;
 }
-.login__input[type=id] {
+.login__input[type=email] {
   margin-top: 3.75rem;
   margin-bottom: 0.9375rem;
 }
