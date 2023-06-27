@@ -40,6 +40,7 @@
 .findId{
   width: 100%;
   background: $black;
+  line-height: 230%;
 }
 
 .useEmail{
@@ -50,11 +51,13 @@
   @include mobile{
     width: rem(288px);
     padding-top: rem(28px);
+    line-height: 100%;
   }
 
   @include tablet{
     width: rem(416px);
     padding-top: rem(44px);
+    line-height: 150%;
   }
 
   &__title{
@@ -63,6 +66,7 @@
     text-align: center;
     margin-bottom: rem(60px);
     font-weight: 700;
+    
 
     @include mobile{
     font-size: rem(16px);
