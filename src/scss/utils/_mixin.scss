@@ -1,5 +1,37 @@
-@use "./unit" as *;
-@use "./media-query" as *;
+@use "color" as *;
+@use "unit" as *;
+@use "media-query" as *;
+
+@mixin sectionTitle {
+  font-weight: bold;
+  color: $white;
+
+  margin-bottom: rem(12px);
+  font-size: vw(28.4px);
+
+  @include tablet {
+    margin-bottom: rem(8px);
+    font-size: vw(16px, $tablet);
+  }
+  @include mobile {
+    margin-top: 50px;
+    margin-bottom: rem(4px);
+    font-size: vw(12px, $mobile);
+  }
+}
+
+@mixin grid($column, $imageWidth) {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat($column, vw($imageWidth));
+  column-gap: rem(16px);
+}
+
+@mixin whiteSpace {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
 @mixin flexbox(
   $direction: row,
@@ -13,126 +45,190 @@
   align-items: $items;
 }
 
-@mixin padding($paddingY,$paddingX){
+@mixin containerPaddingX($top: 0, $bottom: 0) {
+  @include mobile {
+    margin: rem($top) rem(8px) rem($bottom);
+  }
+
+  @include tablet {
+    padding: rem($top) rem(40px) rem($bottom);
+  }
+
+  @include desktop {
+    padding: rem($top) rem(70px) rem($bottom);
+  }
+}
+
+@mixin rank {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: italic;
+  color: $white;
+
+  font-size: 3.6458333333333335vw;
+
+  @include tablet {
+    font-size: vw(46px, $tablet);
+  }
+  @include mobile {
+    font-size: vw(34px, $mobile);
+  }
+}
+
+@mixin redDot {
+  display: inline-block;
+
+  @include desktop {
+    background: url("./../assets/icons/Frame_47.png") no-repeat;
+    background-size: vw(8px), vw(8px);
+    width: vw(8px);
+    height: vw(8px);
+    margin-top: vw(8px);
+    vertical-align: top;
+  }
+  @include tablet {
+    background: url("./../assets/tablet/icons/Frame_47.png") no-repeat 0
+      vw(-3px, $tablet);
+    background-size: vw(6px, $tablet), vw(6px, $tablet);
+    width: vw(6px, $tablet);
+    height: vw(6px, $tablet);
+    margin-bottom: vw(17px, $tablet);
+  }
+  @include mobile {
+    background: url("./../assets/mobile/icons/Frame_47.png") no-repeat 0
+      vw(-4px, $mobile);
+    background-size: vw(4px, $mobile), vw(4px, $mobile);
+    width: vw(4px, $mobile);
+    height: vw(4px, $mobile);
+    margin-bottom: vw(15px, $mobile);
+  }
+}
+
+@mixin ageLimit {
+  background: url("./../assets/icons/Age_Limit.png") no-repeat;
+  position: absolute;
+  top: vw(5px);
+  right: vw(5px);
+
+  background-size: vw(30px), vw(30px);
+  width: vw(30px);
+  height: vw(30px);
+
+  @include tablet {
+    background-size: vw(40px), vw(40px);
+    width: vw(40px);
+    height: vw(40px);
+  }
+  @include mobile {
+    background-size: vw(78px), vw(78px);
+    width: vw(78px);
+    height: vw(78px);
+  }
+}
+
+@mixin sectionMarginBottom {
+  @include desktop {
+    margin-bottom: 36px;
+  }
+  @include tablet {
+    margin-bottom: 28px;
+  }
+  @include mobile {
+    margin-bottom: 50px;
+  }
+}
+
+@mixin padding($paddingY, $paddingX) {
   padding-top: rem($paddingY);
   padding-bottom: rem($paddingY);
   padding-left: rem($paddingX);
   padding-right: rem($paddingX);
 }
 
-@mixin margin($marginY,$marginX){
+@mixin margin($marginY, $marginX) {
   margin-top: rem($marginY);
   margin-bottom: rem($marginY);
   margin-left: rem($marginX);
   margin-right: rem($marginX);
 }
 
-@mixin paddingX($paddingX){
+@mixin paddingX($paddingX) {
   padding-left: rem($paddingX);
   padding-right: rem($paddingX);
 }
 
-@mixin paddingY($spacing){
+@mixin paddingY($spacing) {
   padding-top: rem($spacing);
   padding-bottom: rem($spacing);
 }
 
-@mixin marginX($spacing){
+@mixin marginX($spacing) {
   margin-left: rem($spacing);
   margin-right: rem($spacing);
 }
 
-@mixin marginY($spacing){
+@mixin marginY($spacing) {
   margin-top: rem($spacing);
   margin-bottom: rem($spacing);
 }
 
-@mixin containerPaddingX($top: 0, $bottom: 0){
-  @include mobile {
-    padding: rem($top) rem(8px) rem($bottom);
-  }
-
-  @include tablet{
-    padding: rem($top) rem(40px) rem($bottom);
-  }
-
-  @include desktop{
-    padding: rem($top) rem(70px) rem($bottom);
-  }
-}
-
-// @mixin grid($column: 12, $imageWidth) {
-//   display: grid;
-//   grid-template-columns: repeat($column, $imageWidth);
-//   grid-template-rows: auto;
-
-//   @include desktop {
-//     column-gap: rem(16px);
-//   }
-//   @include tablet {
-//     column-gap: rem(8px);
-//   }
-//   @include mobile {
-//     column-gap: rem(8px);
-//   }
-// }
-@mixin autoMargin{
+@mixin autoMargin {
   margin-left: auto;
   margin-right: auto;
 }
 
-@mixin poa{
+@mixin poa {
   position: absolute;
 }
 
-@mixin poaLeftTop($l:0,$t:0){
+@mixin poaLeftTop($l: 0, $t: 0) {
   @include poa;
   top: $t;
   left: $l;
 }
 
-@mixin poaRightTop($r:0,$t:0){
+@mixin poaRightTop($r: 0, $t: 0) {
   @include poa;
   top: $t;
   right: $r;
 }
 
-@mixin poaCenterY(){
+@mixin poaCenterY() {
   @include poa;
   top: 50%;
   transform: translateY(-50%);
 }
 
-@mixin poaCenterX(){
+@mixin poaCenterX() {
   @include poa;
   left: 50%;
   transform: translateX(-50%);
 }
 
-
-@mixin containerPadding($top: 0, $right: 0){
+@mixin containerPadding($top: 0, $right: 0) {
   @include mobile {
     padding: rem($top) rem(8px) rem(16px) rem($right);
   }
 
-  @include tablet{
+  @include tablet {
     padding: rem($top) rem(40px) rem(28px) rem($right);
   }
 
-  @include desktop{
+  @include desktop {
     padding: rem($top) rem(70px) rem(36px) rem($right);
   }
 }
 
-// @mixin mobileSize{
-//   width: rem(288px);
-//   font-size: rem(12.003px);
-// }
-
-// @mixin tabletSize{
-//   width: rem(416px);
-//   font-size: rem(16px);
-// }
-
-
-
+@mixin pos($pos: absolute, $t: initial, $r: initial, $b: initial, $l: initial) {
+  position: $pos;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+}
+@mixin textDeco {
+  color: $gray2;
+}

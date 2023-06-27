@@ -36,12 +36,12 @@
       display: block;
       width: rem(221px);
       height: rem(78px);
-      border: 1px solid $white;
+      border: 1px solid $gray3;
       border-radius: rem(4px);
       font-size: rem(21px);
       text-align: center;
       line-height: rem(78px);
-      @include poaRightTop($r:0,$t:rem(-30px));
+      @include poaRightTop($r:0,$t:35%);
   
       @include tablet {
         width: rem(128px);
@@ -70,21 +70,44 @@
   }
 
   &__paging{
+    cursor: pointer;
     @include poaLeftTop($l:4%,$t:77%);
     z-index: 50;
     &__play{
       color: $white;
       display: inline-block;
-      vertical-align: middle;
-      margin-right: rem(8px);
+      &__i{
+        vertical-align: middle;
+        font-size: rem(18px);
+        margin-right: rem(20px);
+        @include tablet {
+          font-size: rem(10px);
+          margin-right: rem(8px);
+        }
+        @include mobile {
+          font-size: rem(6px);
+          margin-right: rem(6px);
+        }
+      }
+
     }
     &__btn{
       display: inline-block;
       width: rem(8px);
       height: rem(8px);
+      @include mobile {
+        width: rem(6px);
+        height: rem(6px);
+      }
       border-radius: 50%;
       background:rgba(255,255,255,0.5);
-      margin-right: rem(4px);
+      margin-right: rem(12px);
+      @include tablet {
+        margin-right: rem(4px);
+      }
+      @include mobile {
+        margin-right: rem(4px);
+      }
     }
     .on{
       background: $white;
@@ -93,6 +116,7 @@
 
   &__btn{
     .button{
+      cursor: pointer;
       border: 0;
       background: transparent;
       @include poaCenterY;
