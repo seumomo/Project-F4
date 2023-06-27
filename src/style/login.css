@@ -378,12 +378,37 @@ iframe {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .useEmail {
+    width: 18rem;
+    background: blue;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .useEmail {
+    width: 26rem;
+  }
+}
 .useEmail__title {
   font-size: 2.3685625rem;
   color: #ffffff;
   text-align: center;
   margin-bottom: 3.75rem;
   font-weight: 700;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .useEmail__title {
+    width: 18rem;
+    font-size: 0.7501875rem;
+    margin-bottom: 1.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .useEmail__title {
+    width: 26rem;
+    font-size: 1.776875rem;
+    margin-bottom: 1.5rem;
+  }
 }
 .useEmail__find {
   display: block;
@@ -392,12 +417,28 @@ iframe {
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .useEmail__find {
+    font-size: 0.7501875rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .useEmail__find {
+    font-size: 1rem;
+  }
+}
 .useEmail__inputEmail {
   display: block;
   font-size: 1.776875rem;
   color: #898989;
   margin-bottom: 1.5rem;
   font-weight: 600;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .useEmail__inputEmail {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 .useEmail__Id input {
   width: 45.75rem;
@@ -410,6 +451,15 @@ iframe {
   color: #565656;
   border-radius: 4px;
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .useEmail__Id input {
+    width: 26rem;
+    height: 3.375rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+  }
+}
 .useEmail__check {
   width: 45.75rem;
   height: 5.375rem;
@@ -419,6 +469,14 @@ iframe {
   color: #898989;
   border-radius: 4px;
   cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .useEmail__check {
+    width: 26rem;
+    height: 3.125rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .or {
@@ -431,6 +489,14 @@ iframe {
   align-items: center;
   padding-top: 4.875rem;
   padding-bottom: 4.875rem;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .or {
+    font-size: 0.7501875rem;
+    margin-bottom: 1rem;
+    padding-top: 2.8125rem;
+    padding-bottom: 2.8125rem;
+  }
 }
 .or p {
   min-width: 3rem;
@@ -453,11 +519,26 @@ iframe {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .useId {
+    width: 18rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .useId {
+    width: 26rem;
+  }
+}
 .useId__identity {
   font-size: 1.776875rem;
   color: #ffffff;
   font-weight: 600;
   margin-bottom: 0.25rem;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .useId__identity {
+    font-size: 1rem;
+  }
 }
 .useId__possible {
   display: block;
@@ -466,6 +547,11 @@ iframe {
   font-weight: 600;
   margin-bottom: 2.25rem;
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .useId__possible {
+    font-size: 1rem;
+  }
+}
 .useId__identityBtn {
   background: #ffffff;
   color: #000000;
@@ -473,10 +559,21 @@ iframe {
   font-weight: 600;
   text-align: center;
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .useId__identityBtn {
+    font-size: 1rem;
+  }
+}
 .useId__identityBtn a {
   display: block;
   padding-top: 1.34375rem;
   padding-bottom: 1.34375rem;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .useId__identityBtn a {
+    padding-top: 0.8125rem;
+    padding-bottom: 0.8125rem;
+  }
 }
 
 body {

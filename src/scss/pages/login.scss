@@ -5,12 +5,20 @@
   width: 100%;
   background: black;
   padding-top: rem(70px);
-
 }
 
 .useEmail{
   width: rem(732px);
   @include autoMargin();
+
+  @include mobile{
+    width: rem(288px);
+    background: blue;
+  }
+
+  @include tablet{
+    width: rem(416px);
+  }
 
   &__title{
     font-size: rem(37.897px);
@@ -18,6 +26,18 @@
     text-align: center;
     margin-bottom: rem(60px);
     font-weight: 700;
+
+    @include mobile{
+    width: rem(288px);
+    font-size: rem(12.003px);
+    margin-bottom: rem(28px);
+    }
+
+    @include tablet{
+      width: rem(416px);
+      font-size: rem(28.43px);
+      margin-bottom: rem(24px);
+    }
   }
 
   &__find{
@@ -26,6 +46,15 @@
     color: $white;
     font-weight: 600;
     margin-bottom: rem(4px);
+
+    @include mobile{
+    font-size: rem(12.003px);
+    }
+
+    @include tablet{
+    font-size: rem(16px);
+     
+    }
   }
 
   &__inputEmail{
@@ -34,6 +63,16 @@
     color: $gray4;
     margin-bottom: rem(24px);
     font-weight: 600;
+
+    @include mobile{
+
+    }
+
+    @include tablet{
+      font-size: rem(16px);
+      margin-bottom: rem(16px);
+    }
+
   }
 
   &__Id input{
@@ -46,6 +85,18 @@
     border: 1px solid $dark-bg-2;
     color: $gray6;
     border-radius: 4px;
+
+    @include mobile{
+
+    }
+
+    @include tablet{
+      width: rem(416px);
+      height: rem(54px);
+      font-size: rem(16px);
+      margin-bottom: rem(24px);
+      padding-left: rem(16px);
+    }
   }
 
   &__check{
@@ -57,6 +108,17 @@
     color: $gray4;
     border-radius: 4px;
     cursor: pointer;
+
+    @include mobile{
+
+    }
+
+    @include tablet{
+      width: rem(416px);
+      height: rem(50px);
+      font-size: rem(16px);
+      margin-bottom: rem(24px);
+    }
   }
 }
 
@@ -66,6 +128,16 @@
   color: $gray7;
   @include flexbox($justify: center, $items: center);
   @include paddingY(78px);
+
+  @include mobile{
+
+  }
+
+  @include tablet{
+    font-size: rem(12.003px);
+    margin-bottom: rem(16px);
+    @include paddingY(45px);
+  }
 
   p{
     min-width: rem(48px);
@@ -85,18 +157,34 @@
 }
 
 
-
-
 .useId{
   width: rem(732px);
   @include autoMargin();
+
+  @include mobile{
+    width: rem(288px);
+  }
+
+  @include tablet{
+    width: rem(416px);
+  }
 
   &__identity{
     font-size: rem(28.43px);
     color: $white;
     font-weight: 600;
     margin-bottom: rem(4px);
+
+    @include mobile{
+      
+    }
+  
+    @include tablet{
+      font-size: rem(16px);
+    }
   }
+
+
 
   &__possible{
     display: block;
@@ -104,6 +192,14 @@
     font-size: rem(21.328px);
     font-weight: 600;
     margin-bottom: rem(36px);
+
+    @include mobile{
+      
+    }
+  
+    @include tablet{
+      font-size: rem(16px);
+    }
   }
 
   &__identityBtn{
@@ -112,10 +208,26 @@
     font-size: rem(28.43px);
     font-weight: 600;
     text-align: center;
+
+    @include mobile{
+      
+    }
+  
+    @include tablet{
+      font-size: rem(16px);
+    }
   }
   &__identityBtn a{
     display: block;
     @include paddingY(21.5px);
+
+    @include mobile{
+      
+    }
+  
+    @include tablet{
+      @include paddingY(13px);
+    }
   }
 }
 
