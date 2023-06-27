@@ -1,3 +1,21 @@
+@use "./../utils/" as *;
+
+body{
+  color: $white;
+}
 .meetTaing{
-  
+  &__bgWrap{
+    position: relative;
+  }
+  &__bg{
+    width: 100vw;
+    transform: translateY(-15%);
+    
+    &__gradation{
+      position: absolute;
+      top: -15%;left: 0;
+      width: 100vw;
+    }
+  }
+  text-align: center;
 }
