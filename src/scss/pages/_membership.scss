@@ -1,4 +1,4 @@
-@use "./../utils/" as *;
+@use "../utils" as *;
 
 body {
   background: $black;
@@ -76,7 +76,7 @@ body {
   row-gap: 12px;
 
   .allCheckContainer {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
 
   &__text {
@@ -91,53 +91,61 @@ body {
   appearance: none;
 }
 
-#allAgree {
-  color: $gray3;
+.checkBoxContainer {
+  position: relative;
+
+  .allCheck {
+    color: $gray3;
+  }
 }
 
-.allCheckBoxDefault {
-  background: url("/assets/icons/roundcheck.png") no-repeat;
-  background-position: left;
-}
-
-.allCheckBox:checked + label {
-  background: url("/assets/icons/roundchecked.svg") no-repeat;
-  background-position: left;
-
-  position: absolute;
-  top: 4px;
+.allCheckBox {
   width: 26px;
   height: 26px;
-}
-
-.checkBoxDefault {
-  background: url("/assets/icons/Check.png") no-repeat;
-  background-position: left;
-}
-
-.checkBox:checked + label {
-  background: url("/assets/icons/checked.svg") no-repeat;
-  background-position: left;
-
   position: absolute;
-  top: 4px;
+  background-position: left;
+
+  &Default {
+    background: url("/assets/icons/roundcheck.png") no-repeat;
+    display: inline-block;
+  }
+  &:checked + label {
+    background: url("/assets/icons/roundchecked.svg") no-repeat;
+  }
+}
+
+.checkBox {
   width: 26px;
   height: 26px;
+  position: absolute;
+  background-position: left;
+
+  &Default {
+    background: url("/assets/icons/Check.png") no-repeat;
+    display: inline-block;
+  }
+  &:checked + label {
+    background: url("/assets/icons/checked.svg") no-repeat;
+  }
 }
 
 .secondList {
   margin-top: 13px;
 
-  & :nth-child(2) {
+  .lastBox {
     margin-top: 12px;
   }
-}
 
+  .sonList {
+    margin-left: 36px;
+  }
+
+  #checkBox7,
+  #checkBox8 {
+    left: 35px;
+  }
+}
 .sign-up-box {
   padding-right: 24px;
   cursor: pointer;
-}
-
-.sonList {
-  margin-left: 36px;
 }
