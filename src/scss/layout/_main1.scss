@@ -72,7 +72,7 @@ body {
     @include textDeco;
 
     @include desktop {
-      font-size: rem(21.3px);
+      font-size: vw(21.3px);
     }
 
     @include tablet {
@@ -80,7 +80,7 @@ body {
     }
 
     @include mobile {
-      font-size: vw(12px,$mobile);
+      font-size: vw(10px,$mobile);
     }
   }
 
@@ -143,7 +143,7 @@ body {
     @include textDeco;
 
     @include desktop {
-      font-size: rem(21.328px);
+      font-size: vw(21.328px);
     }
 
     @include tablet {
@@ -151,7 +151,7 @@ body {
     }
 
     @include mobile {
-      font-size: vw(12px,$mobile);
+      font-size: vw(10px,$mobile);
     }
   }
 
