@@ -15,11 +15,9 @@ $rootUnit: 16px !default;
   @return math.div($removeValue, $removeBase) * 1rem;
 }
 
-
-
 $desktop: 1920;
-$tablet: 768;
-$mobile: 320;
+$tablet: 1280;
+$mobile: 768;
 
 @function vw($value, $device: $desktop) {
   $removeValue: removeUnit($value);
