@@ -2579,6 +2579,53 @@ body {
   right: 0;
 }
 
+.subHeader {
+  width: 100%;
+  height: 6.25rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 100;
+  height: 6.25rem;
+  transition: 0.3s;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .subHeader {
+    height: 2.375rem;
+    transition: 0.3s;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .subHeader {
+    height: 3.5rem;
+    transition: 0.3s;
+  }
+}
+.subHeader__inner {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.subHeader .subLogo {
+  max-width: 8.25rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .subHeader .subLogo {
+    width: 2.875rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .subHeader .subLogo {
+    width: 4.8125rem;
+  }
+}
+
 .findPw {
   width: 100%;
   background: #000000;
