@@ -93,9 +93,9 @@
 
 
 // 검색
-.header{
 
   .searchFormWrap{
+    // display: none;
     width: 100%;
     height: rem(890px);
     padding-top: rem(52px);
@@ -109,6 +109,9 @@
     }
     background: $dark-bg-1;
     position: relative;
+  }
+  .is--active{
+    display: block;
   }
 
   .form{
@@ -236,4 +239,6 @@
     color: $gray5;
   }
   
+.is-active{
+  display: block;
 }
