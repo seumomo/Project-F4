@@ -26,14 +26,13 @@ body {
     justify-content: center;
     align-items: center;
 
+
     @include tablet{
-      margin-left: rem(176px);
-      margin-right: rem(176px);
+      @include marginX(176px)
 
     }
     @include mobile{
-      margin-left: rem(15.5px);
-      margin-right: rem(15.5px);
+      @include marginX(15.5px)
     }
   }
 
@@ -150,45 +149,3 @@ body {
 
 }
 
-
-/*
-.search__id {
-
-  color: $gray3;
-  font-size: rem(21.328px);
-  
-}
-
-.search__pwd {
-  
-  color: $gray3;
-  font-size: rem(21.328px);
-}
-
-.search__find{
-  width: rem(732px);
-  margin-top: rem(42px);
-  display: flex;
-  @include autoMargin;
-  justify-content: space-around;
-}
-
-.search__join{
-  width: rem(732px);
-  margin-top: rem(44px);
-  display: flex;
-  @include autoMargin;
-  justify-content: center;
-  align-items: center;
-}
-
-.search__no {
-  color: $gray5;
-  font-size: rem(21.328px);
-}
-
-.search__new {
-  color: $gray3;
-  font-size: rem(21.328px);
-}
-*/

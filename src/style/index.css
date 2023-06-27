@@ -1154,46 +1154,4 @@ body {
   font-size: 1.333rem;
 }
 
-/*
-.search__id {
-
-  color: $gray3;
-  font-size: rem(21.328px);
-
-}
-
-.search__pwd {
-
-  color: $gray3;
-  font-size: rem(21.328px);
-}
-
-.search__find{
-  width: rem(732px);
-  margin-top: rem(42px);
-  display: flex;
-  @include autoMargin;
-  justify-content: space-around;
-}
-
-.search__join{
-  width: rem(732px);
-  margin-top: rem(44px);
-  display: flex;
-  @include autoMargin;
-  justify-content: center;
-  align-items: center;
-}
-
-.search__no {
-  color: $gray5;
-  font-size: rem(21.328px);
-}
-
-.search__new {
-  color: $gray3;
-  font-size: rem(21.328px);
-}
-*/
-
 /*# sourceMappingURL=index.css.map */
