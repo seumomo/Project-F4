@@ -27,10 +27,10 @@ body {
   column-gap: 16px;
 
   @include tablet {
-    column-gap: 8;
+    column-gap: 8px;
   }
   @include mobile {
-    column-gap: 8;
+    column-gap: 8px;
   }
   &__list {
     flex-shrink: 0;

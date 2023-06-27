@@ -14,6 +14,7 @@
     font-size: vw(16px, $tablet);
   }
   @include mobile {
+    margin-top: 50px;
     margin-bottom: rem(4px);
     font-size: vw(12px, $mobile);
   }
@@ -136,7 +137,7 @@
     margin-bottom: 28px;
   }
   @include mobile {
-    margin-bottom: 16px;
+    margin-bottom: 50px;
   }
 }
 
@@ -221,20 +222,13 @@
   }
 }
 
-// @mixin inputBox {
-//   width: 100%;
-//   height: 96px;
-//   padding-left: 24px;
-//   border: 0;
-//   border-radius: 4px;
-//   font-size: 28.43px;
-//   color: $gray6;
-//   background: #212121;
-// }
-
-// @mixin inputBox__text {
-//   line-height: 160%;
-//   font-size: 21.328px;
-//   display: block;
-//   color: $gray5;
-// }
+@mixin pos($pos: absolute, $t: initial, $r: initial, $b: initial, $l: initial) {
+  position: $pos;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+}
+@mixin textDeco {
+  color: $gray2;
+}

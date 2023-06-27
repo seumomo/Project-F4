@@ -17,7 +17,6 @@
     height: rem(56px);
     transition: 0.3s;
   }
-  // overflow: hidden;
   
   &__inner{
     width: 90%;
@@ -37,7 +36,6 @@
   }
 
   .menuWrap{
-    // width: rem(690px);
     @include flexbox(row,space-between,center,nowrap);
     gap: rem(52px);
     @include tablet {
@@ -91,6 +89,159 @@
   }
 }
 
-.searchFormWrap{
-  display: none;
-}
+
+
+// 검색
+
+  .searchFormWrap{
+    width: 100%;
+    height: rem(890px);
+    padding-top: rem(52px);
+    @include tablet {
+      height: rem(535px);
+      padding-top: rem(28px);
+      top: rem(56px);
+    }
+    @include mobile {
+      height: rem(535px);
+      padding-top: rem(28px);
+      top: rem(38px);
+    }
+    background: $dark-bg-1;
+    position: absolute;
+    top: rem(100px);left: 0;
+    z-index: 80;
+    transform: translateY(-120%);
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .is--active{
+    transform: translateY(0%);
+    transition: 0.3s;
+    opacity: 1;
+  }
+  .bg--gray{
+    background: $dark-bg-1;
+  }
+
+  .form{
+    width: 80%;
+    margin: auto;
+    &__searchInput{
+      display: block;
+      width: 100%;
+      height: 89px;
+      margin: auto;
+      outline: none;
+      border: 0;
+      border-bottom: 3px solid $white;
+      background: transparent;
+      font-size: rem(37px);
+      @include tablet {
+        font-size: rem(21px);
+        height: 56px;
+      }
+      @include mobile {
+        font-size: rem(21px);
+        height: 56px;
+      }
+      color: $gray7;
+      padding: rem(15px) 0;
+    }
+    &__searchBtn{
+      border: 0;
+      background: transparent;
+      position: absolute;
+      top: rem(80px);
+      right: 10%;
+      cursor: pointer;
+      @include tablet {
+        width: rem(35px);
+        top: rem(45px);
+      }
+      @include mobile {
+        width: rem(35px);
+        top: rem(45px);
+      }
+    }
+  }
+  .searchWord{
+    width: 80%;
+    margin: auto;
+    padding-top: rem(97px);
+    display: flex;
+    justify-content: space-between;
+    font-size: rem(21px);
+    @include tablet {
+      font-size: rem(12px);
+      padding-top: rem(48px);
+    }
+    @include mobile {
+      font-size: rem(12px);
+      padding-top: rem(48px);
+    }
+    color: $gray3;
+    position: relative;
+
+    &__recent{
+      width: 45%;
+      position: relative;
+      ::before{
+        content: "";
+        display: block;
+        height: rem(600px);
+        width: 1px;
+        background: $gray8;
+        position: absolute;
+        top: 0;
+        right: -12%;
+        @include tablet {
+          height: rem(355px);
+        }
+        @include mobile {
+          height: rem(355px);
+        }
+      }
+    }
+    &__popular{
+      width: 45%;
+      &__list{
+        display: flex;
+        flex-direction: column;
+        gap: rem(16px);
+        @include tablet {
+          gap: rem(9px);
+        }
+        @include mobile {
+          gap: rem(9px);
+        }
+        line-height: 1.6;
+      }
+    } 
+  }
+  .searchWord [class*="__title"]{
+    font-size: rem(28px);
+    margin-bottom: rem(36px);
+    @include tablet {
+      font-size: rem(16px);
+    }
+    @include mobile {
+      font-size: rem(16px);
+    }
+  }
+  .accent-red{
+    display: inline-block;
+    width: rem(35px);
+    @include tablet {
+      width: rem(20px);
+    }
+    @include mobile {
+      width: rem(20px);
+    }
+    color: $red-1;
+    font-weight: 700;
+
+  }
+  .time{
+    color: $gray5;
+  }
