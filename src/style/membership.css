@@ -371,13 +371,25 @@ body {
   background: #000000;
 }
 
-.container div {
+.signupContainer__title {
+  margin: 140px 0 28px 0;
+  font-size: 37.897px;
+  text-align: center;
+  color: #ffffff;
+}
+.signupContainer__text {
+  margin-bottom: 60px;
+  font-size: 28.43px;
+  text-align: center;
+  color: #898989;
+}
+.signupContainer div {
   width: 732px;
   margin-bottom: 34px;
   margin-left: auto;
   margin-right: auto;
 }
-.container [class*=box] {
+.signupContainer [class*=box] {
   width: 100%;
   height: 96px;
   padding-left: 24px;
@@ -387,33 +399,25 @@ body {
   color: #565656;
   background: #212121;
 }
-.container [class*=text] {
-  line-height: 160%;
-  font-size: 21.328px;
+.signupContainer [class*=text] {
   display: block;
+  font-size: 21.328px;
+  line-height: 160%;
   color: #6b6b6b;
 }
 
-.membership {
-  margin: 140px 0 28px 0;
-  text-align: center;
-  color: #ffffff;
-  font-size: 37.897px;
-}
-.membership__text {
-  margin-bottom: 60px;
-  text-align: center;
-  color: #898989;
-  font-size: 28.43px;
+.inputId__text,
+.inputPw__text {
+  margin-top: 4px;
 }
 
 .inputPw {
   position: relative;
 }
 .inputPw::after {
+  content: "";
   display: block;
   position: absolute;
-  content: "";
   top: 30px;
   right: 30px;
   width: 36px;
@@ -422,30 +426,64 @@ body {
   background-size: contain;
 }
 
-.subcontainer {
-  width: 732px;
-  margin-left: auto;
-  margin-right: auto;
+.allCheckContainer {
+  position: relative;
 }
 
-.checkList {
+.appearance-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  top: 4px;
+  width: 26px;
+  height: 26px;
+}
+
+.allCheck {
+  width: max-content;
   font-size: 21.328px;
   font-weight: 600;
   color: #a6a6a6;
-  margin-bottom: 34px;
+}
+
+.allCheckBoxDefault {
+  background: url("/src/assets/icons/roundcheck.png") no-repeat;
+  background-position: left;
+}
+
+.allCheckBox:checked + label {
+  background: url("/src/assets/icons/roundchecked.svg") no-repeat;
+  background-position: left;
+}
+
+.checkList {
+  padding-left: 38px;
+  font-weight: 600;
+}
+.checkList__all {
+  font-weight: 600;
 }
 .checkList__item {
-  font-size: 21.328px;
-  font-weight: 600;
-  color: #6b6b6b;
-  margin-bottom: 16px;
-  height: 150%;
+  height: 32px;
+  margin-bottom: 13px;
 }
-.checkList__item__sons {
+.checkBox {
+  background: url("/src/assets/icons/Check.png") no-repeat;
+  background-position: left;
+}
+.checkBox:checked {
+  background: url("/src/assets/icons/checked.svg") no-repeat;
+  background-position: left;
+}
+
+.subCheckList {
   margin-left: 36px;
 }
 
 .sign-up-box {
+  padding: 24px;
+  cursor: pointer;
   margin-top: 20px;
 }
 

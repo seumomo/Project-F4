@@ -16,14 +16,14 @@
       <h1 class="logo"><a href="/"></a></h1>
     </header>
 
-    <main class="container">
-      <h2 class="membership">티빙 회원가입</h2>
-      <p class="membership__text">
+    <main class="signupContainer">
+      <h2 class="signupContainer__title">티빙 회원가입</h2>
+      <p class="signupContainer__text">
         아이디와 이메일로 간편하게 티빙을 시작하세요!
       </p>
       <form action="/">
         <fieldset>
-          <legend class="a11yHidden">회원가입</legend>
+          <legend class="a11yHidden">회원가입 양식</legend>
           <div class="inputId">
             <label for="inputId__box" class="a11yHidden"
               >아이디를 입력하세요</label
@@ -32,9 +32,9 @@
               type="text"
               required
               name="id"
-              pattern="^(?=.*[A-Za-z])(?=.*[0-9]).{6,12}$"
               placeholder="아이디"
-              class="inputId__box" />
+              class="inputId__box"
+              pattern="^(?=.*[A-Za-z])(?=.*[0-9]).{6,12}$" />
             <p class="inputId__text">
               영문 대문자 또는 소문자, 숫자 조합 6~12자리
             </p>
@@ -47,9 +47,9 @@
               type="password"
               required
               name="password"
-              pattern="^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[~!@#$%^&*]).{8,15}$"
               placeholder="비밀번호"
-              class="inputPw__box" />
+              class="inputPw__box"
+              pattern="^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[~!@#$%^&*]).{8,15}$" />
             <p class="inputPw__text">
               영문, 숫자, 특수문자(~!@#$%^&amp;*) 조합 8~15자리
             </p>
@@ -62,9 +62,9 @@
               type="password"
               required
               name="password"
-              pattern="^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[~!@#$%^&*]).{8,15}$"
               placeholder="비밀번호"
-              class="intputPwAgain__box" />
+              class="intputPwAgain__box"
+              pattern="^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[~!@#$%^&*]).{8,15}$" />
           </div>
           <div class="inputEmail">
             <label for="inputEmail__box" class="a11yHidden"
@@ -77,66 +77,71 @@
               placeholder="이메일"
               class="inputEmail__box" />
           </div>
-          <div class="subcontainer">
-            <input type="checkbox" name="allCheck" class="checkList" /><label
-              for="checkList"
-              class="checkList"
-              >모두 동의합니다</label
-            >
+          <div class="checkListContainer">
+            <div class="allCheckContainer">
+              <input
+                type="checkbox"
+                name="allCheck"
+                class="allCheckBox appearance-none" /><label
+                for="checkList"
+                class="checkList allCheck allCheckBoxDefault"
+                >모두 동의합니다</label
+              >
+            </div>
             <ul class="checkList__list">
-              <li>
-                <input type="checkbox" class="checkList__item" /><label
+              <li class="checkList__item">
+                <input type="checkbox" class="appearance-none" /><label
                   for="checkList__item"
-                  class="checkList__item"
+                  class="checkList checkList__text checkBox"
                   >만 14세 이상입니다.</label
                 >
               </li>
-              <li>
-                <input type="checkbox" required class="checkList__item" /><label
+              <li class="checkList__item">
+                <input type="checkbox" required class="appearance-none" /><label
                   for="checkList__item"
-                  class="checkList__item"
+                  class="checkList checkList__text checkBox"
                   >[필수] 서비스 이용약관 동의</label
                 >
               </li>
-              <li>
-                <input type="checkbox" required class="checkList__item" /><label
+              <li class="checkList__item">
+                <input type="checkbox" required class="appearance-none" /><label
                   for="checkList__item"
-                  class="checkList__item"
+                  class="checkList checkList__text checkBox"
                   >[필수] 개인정보 수집 및 서비스 활용 동의</label
                 >
               </li>
-              <li>
-                <input type="checkbox" required class="checkList__item" /><label
+              <li class="checkList__item">
+                <input type="checkbox" required class="appearance-none" /><label
                   for="checkList__item"
-                  class="checkList__item"
+                  class="checkList checkList__text checkBox"
                   >[필수] 채널 홈페이지 개인정보 제 3자 제공동의</label
                 >
               </li>
-              <li>
-                <input type="checkbox" class="checkList__item" /><label
+              <li class="checkList__item">
+                <input type="checkbox" class="appearance-none" /><label
                   for="checkList__item"
-                  class="checkList__item"
+                  class="checkList checkList__text checkBox"
                   >[선택] 개인정보 제 3자 제공동의</label
                 >
               </li>
-              <li>
-                <input type="checkbox" class="checkList__item" /><label
+              <li class="checkList__item">
+                <input type="checkbox" class="appearance-none" /><label
                   for="checkList__item"
-                  class="checkList__item"
+                  class="checkList checkList__text checkBox"
                   >[선택] 개인정보 수집 및 서비스 활용 동의</label
                 >
                 <ul>
-                  <li>
-                    <input type="checkbox" class="checkList__item" /><label
+                  <li class="checkList__item">
+                    <input type="checkbox" class="appearance-none" /><label
                       for="checkList__item"
-                      class="checkList__item checkList__item__sons"
+                      class="checkList checkList__text checkList__sons checkBox"
                       >[선택] 마케팅 정보 SMS 수신동의</label
                     >
                   </li>
-                  <li>
-                    <input type="checkbox" class="checkList__item" /><label
+                  <li class="checkList__item">
+                    <input type="checkbox" class="appearance-none" /><label
                       for="checkList__item"
-                      class="checkList__item checkList__item__sons"
+                      class="checkList checkList__text checkList__sons checkBox"
                       >[선택] 마케팅 정보 이메일 수신동의</label
                     >
                   </li>
