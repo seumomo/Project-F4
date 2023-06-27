@@ -2653,31 +2653,45 @@ body {
   font-size: 2.3685625rem;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 3.75rem;
   font-weight: 700;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .usePw__title {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+    font-size: 1rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .usePw__title {
     width: 26rem;
     font-size: 1.776875rem;
+    margin-top: 2.75rem;
     margin-bottom: 1.5rem;
   }
 }
-.usePw__find {
+.usePw__confirm {
   display: block;
+  width: 45.75rem;
   font-size: 1.776875rem;
-  color: #ffffff;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
+  color: #898989;
+  margin-bottom: 1.5rem;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .usePw__find {
+  .usePw__confirm {
+    display: block;
+    width: 18rem;
+    margin-bottom: 1rem;
     font-size: 0.7501875rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
-  .usePw__find {
+  .usePw__confirm {
+    width: 26rem;
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
 }
 .usePw__inputEmail {
@@ -2750,7 +2764,6 @@ body {
     width: 26rem;
     height: 3.125rem;
     font-size: 1rem;
-    margin-bottom: 1.5rem;
   }
 }
 
