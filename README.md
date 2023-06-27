@@ -1,6 +1,10 @@
 # **멋쟁이 사자처럼 프론트엔드 스쿨 6기<br>HTML/CSS 프로젝트**
 
-<div align="center">[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fseumomo%2FProject-F4&count_bg=%233DACC8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true)](https://hits.seeyoufarm.com)</div>
+<div align="center">
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fseumomo%2FProject-F4&count_bg=%233DACC8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true)](https://hits.seeyoufarm.com)
+
+</div>
 
 # OTT TAING 구현하기
 
@@ -23,8 +27,6 @@
 > <a target=_blank noreferrer noopener>taing-f4.netlify.app</a>
 
 ## **팀 구성**
-
-!(/src/assets/images/main.jpg)
 
 ### 팀 이름 : F4
 
