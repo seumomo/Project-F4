@@ -369,24 +369,25 @@ iframe {
 
 .findId {
   width: 100%;
-  background: black;
-  padding-top: 4.375rem;
+  background: #000000;
 }
 
 .useEmail {
   width: 45.75rem;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 4.375rem;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .useEmail {
     width: 18rem;
-    background: blue;
+    padding-top: 1.75rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .useEmail {
     width: 26rem;
+    padding-top: 2.75rem;
   }
 }
 .useEmail__title {
@@ -398,9 +399,7 @@ iframe {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .useEmail__title {
-    width: 18rem;
-    font-size: 0.7501875rem;
-    margin-bottom: 1.75rem;
+    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -408,6 +407,20 @@ iframe {
     width: 26rem;
     font-size: 1.776875rem;
     margin-bottom: 1.5rem;
+  }
+}
+.useEmail__mobileTitle {
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .useEmail__mobileTitle {
+    display: block;
+    width: 18rem;
+    margin-bottom: 1.75rem;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
   }
 }
 .useEmail__find {
@@ -434,6 +447,12 @@ iframe {
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .useEmail__inputEmail {
+    font-size: 0.7501875rem;
+    margin-bottom: 1rem;
+  }
+}
 @media (min-width: 768px) and (max-width: 1279px) {
   .useEmail__inputEmail {
     font-size: 1rem;
@@ -450,6 +469,15 @@ iframe {
   border: 1px solid #212121;
   color: #565656;
   border-radius: 4px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .useEmail__Id input {
+    width: 18rem;
+    height: 2.875rem;
+    font-size: 0.7501875rem;
+    padding-left: 1rem;
+    margin-bottom: 1.25rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .useEmail__Id input {
@@ -470,6 +498,13 @@ iframe {
   border-radius: 4px;
   cursor: pointer;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .useEmail__check {
+    font-size: 0.7501875rem;
+    width: 18rem;
+    height: 2.625rem;
+  }
+}
 @media (min-width: 768px) and (max-width: 1279px) {
   .useEmail__check {
     width: 26rem;
@@ -480,6 +515,7 @@ iframe {
 }
 
 .or {
+  width: 45.75rem;
   height: 1rem;
   font-size: 1rem;
   color: #404040;
@@ -490,8 +526,17 @@ iframe {
   padding-top: 4.875rem;
   padding-bottom: 4.875rem;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .or {
+    width: 18rem;
+    font-size: 0.7501875rem;
+    padding-top: 1.90625rem;
+    padding-bottom: 1.90625rem;
+  }
+}
 @media (min-width: 768px) and (max-width: 1279px) {
   .or {
+    width: 26rem;
     font-size: 0.7501875rem;
     margin-bottom: 1rem;
     padding-top: 2.8125rem;
@@ -535,6 +580,11 @@ iframe {
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .useId__identity {
+    font-size: 0.7501875rem;
+  }
+}
 @media (min-width: 768px) and (max-width: 1279px) {
   .useId__identity {
     font-size: 1rem;
@@ -547,6 +597,11 @@ iframe {
   font-weight: 600;
   margin-bottom: 2.25rem;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .useId__possible {
+    font-size: 0.7501875rem;
+  }
+}
 @media (min-width: 768px) and (max-width: 1279px) {
   .useId__possible {
     font-size: 1rem;
@@ -558,6 +613,7 @@ iframe {
   font-size: 1.776875rem;
   font-weight: 600;
   text-align: center;
+  border-radius: 4px;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .useId__identityBtn {
@@ -568,6 +624,13 @@ iframe {
   display: block;
   padding-top: 1.34375rem;
   padding-bottom: 1.34375rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .useId__identityBtn a {
+    font-size: 0.7501875rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .useId__identityBtn a {

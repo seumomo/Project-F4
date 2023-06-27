@@ -3,21 +3,22 @@
 
 .findId{
   width: 100%;
-  background: black;
-  padding-top: rem(70px);
+  background: $black;
 }
 
 .useEmail{
   width: rem(732px);
   @include autoMargin();
+  padding-top: rem(70px);
 
   @include mobile{
     width: rem(288px);
-    background: blue;
+    padding-top: rem(28px);
   }
 
   @include tablet{
     width: rem(416px);
+    padding-top: rem(44px);
   }
 
   &__title{
@@ -28,15 +29,27 @@
     font-weight: 700;
 
     @include mobile{
-    width: rem(288px);
-    font-size: rem(12.003px);
-    margin-bottom: rem(28px);
+    display: none;
     }
 
     @include tablet{
       width: rem(416px);
       font-size: rem(28.43px);
       margin-bottom: rem(24px);
+    }
+  }
+
+  &__mobileTitle{
+    display: none;
+
+    @include mobile{
+      display: block;
+      width: rem(288px);
+      margin-bottom: rem(28px);
+      color: $white;
+      font-size: rem(16px);
+      font-weight: 700;
+      text-align: center;  
     }
   }
 
@@ -65,7 +78,8 @@
     font-weight: 600;
 
     @include mobile{
-
+      font-size: rem(12.003px);
+      margin-bottom: rem(16px);
     }
 
     @include tablet{
@@ -87,7 +101,12 @@
     border-radius: 4px;
 
     @include mobile{
-
+      // @include mobileSize();
+      width: rem(288px);
+      height: rem(46px);
+      font-size: rem(12.003px);
+      padding-left: rem(16px);
+      margin-bottom: rem(20px);
     }
 
     @include tablet{
@@ -110,7 +129,9 @@
     cursor: pointer;
 
     @include mobile{
-
+      font-size: rem(12.003px);
+      width: rem(288px);
+      height: rem(42px);
     }
 
     @include tablet{
@@ -123,6 +144,7 @@
 }
 
 .or{
+  width: rem(732px);
   height: rem(16px);
   font-size: rem(16px);
   color: $gray7;
@@ -130,10 +152,13 @@
   @include paddingY(78px);
 
   @include mobile{
-
+    width: rem(288px);
+    font-size: rem(12.003px);
+    @include paddingY(30.5px);
   }
 
   @include tablet{
+    width: rem(416px);
     font-size: rem(12.003px);
     margin-bottom: rem(16px);
     @include paddingY(45px);
@@ -176,7 +201,7 @@
     margin-bottom: rem(4px);
 
     @include mobile{
-      
+      font-size: rem(12.003px);
     }
   
     @include tablet{
@@ -194,7 +219,7 @@
     margin-bottom: rem(36px);
 
     @include mobile{
-      
+      font-size: rem(12.003px);
     }
   
     @include tablet{
@@ -208,6 +233,7 @@
     font-size: rem(28.43px);
     font-weight: 600;
     text-align: center;
+    border-radius: 4px;
 
     @include mobile{
       
@@ -222,7 +248,8 @@
     @include paddingY(21.5px);
 
     @include mobile{
-      
+      font-size: rem(12.003px);
+      @include paddingY(12px);
     }
   
     @include tablet{
