@@ -11,154 +11,46 @@
     <link rel="stylesheet" href="/style/index.css" />
   </head>
 
-  <body style="background-color: black; color: white;">
+  <body>
     <!-- 1번 -->
     <header class="header">
-      <div class="header__inner">
-
-        <div class="menuWrap">
-          <h1 class="logo">
-            <a href="/"><img src="/assets/icons/logo.png" alt="TAING" /></a>
-          </h1>
-
-          <nav class="menu">
-            <ul class="menu__list">
-              <li>
-                <a href="/" class="menu__link">
-                  <img class="menu__link__img" src="/assets/icons/Live.png" alt=""/>실시간
-                </a>
-              </li>
-              <li><a href="/">TV프로그램</a></li>
-              <li><a href="/">영화</a></li>
-              <li>
-                <a href="/" class="menu__link">
-                  <img src="/assets/icons/group.png" alt="Paramount+" />
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="subMenu">
-          <a class="subMenu__search" href="/" type="button">
-            <img src="/assets/icons/Search.png" alt="검색하기" />
-          </a>
-          <a class="subMenu__profile" href="/">
-            <img src="/assets/icons/Profile.png" alt="프로필 전환 및 편집" />
-          </a>
-        </div>
+      <h1 class="logo">
+        <a href=""><img src="" alt="TAING" /></a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="">실시간</a></li>
+          <li><a href="">TV프로그램</a></li>
+          <li><a href="">영화</a></li>
+          <li><a href="">Paramount+</a></li>
+        </ul>
+      </nav>
+      <div>
+        <button>검색하기</button>
+        <a href="">프로필 전환/편집</a>
       </div>
-
-      <div class="searchFormWrap">
-
-        <form action="/" method="get" class="form">
-          <fieldset>
-            <legend>검색/찾기</legend>
-            <label for="search" class="a11yHidden" aria-hidden="true">TV프로그램, 영화 제목 및 출연진으로 검색해보세요</label>
-            <input type="text" id="search" placeholder="TV프로그램, 영화 제목 및 출연진으로 검색해보세요" class="form__searchInput" />
-            <button type="submit" class="form__searchBtn">
-              <img src="/assets/icons/Search.png" alt="검색하기" />
-            </button>
-          </fieldset>
-        </form>
-
-        <div class="searchWord">
-          <div class="searchWord__recent">
-            <h2 class="searchWord__recent__title">최근 검색어</h2>
-            <ul class="searchWord__recent__list">
-              <li>검색 내역이 없습니다.</li>
-            </ul>
-          </div>
-          <div class="searchWord__popular">
-            <h2 class="searchWord__popular__title">실시간 인기 검색어</h2>
-            <ol class="searchWord__popular__list">
-              <li>
-                <a href="/">
-                  <span class="accent-red" aria-hidden="true">1</span>재벌집 막내아들
-                </a>
-              </li>
-              <li>
-                <a href="/">
-                  <span class="accent-red" aria-hidden="true">2</span>미스터트롯2: 새로운 전설의 시작
-                </a>
-              </li>
-              <li>
-                <a href="/">
-                  <span class="accent-red" aria-hidden="true">3</span>유 퀴즈 온 더 블럭
-                </a>
-              </li>
-              <li>
-                <a href="/">
-                  <span class="accent-red" aria-hidden="true">4</span>대행사
-                </a>
-              </li>
-              <li>
-                <a href="/">
-                  <span class="accent-red" aria-hidden="true">5</span>SHOW ME THE MONEY 11
-                </a>
-              </li>
-              <li>
-                <a href="/">
-                  <span class="accent-red" aria-hidden="true">6</span>미씽: 그들이 있었다2
-                </a>
-              </li>
-              <li>
-                <a href="/">
-                  <span class="accent-red" aria-hidden="true">7</span>술꾼도시여자들2
-                </a>
-              </li>
-              <li>
-                <a href="/">
-                  <span class="accent-red" aria-hidden="true">8</span>캐나다 체크인
-                </a>
-              </li>
-              <li>
-                <a href="/">
-                  <span class="accent-red" aria-hidden="true">9</span>미씽: 그들이 있었다 - 그들을 ‘다만나다
-                </a>
-              </li>
-              <li>
-                <a href="/">
-                  <span class="accent-red" aria-hidden="true">10</span>술꾼도시여자들
-                </a>
-              </li>
-              <li aria-hidden="true">
-                <time class="time">2022.12.24 오전 03:04 기준</time>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-
     </header>
 
     <!-- 1번 -->
     <!-- 백그라운드 처리 -->
-    <section class="visual" area-label="광고">
-
-      <div class="visual__summary">
-        <h2 class="a11yHidden">재벌집 막내아들</h2>
-        <p class="visual__summary__content">인생 2회차를 사는 판타지 드라마</p>
-        <p>
-          <a class="more" href="/" >자세히 보기</a>
-        </p>
-      </div>
-
-      <ul class="visual__banner">
-        <li class="visual__banner__list"></li>
-        <li class="visual__banner__list"></li>
-        <li class="visual__banner__list"></li>
-        <li class="visual__banner__list"></li>
-      </ul>
-
-      <ul class="visual__paging">
-        <li class="visual__paging__play" aria-label="재생/멈춤">
-          <i class="xi-pause" aria-hidden="true"></i>
+    <section class="visual">
+      <ul>
+        <li>
+          드라마1
+          <p>드라마1 설명</p>
         </li>
-        <li class="visual__paging__btn"></li>
-        <li class="visual__paging__btn on"></li>
-        <li class="visual__paging__btn"></li>
-        <li class="visual__paging__btn"></li>
+        <li>
+          재벌집 막내아들
+          <p>인생 2회차를 사는 판타지 드라마</p>
+        </li>
+        <li>
+          드라마3
+          <p>드라마3 설명</p>
+        </li>
+        <li>
+          드라마4
+          <p>드라마4 설명</p>
+        </li>
       </ul>
 
       <div class="visual__btn">
@@ -173,113 +65,169 @@
     </section>
 
     <!-- 2번 -->
-    <section>
-      <h2>Quick VOD</h2>
-      <ul>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-      </ul>
-    </section>
+    <main>
+      <section>
+        <h2>티빙에서 꼭 봐야하는 콘텐츠</h2>
+        <ul>
+          <li>
+            <a href=""
+              ><img src="" alt="" />
+              <h3>보물찾기</h3></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="" alt="" />
+              <h3>러브캐처 인 발리</h3></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="" alt="" />
+              <h3>술꾼도시여자들2</h3></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="" alt="" />
+              <h3></h3
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="" alt="" />
+              <h3></h3
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="" alt="" />
+              <h3></h3
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="" alt="" />
+              <h3></h3
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="" alt="" />
+              <h3></h3
+            ></a>
+          </li>
+        </ul>
+      </section>
 
-    <!-- 3번 -->
-    <section>
-      <h2>실시간 인기 프로그램</h2>
-      <ol>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-      </ol>
-    </section>
+      <!-- 2번 -->
+      <section>
+        <h2>Quick VOD</h2>
+        <ul>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+        </ul>
+      </section>
 
-    <!-- 3번 -->
-    <section>
-      <h2>인기 LIVE 채널</h2>
-      <ol>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-      </ol>
-    </section>
+      <!-- 3번 -->
+      <section>
+        <h2>실시간 인기 프로그램</h2>
+        <ol>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+        </ol>
+      </section>
 
-    <!-- 2번 -->
-    <section>
-      <h2>오직 티빙에만 있어요</h2>
-      <ul>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="" alt="" /></a>
-        </li>
-      </ul>
-    </section>
+      <!-- 3번 -->
+      <section>
+        <h2>인기 LIVE 채널</h2>
+        <ol>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 2번 -->
+      <section>
+        <h2>오직 티빙에만 있어요</h2>
+        <ul>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+        </ul>
+      </section>
 
     <!-- 4번 -->
     <article class="article__banner">
@@ -322,18 +270,16 @@
         </a>
       </div>
 
-      <div class="infoLink">
-        <ul class="infoLink__click">
-          <li class="infoLink__brand">
-            <a href="">브랜드 바로가기<span class="infoLink__plusbtn" aria-hidden="true"><i class='bx bx-plus'></i></span></a>
-            <span class="infoLink__divider" aria-hidden="true">ㅣ</span>
+      <div>
+        <ul>
+          <li>
+            <a href="">브랜드 바로가기</a>
           </li>
-          <li class="infoLink__group">
-            <a href="">그룹 계열사 바로가기<span class="infoLink__plusbtn" aria-hidden="true"><i class='bx bx-plus'></i></span></a>
+          <li>
+            <a href="">그룹 계열사 바로가기</a>
           </li>
         </ul>
       </div>
-    </div>
 
     <ul class="corpArea">
       <li class="corpArea__list"><a href="/">고객센터</a></li>
@@ -345,28 +291,7 @@
       <li class="corpArea__list"><a href="/">인재채용</a></li>
     </ul>
 
-    <address class="address">
-      <span class="address__box">
-        대표이사 : YANG JIEUL<span class="divider" aria-hidden="true">ㅣ</span>
-        <a href="">사업자정보확인</a><span class="divider" aria-hidden="true">ㅣ</span>
-        사업자등록번호: <a class="address__telephone" href="tel:022345678">02-234-5678</a><span class="divider" aria-hidden="true">ㅣ</span>
-        통신판매신고번호: 2020-서울마포-3641호
-      </span>
-      <span class="address__box">
-        사업장 : 서울특별시 마포구 상암산로 34, DMC디지털큐브 15층(상암동)<span class="divider" aria-hidden="true">ㅣ</span>호스팅사업자 : 씨제이올리브네트웍스(주)
-      </span>
-      <span class="address__box">
-        <a href="/" class="customer">고객문의 바로가기</a><span class="divider" aria-hidden="true">ㅣ</span>
-        <span class="mail">대표메일: <a class="address__link" href="mailto:tving@cj.net?subject=문의사항">tving@cj.net</a>
-        <span class="divider" aria-hidden="true">ㅣ</span>
-        <span class="center"><a href="/">고객센터 : 1670-1525(평일/주말 09시~18시, 공휴일 휴무)</a></span>
-        </span>
-      </span>
-      <span class="address__box">
-        ENM 시청자 상담실 (편성 문의 및 시청자 의견) : 080-080-0780<span class="divider" aria-hidden="true">ㅣ</span>
-        Mnet 고객센터(반송편성문의) : 1855-1631
-      </span>
-    </address>
+      <address></address>
 
     <ul class="footer__sns">
       <li class="sns__youtube"><a href="/" target='_blank' rel="noopener noreferrer"><img src="./assets/icons/Youtube.png" alt="Youtube" /></a></li>
@@ -375,10 +300,7 @@
       <li class="sns__facebook"><a href="/" target='_blank' rel="noopener noreferrer"><img src="./assets/icons/Facebook.png" alt="facebook" /></a></li>
     </ul>
 
-    <small class="copyrignt">
-      Copyright &copy; 주식회사 티빙 All right reserved.
-    </small>
-  </footer>
-</body>
-
+      <small></small>
+    </footer>
+  </body>
 </html>
