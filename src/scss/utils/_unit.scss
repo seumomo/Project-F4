@@ -16,8 +16,8 @@ $rootUnit: 16px !default;
 }
 
 $desktop: 1920;
-$tablet: 1280;
-$mobile: 768;
+$tablet: 768;
+$mobile: 320;
 
 @function vw($value, $device: $desktop) {
   $removeValue: removeUnit($value);
