@@ -82,15 +82,13 @@
 
 ## 결과물
 
-메인 페이지
-
-(팀 전원)
-
 <div align="center">
-  
-  ## <h2 id="headerResult">header와 visual 영역</h2>
-  
-  (강예나)
+
+## 메인 페이지
+
+## <h2 id="headerResult">header와 visual 영역</h2>
+
+(강예나)
 
 </div>
 
