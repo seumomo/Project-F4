@@ -1,1 +1,141 @@
-// home.scss
+@use "./../utils" as *;
+
+.visual{
+  width: 100%;
+  height: 0;
+  padding-top: calc(855px/1920px*100%);
+  position: relative;
+  top: rem(100px);
+  margin-bottom: rem(100px);
+  @include mobile {
+    top: 0;
+    margin-bottom: 0;
+  }
+  @include tablet {
+    top: 0;
+    margin-bottom: 0;
+  }
+
+  &__summary{
+    width: 90%;
+    z-index: 50;
+    @include poaLeftTop($l:4%,$t:70%);
+    color: $white;
+  
+    &__content{
+      font-size: rem(28px);
+      @include mobile {
+        font-size: rem(12px);
+      }
+      @include tablet {
+        font-size: rem(16px);
+      }
+    }
+  
+    .more{
+      display: block;
+      width: rem(221px);
+      height: rem(78px);
+      border: 1px solid $gray3;
+      border-radius: rem(4px);
+      font-size: rem(21px);
+      text-align: center;
+      line-height: rem(78px);
+      @include poaRightTop($r:0,$t:35%);
+  
+      @include tablet {
+        width: rem(128px);
+        height: rem(44px);
+        font-size: rem(12px);
+        line-height: rem(44px);
+      }
+      @include mobile {
+        font-size: rem(12px);
+        width: rem(64px);
+        height: rem(27px);
+        line-height: rem(27px);
+      }
+    }
+  }
+  &__banner{
+    width: 100%;
+    &__list{
+      width: 100vw;
+      height: 0;
+      padding-top: calc(855px/1920px*100%);
+      background: url(/assets/images/banner_img.png) no-repeat;
+      background-size: contain;
+      @include poaLeftTop(); 
+    }
+  }
+
+  &__paging{
+    cursor: pointer;
+    @include poaLeftTop($l:4%,$t:77%);
+    z-index: 50;
+    &__play{
+      color: $white;
+      display: inline-block;
+      &__i{
+        vertical-align: middle;
+        font-size: rem(18px);
+        margin-right: rem(20px);
+        @include tablet {
+          font-size: rem(10px);
+          margin-right: rem(8px);
+        }
+        @include mobile {
+          font-size: rem(6px);
+          margin-right: rem(6px);
+        }
+      }
+
+    }
+    &__btn{
+      display: inline-block;
+      width: rem(8px);
+      height: rem(8px);
+      @include mobile {
+        width: rem(6px);
+        height: rem(6px);
+      }
+      border-radius: 50%;
+      background:rgba(255,255,255,0.5);
+      margin-right: rem(12px);
+      @include tablet {
+        margin-right: rem(4px);
+      }
+      @include mobile {
+        margin-right: rem(4px);
+      }
+    }
+    .on{
+      background: $white;
+    }
+  }
+
+  &__btn{
+    .button{
+      cursor: pointer;
+      border: 0;
+      background: transparent;
+      @include poaCenterY;
+    }
+
+    &__i{
+      font-size: rem(70px);
+      @include tablet {
+        font-size: rem(40px);
+      }
+      @include mobile {
+        font-size: rem(14px);
+      }
+      color: rgba(255,255,255,0.5);
+    }
+
+    &__prev{left: 0;}
+    &__next{right: 0;}
+  }
+
+
+  }
