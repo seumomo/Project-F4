@@ -1,7 +1,6 @@
 @use "./../utils" as *;
 @use "./../base" as *;
 
-
 body {
   @include autoMargin;
   background-color: $black;
@@ -11,43 +10,46 @@ body {
   margin-top: rem(170px);
 }
 
+// .subHeader {
+//   width: 100%;
+//   height: rem(100px);
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   background: linear-gradient(
+//     180deg,
+//     rgba(0, 0, 0, 0.7) 0%,
+//     rgba(0, 0, 0, 0) 100%
+//   );
+//   z-index: 100;
+//   height: rem(100px);
+//   transition: 0.3s;
+//   @include mobile {
+//     height: rem(38px);
+//     transition: 0.3s;
+//   }
+//   @include tablet {
+//     height: rem(56px);
+//     transition: 0.3s;
+//   }
+//   &__inner {
+//     width: 90%;
+//     height: 100%;
+//     @include autoMargin;
+//     @include flexbox($items: center);
+//   }
+//   .subLogo {
+//     max-width: rem(132px);
+//     @include mobile {
+//       width: rem(46px);
+//     }
+//     @include tablet {
+//       width: rem(77px);
+//     }
+//   }
+// }
 
-.subHeader{
-  width: 100%;
-  height: rem(100px);
-  position: fixed;
-  top: 0;left: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.00) 100%);
-  z-index: 100;
-  height: rem(100px);
-  transition: 0.3s;
-  @include mobile {
-    height: rem(38px);
-    transition: 0.3s;
-  }
-  @include tablet {
-    height: rem(56px);
-    transition: 0.3s;
-  }
-  &__inner{
-    width: 90%;
-    height: 100%;
-    @include autoMargin;
-    @include flexbox($items:center);
-  }
-  .subLogo{
-    max-width:rem(132px);
-    @include mobile {
-      width: rem(46px);
-    }
-    @include tablet {
-      width: rem(77px);
-    }
-  }
-}
-
-
-.login {  
+.login {
   &__title {
     color: $white;
     font-size: rem(37.897px);
@@ -62,13 +64,11 @@ body {
     justify-content: center;
     align-items: center;
 
-
-    @include tablet{
-      @include marginX(176px)
-
+    @include tablet {
+      @include marginX(176px);
     }
-    @include mobile{
-      @include marginX(15.5px)
+    @include mobile {
+      @include marginX(15.5px);
     }
   }
 
@@ -89,13 +89,10 @@ body {
     margin-bottom: rem(15px);
   }
 
- 
-
   .checkboxContainer {
     margin-top: rem(16px);
     margin-bottom: rem(32px);
   }
-
 
   &__pwd {
     position: relative;
@@ -115,27 +112,23 @@ body {
     height: rem(26px);
     padding: 3px;
     border: 0px solid #999;
-    vertical-align:-3px; 
-
+    vertical-align: -3px;
   }
 
   &__minibox:checked {
-    border: 5px solid #FF153C;
-  
+    border: 5px solid #ff153c;
   }
-   
 
   &__checkboxLabel {
     color: $gray5;
     font-size: rem(21.328px);
     font-weight: 600;
-
   }
 
   &__button {
     width: rem(732px);
     height: rem(96px);
-    background-color: #FF153C;
+    background-color: #ff153c;
     border-radius: 4px;
     outline: none;
     border: 0;
@@ -145,12 +138,8 @@ body {
     font-size: rem(28.43px);
     font-weight: 600;
     color: $white;
-
   }
-
-
 }
-
 
 .search {
   &__id {
@@ -163,248 +152,242 @@ body {
     font-size: rem(21.328px);
   }
 
-  &__find{
+  &__find {
     width: rem(400px);
     margin-top: rem(42px);
     display: flex;
     @include autoMargin;
     justify-content: space-around;
-    
   }
 
-  &__divider{
-    color: #2B2B2B;
-    font-size:  rem(21.328px);
+  &__divider {
+    color: #2b2b2b;
+    font-size: rem(21.328px);
   }
 
-  &__join{
+  &__join {
     width: rem(732px);
     margin-top: rem(44px);
     display: flex;
     @include autoMargin;
     justify-content: space-around;
   }
-  
+
   &__no {
     color: $gray5;
     font-size: rem(21.328px);
   }
-  
+
   &__new {
     color: $gray3;
     font-size: rem(21.328px);
   }
-
-
 }
 
+// .footer{
+//     @include mobile{
+//       @include containerPaddingX(52px, 82px);
 
+//     }
 
+//     @include tablet{
+//       @include containerPaddingX(70px, 100px);
 
-.footer{
-    @include mobile{
-      @include containerPaddingX(52px, 82px);
+//     }
 
-    }
+//     @include desktop{
+//       @include containerPaddingX(140px, 170px);
+//     }
+// }
 
-    @include tablet{
-      @include containerPaddingX(70px, 100px);
+// // footer info
+// .info{
+//   border-bottom: 1px solid $gray8;
+//   @include flexbox($justify:space-between);
+//   align-items: center;
 
-    }
+//   @include mobile{
+//     padding: 0 0 rem(12px);
+//   }
 
-    @include desktop{
-      @include containerPaddingX(140px, 170px);
-    }
-}
+//   @include tablet{
+//     padding: rem(12px) 0 rem(16px);
+//   }
 
-// footer info
-.info{
-  border-bottom: 1px solid $gray8;
-  @include flexbox($justify:space-between);
-  align-items: center;
+//   @include desktop{
+//     padding: 0 0 rem(27px);
+//   }
 
-  @include mobile{
-    padding: 0 0 rem(12px);
-  }
+//   &__notice a{
+//     @include flexbox($justify:space-between);
 
-  @include tablet{
-    padding: rem(12px) 0 rem(16px);
-  }
+//     @include mobile{
+//       font-size: rem(12.003px);
+//     }
 
-  @include desktop{
-    padding: 0 0 rem(27px);
-  }
+//     @include tablet{
+//       font-size: rem(12.003px);
+//     }
 
-  &__notice a{
-    @include flexbox($justify:space-between);
+//   }
 
-    @include mobile{
-      font-size: rem(12.003px);
-    }
+//   &__noticeTitle{
+//     color: $gray5;
 
-    @include tablet{
-      font-size: rem(12.003px);
-    }
+//     @include mobile{
+//       padding-right: rem(4px);
+//     }
 
-  }
+//     @include tablet{
+//       padding-right: rem(20px);
+//     }
 
-  &__noticeTitle{
-    color: $gray5;
+//     @include desktop{
+//       padding-right: rem(20px);
+//     }
+//   }
 
-    @include mobile{
-      padding-right: rem(4px);
-    }
+//   &__noticeContent{
+//     color: $gray2;
 
-    @include tablet{
-      padding-right: rem(20px);
-    }
+//     @include tablet{
+//       font-size: rem(12.003px);
+//     }
+//   }
+// }
 
-    @include desktop{
-      padding-right: rem(20px);
-    }
-  }
+// .infoLink{
 
-  &__noticeContent{
-    color: $gray2;
+//   @include flexbox($justify:space-between);
 
-    @include tablet{
-      font-size: rem(12.003px);
-    }
-  }
-}
+//   &__click{
+//     @include flexbox($justify:space-between);
+//   }
 
-.infoLink{
+//   &__brand a{
+//     color: $gray2;
+//     padding-right: 15px;
 
-  @include flexbox($justify:space-between);
+//     @include tablet{
+//       font-size: rem(12.003px);
+//     }
+//   }
 
-  &__click{
-    @include flexbox($justify:space-between);
-  }
+//   &__group a{
+//     color: $gray2;
+//     padding-left: 15px;
+//     // vertical-align: center;
 
-  &__brand a{
-    color: $gray2;
-    padding-right: 15px;
+//     @include tablet{
+//       font-size: rem(12.003px);
+//     }
+//   }
 
-    @include tablet{
-      font-size: rem(12.003px);
-    }
-  }
+//   &__plusbtn{
+//     padding-left: 15px;
+//   }
 
-  &__group a{
-    color: $gray2;
-    padding-left: 15px;
-    // vertical-align: center;
+//   &__divider{
+//     color: $gray5;
+//     font-size: rem(12.003px);
+//   }
 
-    @include tablet{
-      font-size: rem(12.003px);
-    }
-  }
+//   @include mobile{
+//     display: none;
+//   }
 
-  &__plusbtn{
-    padding-left: 15px;
-  }
+// }
 
-  &__divider{
-    color: $gray5;
-    font-size: rem(12.003px);
-  }
+// .corpArea{
+//   @include flexbox();
+//   @include paddingY(24px);
+//   color: $gray2;
 
-  @include mobile{
-    display: none;
-  }
+//   @include mobile{
+//     @include flexbox($direction: column);
+//     @include paddingY(0px);
+//     margin: rem(12px) 0;
+//     gap: 4px;
+//   }
 
-}
+//   @include tablet{
+//     margin: rem(16px) 0 rem(12px);
+//     gap: 20px;
+//   }
 
-.corpArea{
-  @include flexbox();
-  @include paddingY(24px);
-  color: $gray2;
+//   @include desktop{
+//     margin: rem(27px) 0 rem(24px);
+//       gap: 36px;
+//     }
 
-  @include mobile{
-    @include flexbox($direction: column);
-    @include paddingY(0px);
-    margin: rem(12px) 0;
-    gap: 4px;
-  }
+//   &__list{
+//     @include mobile{
+//       font-size: rem(12.003px);
+//     }
 
-  @include tablet{
-    margin: rem(16px) 0 rem(12px);
-    gap: 20px;
-  }
+//     @include tablet{
+//       font-size: rem(12.003px);
+//     }
+//   }
+//   }
 
-  @include desktop{
-    margin: rem(27px) 0 rem(24px);
-      gap: 36px;
-    }
+// // 사업정보
+// .address{
+//   @include mobile{
+//     display: none;
+//   }
 
-  &__list{
-    @include mobile{
-      font-size: rem(12.003px);
-    }
+//   @include mobile{
+//     font-size: rem(12.003px);
+//   }
 
-    @include tablet{
-      font-size: rem(12.003px);
-    }
-  }
-  }
+//   @include tablet{
+//     font-size: rem(12.003px);
+//   }
+// }
 
-// 사업정보
-.address{
-  @include mobile{
-    display: none;
-  }
+// .address__box{
+//   display: block;
+//   color: $gray5;
+// }
 
-  @include mobile{
-    font-size: rem(12.003px);
-  }
+// .customer,
+// .mail,
+// .center{
+//   text-decoration: underline;
+// }
 
-  @include tablet{
-    font-size: rem(12.003px);
-  }
-}
+// .divider{
+//   color: $gray8;
+// }
 
-.address__box{
-  display: block;
-  color: $gray5;
-}
+// .footer__sns{
+//   width: rem(268px);
+//   @include flexbox($justify: space-between);
+//   gap: rem(20px);
+//   @include marginY(24px);
 
-.customer,
-.mail,
-.center{
-  text-decoration: underline;
-}
+//   @include mobile{
+//     width: rem(120px);
+//     gap: rem(8px);
+//     @include marginY(12px);
+//   }
 
-.divider{
-  color: $gray8;
-}
+//   @include desktop{
+//     gap: rem(8px);
+//   }
+// }
 
-.footer__sns{
-  width: rem(268px);
-  @include flexbox($justify: space-between);
-  gap: rem(20px);
-  @include marginY(24px);
+// .copyrignt{
+//   display: inline-block;
+//   color: $gray5;
 
-  @include mobile{
-    width: rem(120px);
-    gap: rem(8px);
-    @include marginY(12px);
-  }
+//   @include mobile{
+//     width: rem(232px);
+//     font-size: rem(12.003px);
+//   }
 
-  @include desktop{
-    gap: rem(8px);
-  }
-}
-
-.copyrignt{
-  display: inline-block;
-  color: $gray5;
-
-  @include mobile{
-    width: rem(232px);
-    font-size: rem(12.003px);
-  }
-
-  @include tablet{
-    font-size: rem(12.003px);
-  }
-}
+//   @include tablet{
+//     font-size: rem(12.003px);
+//   }
+// }
