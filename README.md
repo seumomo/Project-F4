@@ -36,7 +36,7 @@
 
 ## 배포 주소
 
-## [새 탭에서 열기](https://taing-f4.netlify.app){:target="\_blank"}
+## <a href="https://taing-f4.netlify.app" target="_blank">https://taing-f4.netlify.app</a>
 
 ### 접근 방법
 
