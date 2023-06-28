@@ -119,7 +119,7 @@
 <h2 id="signUp"> 회원가입 페이지</h2>
 
 (김태일)
-<a href="#singUpResult">결과물 보기</a>
+<a href="#signUpResult">결과물 보기</a>
 
 <br>
 
