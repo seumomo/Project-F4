@@ -12,13 +12,13 @@
 
 - 목차
 
-  1. <a href="#main">메인 페이지</a>
-  2. <a href="#search">검색창</a>
-  3. <a href="#randing">랜딩 페이지</a>
-  4. <a href="#login">로그인 페이지</a>
-  5. <a href="#profile">프로필 전환 페이지</a>
-  6. <a href="#signUP">회원가입 페이지</a>
-  7. <a href="#IDPW">아이디/비밀번호 찾기 페이지</a>
+  1. <a href="#mainResult">메인 페이지</a>
+  2. <a href="#searchResult">검색창</a>
+  3. <a href="#randingResult">랜딩 페이지</a>
+  4. <a href="#loginResult">로그인 페이지</a>
+  5. <a href="#profileResult">프로필 전환 페이지</a>
+  6. <a href="#signUPResult">회원가입 페이지</a>
+  7. <a href="#IDPWResult">아이디/비밀번호 찾기 페이지</a>
 
 - 기간 : 2023 / 06 / 23 ~ 2023 / 06 / 28
 
@@ -32,12 +32,15 @@
 
 ## 배포 주소
 
-## <a href="https://taing-f4.netlify.app" target="_blank" nooferrer noopener>https://taing-f4.netlify.app</a>
+## <a href="https://taing-f4.netlify.app" target="_blank"> https://taing-f4.netlify.app </a>
 
 ### 접근 방법
 
 1. **_랜딩_** ➡️ **_로그인_** ➡️ **_메인(로그인하기 버튼)_** / **_아이디/비밀번호 찾기_** / **_회원가입_**
 2. **_메인_** ➡️ **_검색창(우측 상단)_** ➡️ **_프로필 전환(우측 상단)_**
+3. 모든 페이지에서 **_좌측 상단 로고를 누르면 메인 페이지로 이동할 수 있습니다._**
+4. **_메인 페이지에서_** 좌측 상단 로고를 누르면 **랜딩 페이지**로 이동할 수 있습니다.
+5. **_<a href="https://taing-f4/views/logout.html.netlify.app" target="_blank"> 로그아웃 페이지는 이 링크로 이동할 수 있습니다. </a>_**
 
 ## **팀 구성**
 
@@ -72,127 +75,62 @@
 
 <div align="center"><img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=black"></div>
 
-<h2 id="main">메인 페이지</h2>
-
-(팀 전원)
-
-<img src="./src/assets/images/TAING.png">
-
-<h2>
-  <div align="center"><a href="#mainResult">결과물 보기</a></div>
-</h2>
-
-### 구역 분배
-
-- **강예나**
-  <br>header / visual 영역
-- **이예나**
-  <br>main 영역 (티빙에서 꼭 봐야 하는 콘텐츠, Quick VOD, 오직 티빙에만 있어요)
-- **김태일**
-  <br>main 영역 (실시간 인기 프로그램, 인기 LIVE 채널)
-- **이지수**
-  <br>main (배너 이미지, 이벤트) / footer 영역
-
----
-
-<h2 id="search"> 검색창</h2>
-
-(강예나)
-<img src="./src/assets/images/search.png">
-
-<h2>
-  <div align="center"><a href="#searchResult">결과물 보기</a></div>
-</h2>
-
----
-
-<h2 id="randing"> 랜딩 페이지</h2>
-(강예나)
-<img src="./src/assets/images/randing.png">
-
-<h2>
-  <div align="center"><a href="#randingResult">결과물 보기</a></div>
-</h2>
-
----
-
-<h2 id="login"> 로그인 페이지</h2>
-(이예나)
-<img src="./src/assets/images/login.png">
-
-<h2>
-  <div align="center"><a href="#loginResult">결과물 보기</a></div>
-</h2>
-
----
-
-<h2 id="profile"> 프로필 전환 페이지</h2>
-(이예나)
-<img src="./src/assets/images/profile.png">
-
-<h2>
-  <div align="center"><a href="#profileResult">결과물 보기</a></div>
-</h2>
-
----
-
-<h2 id="signUp"> 회원가입 페이지</h2>
-(김태일)
-<img src="./src/assets/images/signUp.png">
-
-<h2>
-  <div align="center"><a href="#signUpResult">결과물 보기</a></div>
-</h2>
-
----
-
-<h2 id="IDPW"> 아이디/비밀번호 찾기 페이지</h2>
-(이지수)
-<img src="./src/assets/images/ID.png">
-<img src="./src/assets/images/PW.png">
-
-<h2>
-  <div align="center"><a href="#IDPWResult">결과물 보기</a></div>
-</h2>
-
 ## 결과물
 
 <h2 id="mainResult">메인 페이지</h2>
 
 (팀 전원)
 
----
+<div align="center">
+  
+  ## header와 visual 영역
+  
+  (강예나)
 
-## header와 visual 영역
+</div>
 
-(강예나)
 ![header](https://github.com/seumomo/Project-F4/assets/127176650/2baac169-7dc9-4d67-8160-aad3cd783886)
 
 ---
 
+<div align="center">
+  
 ## main 영역
 
 (티빙에서 꼭 봐야 하는 콘텐츠, Quick VOD, 오직 티빙에만 있어요)
 
 (이예나)
+
+</div>
+
 ![main1,2](https://github.com/seumomo/Project-F4/assets/127176650/999887f2-f0e4-4fed-aeae-af968ce89f8d)
 
 ---
 
+<div align="center">
+  
 ## main 영역
 
 (실시간 인기 프로그램, 인기 LIVE 채널)
 
 (김태일)
+
+</div>
+
 ![main3,4](https://github.com/seumomo/Project-F4/assets/127176650/d4cd6b60-f1b7-4ec1-9a80-7216be9a1b7d)
 
 ---
 
+<div align="center">
+  
 ## main 영역과 footer 영역
 
 (배너 이미지, 이벤트)
 
 (이지수)
+
+</div>
+
 ![footer](https://github.com/seumomo/Project-F4/assets/127176650/5ffac612-5a33-4a28-8efe-44d60a8035c9)
 
 ---
@@ -229,12 +167,12 @@
 
 - **강예나**
 
-1. 헤더부분이 픽스되어 스크롤을 내려도 계속 상단에 위치하게 하는 UI였는데 고정시키려고 position을 사용했기때문에 비주얼 부분을 배치시킬때 어려움이 있었다.
-2. 비주얼영역도 배너부분을 background처리한 li를 position으로 겹쳐서 콘텐츠 영역이 모두 띄어진상태로 인해 아래 영역들이 visual 영역 밑으로 들어가는 현상이 계속 되어서 해당작업을 처리하는데 시간이 꽤 오래걸렸다.
-3. visual 높이를 0으로 처리하고 padding-top과 cale()함수를 사용하여 해당영역을 구현할수 있었다.
-4. visual 영역 마크업이 너무 어려웠다. 페이징 버튼, 이전/다음 버튼, 재생 멈춤버튼 등 접근성을 마크업을 짜고 화면에 구현했지만 과연 접근성을 준수했는지는 의문이다.
-5. WAI-ARIA에 대해 더 많이 학습하고 많은예제를 봐야할것 같다.
-6. 아이콘은 읽지않도록 aria-hidden="true" 처리하고 버튼역할을하는 태그에는 aria-label 를 사용했다.
+  1. 헤더부분이 픽스되어 스크롤을 내려도 계속 상단에 위치하게 하는 UI였는데 고정시키려고 position을 사용했기때문에 비주얼 부분을 배치시킬때 어려움이 있었다.
+  2. 비주얼영역도 배너부분을 background처리한 li를 position으로 겹쳐서 콘텐츠 영역이 모두 띄어진상태로 인해 아래 영역들이 visual 영역 밑으로 들어가는 현상이 계속 되어서 해당작업을 처리하는데 시간이 꽤 오래걸렸다.
+  3. visual 높이를 0으로 처리하고 padding-top과 cale()함수를 사용하여 해당영역을 구현할수 있었다.
+  4. visual 영역 마크업이 너무 어려웠다. 페이징 버튼, 이전/다음 버튼, 재생 멈춤버튼 등 접근성을 마크업을 짜고 화면에 구현했지만 과연 접근성을 준수했는지는 의문이다.
+  5. WAI-ARIA에 대해 더 많이 학습하고 많은예제를 봐야할것 같다.
+  6. 아이콘은 읽지않도록 aria-hidden="true" 처리하고 버튼역할을하는 태그에는 aria-label 를 사용했다.
 
 - **이예나**
 
@@ -254,9 +192,14 @@
 
 <br>
 
+<div align="center">
+  
 <h2 id="searchResult">검색창</h2>
 
 (강예나)
+
+</div>
+
 ![search](https://github.com/seumomo/Project-F4/assets/127176650/2500a57c-91a5-467f-909d-49f0eaa0e3fa)
 
 ### 어려웠거나 아쉬웠던 점
@@ -272,9 +215,14 @@
 
 <br>
 
+<div align="center">
+  
 <h2 id="randingResult">랜딩 페이지</h2>
 
 (강예나)
+
+</div>
+
 ![randing](https://github.com/seumomo/Project-F4/assets/127176650/7f529d66-0459-4735-8a40-4f2c92231b4a)
 
 ### 어려웠거나 아쉬웠던 점
@@ -293,9 +241,14 @@
 
 <br>
 
+<div align="center">
+  
 <h2 id="loginResult">로그인 페이지</h2>
 
 (이예나)
+
+</div>
+
 ![login](https://github.com/seumomo/Project-F4/assets/127176650/d6b43a7e-4451-4480-b689-2628e821d081)
 
 ### 어려웠거나 아쉬웠던 점
@@ -310,9 +263,14 @@
 
 <br>
 
+<div align="center">
+  
 <h2 id="profileResult">프로필 전환 페이지</h2>
 
 (이예나)
+
+</div>
+
 ![profile](https://github.com/seumomo/Project-F4/assets/127176650/0f7ed006-5a41-4809-995a-006dfb6c136b)
 
 ### 어려웠거나 아쉬웠던 점
@@ -326,9 +284,14 @@
 
 <br>
 
+<div align="center">
+  
 <h2 id="signUpResult">회원가입 페이지</h2>
 
 (김태일)
+
+</div>
+
 ![signup](https://github.com/seumomo/Project-F4/assets/127176650/a9d56e9f-f034-4c4a-ab33-278b3d2fe50e)
 
 ### 어려웠거나 아쉬웠던 점
@@ -345,9 +308,13 @@
 
 <br>
 
+<div align="center">
+  
 <h2 id="IDPWResult">아이디/비밀번호 찾기 페이지</h2>
 
 (이지수)
+
+</div>
 
 ![ID](https://github.com/seumomo/Project-F4/assets/127176650/e33b669e-70a0-4f03-8884-c6d4748e92f5)
 ![PW](https://github.com/seumomo/Project-F4/assets/127176650/9a109932-017c-4290-9ae0-c1ad08a790ba)
@@ -363,12 +330,22 @@
 ## 프로젝트를 마친 소감
 
 **강예나**
+
 여러분 4일이란 짧은 기간동안 이만큼의 UI를 만드시느라 너무너무 고생하셨고, 항상 우리 프로젝트 회의실에 붙박이로 계셨던 우리 조장 태일님! 덕분에 수월하게 프로젝트 마칠수 있었고, 충돌과 부딪쳐도 포기하지않고 끝까지 싸워준 우리 작은예나님 박수 드리고 싶고 , 또 많은 궁금증을 같이 얘기했던 우리 지수님! 소통해주셔서 감사했고, 정말 다들 고맙습니다. 많이 배우고 또 여러분들을 보면서 많이 반성도하고 성장한 시간이었습니다. 우리 앞으로 같은길을 나아갈 개발자로써 앞으로도 서로 도움이 돼주고 소통하는 사이가됐으면 좋겠습니다. 다들 사랑해여! 그리고 슬비쌤! 쌤이 가르친보람이 있다고 생각하실만큼 뿌듯함을 드릴 개발자로 성장하겠습니다. 앞으로도 지켜봐주세요 ! 감사합니다!
+
+<br>
 
 **이예나**
 
 프로젝트 하는내내 부족함이 많이 느껴져서 부끄럽기도 했지만 팀원분들이 열심히 하는 모습을 보며 더 열심히 할 수 있었던 것 같습니다! 조장의 역할을 200,% 2000%!!해주신 태일님, 꼼꼼하게 프로젝트 퀄리티를 높여주신 지수님, 자바스크립트까지 적용시킨 고수 큰 예나님! 다들 정말 감사했습니다. 이번 프로젝트 경험을 시작으로 앞으로는 더 많이 성장해서 언젠간 도움을 주는 조원이 되고싶네요 ㅎㅎ 처음보다 마지막이 더 나은 모습이면 좋은거라고 슬비쌤이 말씀해주신 것처럼 부족한 부분에 매몰되지 않고 성장했다는 것에 더 집중하겠습니다! 프론트엔드 개발자로서 첫 단추를 제대로 끼울 수 있도록 해주신 슬비쌤께도 진심으로 감사인사 전하고 싶습니다~~
+
+<br>
+
 **김태일**
+
+이번 프로젝트를 진행하면서 프로젝트 자체도 낯설고 조장도 하게 되면서 처음엔 걱정이 많이 앞섰습니다. 단순히 배우면서 따라서 코딩해보는 것을 넘어서 팀원들과 직접 만들어내는 것은 어렵기도 했지만 그것 이상으로 많이 성장하는 시간이 되었습니다. 확실히 많이 부딪혀봐야 성장할 수 있다는 것을 깨닫게 된 시간이었습니다. 잘할 수 있을까 했던 걱정에서, 잘하면 되겠다는 생각이 들기도 했습니다. 앞으로 이번에 보였던 노력들을 지속해 나간다면 프론트엔드 스쿨 과정 이후에는, 지금은 예상할 수 없을 정도로 많이 성장할 수 있을 것 같습니다. 6일동안 밤새서 같이 고생하고 노력해준 팀원들과 아무것도 모르던 저를 이렇게까지 성장할 수 있도록 만들어 주신 슬비선생님께 감사하다는 말씀을 드리고 싶습니다. 감사합니다.
+
+<br>
 
 **이지수**
 
