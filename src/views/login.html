@@ -1,104 +1,97 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>로그인 페이지</title>
-    <link rel="stylesheet" href="../style/index.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      as="style"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="stylesheet" href="/style/index.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
       href="/assets/icons/favicon-96x96.png" />
+    <title>로그인</title>
   </head>
 
   <body>
     <header class="subHeader">
       <div class="subHeader__inner">
         <h1 class="subLogo">
-          <a href="/views/main.html"
-            ><img src="/assets/icons/logo.png" alt="TAING"
-          /></a>
+          <a href="/views/main.html"><img src="/assets/icons/logo.png" alt="TAING" /></a>
         </h1>
       </div>
     </header>
 
-    <main class="findId">
-      <div class="useEmail">
-        <h2 class="useEmail__title">아이디 찾기</h2>
-        <span class="useEmail__find">이메일로 찾기</span>
-        <span class="useEmail__inputEmail"
-          >가입 시 등록한 이메일을 입력해주세요.</span
-        >
-        <form action="#" class="useEmail__form">
-          <fieldset class="fieldset">
-            <legend>이메일 폼</legend>
-            <div class="useEmail__Id">
-              <label for="userEmail" class="a11yHidden">이메일</label>
+    <main class="loginBox">
+      <div class="login">
+      <h2 class="login__title">TVING ID 로그인</h2>
+        <form class="login__container">
+          <fieldset>
+            <legend>로그인</legend>
+            <div class="login__email">
+              <label for="email" class="a11yHidden">아이디</label>
               <input
                 type="email"
-                id="userEmail"
-                name="userEmail"
+                id="email"
+                name="email"
+                class="login__input"
                 required
-                placeholder="이메일" />
+                placeholder="아이디" />
             </div>
-            <button type="submit" class="useEmail__check">확인</button>
+            <div class="login__pwd">
+              <label for="password" class="a11yHidden form-input-label"
+                >비밀번호</label
+              >
+              <img
+                class="login__secret"
+                src="./../assets/icons/icon-input.png"
+                alt="비밀번호 보안" />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="password__input"
+                required
+                placeholder="비밀번호" />
+            </div>
+            <div class="checkboxContainer">
+              <input
+                class="login__minibox"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox" />
+              <label for="checkbox" class="login__checkboxLabel">
+                자동로그인
+              </label>
+            </div>
+            <button
+              type="submit"
+              class="login__button"
+              onclick="location.href='/views/main.html' ">
+              로그인하기
+            </button>
           </fieldset>
         </form>
-        <div class="or"><p>또는</p></div>
-        <div class="useId">
-          <h3 class="useId__identity">본인인증으로 찾기</h3>
-          <span class="useId__possible"
-            >이미 본인인증 완료된 계정에 한하여 아이디 찾기가 가능합니다.</span
-          >
-          <div class="useId__identityBtn"><a href="/">본인인증하기</a></div>
-        </div>
       </div>
+      <div class="search__find">
+        <a href="/views/login.html"
+          ><span class="search__id">아이디 찾기</span></a
+        >
+        <span class="search__divider" aria-hidden="true">ㅣ</span>
+        <a href="/views/password.html"
+          ><span class="search__pwd"> 비밀번호 찾기</span></a
+        >
+      </div>
+      <div class="search__join">
+        <a href="/views/membership.html"
+          ><span class="search__no"
+            >아직 계정이 없으신가요?
+            <span class="search__new">회원가입하기</span></span
+          ></a
+        >
+      </div>
+    </div>
     </main>
-
     <footer class="footer">
-      <div class="subInfo">
-        <h2 class="footer__info a11yHidden" aria-hidden="true">Information</h2>
-        <div class="info__notice">
-          <a href="/">
-            <h3 class="subInfo__noticeTitle">공지사항</h3>
-            <p class="subInfo__noticeContent">
-              [안내] 합병보고 주주총회에 갈음하는 공고
-            </p>
-          </a>
-        </div>
-
-        <div class="subinfoLink">
-          <ul class="subinfoLink__click">
-            <li class="subinfoLink__brand">
-              <a href=""
-                >브랜드 바로가기<span
-                  class="subinfoLink__plusbtn"
-                  aria-hidden="true"
-                  ><i class="bx bx-plus"></i></span
-              ></a>
-              <span class="subinfoLink__divider" aria-hidden="true">ㅣ</span>
-            </li>
-            <li class="subinfoLink__group">
-              <a href=""
-                >그룹 계열사 바로가기<span
-                  class="subinfoLink__plusbtn"
-                  aria-hidden="true"
-                  ><i class="bx bx-plus"></i></span
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
       <ul class="corpArea">
         <li class="corpArea__list"><a href="/">고객센터</a></li>
         <li class="corpArea__list"><a href="/">이용약관</a></li>
