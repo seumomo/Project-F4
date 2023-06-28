@@ -11,10 +11,8 @@ body{
   font-size: rem(50px);
   font-weight: 700;
   line-height: 140%;
-  margin-bottom: rem(20px);
   @include tablet {
     font-size: rem(21px);
-    margin-bottom: rem(8px);
   }
   @include mobile {
     font-size: rem(16px);
@@ -25,11 +23,14 @@ body{
   font-weight: 600;
   line-height: 150%;
   color: $gray2;
+  margin-top: rem(20px);
   @include tablet {
     font-size: rem(12px);
+    margin-top: rem(8px);
   }
   @include mobile {
     font-size: rem(12px);
+    margin-top: 0;
   }
 }
 
@@ -38,14 +39,17 @@ body{
   color: $gray2;
   font-size: rem(21px); 
   line-height: 160%;
+  margin-top: rem(8px);
   margin-bottom: rem(51px);
   @include tablet {
     font-size: rem(12px);
     margin-bottom: rem(32px);
+    margin-top: rem(4px);
   }
   @include mobile {
     font-size: rem(12px);
     margin-bottom: rem(25px);
+    margin-top: 0;
   }
 }
 

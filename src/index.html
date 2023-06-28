@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap"
       rel="stylesheet" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <script src="/js/search.js" defer></script>
   </head>
 
@@ -143,9 +144,9 @@
       
       <!-- 1번 -->
     <!-- 백그라운드 처리 -->
-    <section class="visual" area-label="광고">
+    <section class="visual" aria-label="광고">
 
-      <div class="visual__summary">
+      <div class="visual__summary" id="summary-description">
         <h2 class="a11yHidden">재벌집 막내아들</h2>
         <p class="visual__summary__content">인생 2회차를 사는 판타지 드라마</p>
         <p>
@@ -154,14 +155,14 @@
       </div>
 
       <ul class="visual__banner">
-        <li class="visual__banner__list"></li>
-        <li class="visual__banner__list"></li>
-        <li class="visual__banner__list"></li>
-        <li class="visual__banner__list"></li>
+        <li class="visual__banner__list" aria-describedby="summary-description"></li>
+        <li class="visual__banner__list" aria-describedby="summary-description"></li>
+        <li class="visual__banner__list" aria-describedby="summary-description"></li>
+        <li class="visual__banner__list" aria-describedby="summary-description"></li>
       </ul>
 
       <ul class="visual__paging">
-        <li class="visual__paging__play" aria-label="재생/멈춤">
+        <li class="visual__paging__play" aria-label="광고멈춤버튼">
           <i class="xi-pause visual__paging__play__i" aria-hidden="true"></i>
         </li>
         <li class="visual__paging__btn"></li>
