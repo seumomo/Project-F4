@@ -253,3 +253,55 @@ body{
     }
   }
 }
+
+.ask{
+  width: 90%;
+  margin: auto;
+  &__title__strong{
+    margin-bottom: rem(56px);
+  }
+  &__list{
+    text-align-last: left;
+  }
+  &__item{
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid $dark-bg-2;
+    cursor: pointer;
+
+    &__h3{
+      text-align: left;
+      padding: rem(28px) 0;
+    }
+
+    &__span{
+      display: inline-block;
+      float: right;
+    }
+  }
+
+  .coupon{
+    margin: rem(88px) auto;
+    display: block;
+    width: rem(504px);
+    height: rem(86px);
+    background: $white;
+    color: $black;
+    line-height: rem(86px);
+    border-radius: rem(4px);
+    font-size: rem(28px);
+    @include tablet {
+      width: rem(283px);
+      height: rem(48px);
+      line-height: rem(48px);
+      font-size: rem(16px);
+    }
+    @include mobile {
+      width: rem(188px);
+      height: rem(34px);
+      line-height: rem(34px);
+      font-size: rem(12px);
+    }
+  }
+  
+}
