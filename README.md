@@ -12,13 +12,13 @@
 
 - 목차
 
-  1. 메인 페이지
-  2. 검색창
-  3. 랜딩 페이지
-  4. 로그인 페이지
-  5. 프로필 전환 페이지
-  6. 회원가입 페이지
-  7. 아이디/비밀번호 찾기 페이지
+  1. <a href="#main">메인 페이지</a>
+  2. <a href="#search">검색창</a>
+  3. <a href="#randing">랜딩 페이지</a>
+  4. <a href="#login">로그인 페이지</a>
+  5. <a href="#profile">프로필 전환 페이지</a>
+  6. <a href="#signUP">회원가입 페이지</a>
+  7. <a href="#IDPW">아이디/비밀번호 찾기 페이지</a>
 
 - 기간 : 2023 / 06 / 23 ~ 2023 / 06 / 28
 
@@ -67,11 +67,13 @@
 
 <div align="center"><img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=black"></div>
 
-## 메인 페이지
+<h2 id="main">메인 페이지</h2>
 
 (팀 전원)
 
 <img src="./src/assets/images/TAING.png">
+
+<a href="#mainResult">결과물 보기</a>
 
 ### 구역 분배
 
@@ -84,33 +86,51 @@
 - **이지수**
   <br>main (배너 이미지, 이벤트) / footer 영역
 
-### 검색창
+  <br>
+
+<h2 id="search"> 검색창</h2>
 
 (강예나)
+<a href="#searchResult">결과물 보기</a>
 
-### 랜딩 페이지
+<br>
+
+<h2 id="randing"> 랜딩 페이지</h2>
 
 (강예나)
+<a href="#randingResult">결과물 보기</a>
 
-### 로그인 페이지
+<br>
+
+<h2 id="login"> 로그인 페이지</h2>
 
 (이예나)
+<a href="#loginResult">결과물 보기</a>
 
-### 프로필 전환 페이지
+<br>
+
+<h2 id="profile"> 프로필 전환 페이지</h2>
 
 (이예나)
+<a href="#profileResult">결과물 보기</a>
 
-### 회원가입 페이지
+<br>
+
+<h2 id="singUp"> 회원가입 페이지</h2>
 
 (김태일)
+<a href="#singUpResult">결과물 보기</a>
 
-### 아이디/비밀번호 찾기 페이지
+<br>
+
+<h2 id="IDPW"> 아이디/비밀번호 찾기 페이지</h2>
 
 (이지수)
+<a href="#IDPWResult">결과물 보기</a>
 
 ## 결과물
 
-### 메인 페이지
+<h2 id="mainResult">메인 페이지</h2>
 
 (팀 전원)
 
@@ -151,7 +171,7 @@
 
 <br>
 
-## 검색창
+<h2 id="mainResult">검색창</h2>
 
 (강예나)
 
@@ -161,7 +181,7 @@
 
 <br>
 
-## 랜딩 페이지
+<h2 id="mainResult">랜딩 페이지</h2>
 
 (강예나)
 
@@ -171,7 +191,7 @@
 
 <br>
 
-## 로그인 페이지
+<h2 id="mainResult">로그인 페이지</h2>
 
 (이예나)
 
@@ -187,17 +207,22 @@
 
 <br>
 
-## 프로필 전환 페이지
+<h2 id="mainResult">프로필 전환 페이지</h2>
 
 (이예나)
 
 ### 어려웠거나 아쉬웠던 점
 
+1. 모바일에서 데스크탑, 태블릿과 다르게 레이아웃을 바꿔야해서 고민이 많았는데 flex를 썼으나 반응형에 따라 자물쇠 아이콘이 조금 어색하게 보여서 grid로 짜면 훨씬 더 쉽게 만들 수 있겠다는 생각이 들었다.
+2. 클릭시, 이미지 위에 마우스를 올렸을 때의 상태를 계속 유지시키고 싶었는데 기간내 해결하지 못해 아쉬웠다.
+
 ### 기억에 남거나 배운 점
+
+프로젝트를 하기 전보다 반응형에 대해 익숙해졌고 flex로 짠 레이아웃을 grid를 통해 다시 짜보고 싶다.
 
 <br>
 
-## 회원가입 페이지
+<h2 id="mainResult">회원가입 페이지</h2>
 
 (김태일)
 
@@ -207,7 +232,7 @@
 
 <br>
 
-## 아이디/비밀번호 찾기 페이지
+<h2 id="mainResult">아이디/비밀번호 찾기 페이지</h2>
 
 (이지수)
 
