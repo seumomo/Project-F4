@@ -6,11 +6,7 @@
 
 </div>
 
-<<<<<<< HEAD
-# **_반응형 웹 OTT TAING 구현하기_**
-=======
 # **_피그마 시안을 참고하여 반응형 웹 OTT TAING 구현하기_**
->>>>>>> develop
 
 ## 목차 및 기간
 
@@ -36,156 +32,16 @@
 
 ## 배포 주소
 
-<<<<<<< HEAD
-<a target=_blank nooferrer noopener>https://taing-f4.netlify.app</a>
-=======
-## <a target=_blank nooferrer noopener>https://taing-f4.netlify.app</a>
+## <a target="_blank" nooferrer noopener>https://taing-f4.netlify.app</a>
 
 ### 접근 방법
 
 1. **_랜딩_** ➡️ **_로그인_** ➡️ **_메인(로그인하기 버튼)_** / **_아이디/비밀번호 찾기_** / **_회원가입_**
 2. **_메인_** ➡️ **_검색창(우측 상단)_** ➡️ **_프로필 전환(우측 상단)_**
->>>>>>> develop
 
 ## **팀 구성**
 
 ### 팀 이름 : F4
-<<<<<<< HEAD
-
-- 강예나 : <a>https://github.com/yenaf</a>
-  <br> => 메인 페이지 일부 / 검색창 / 랜딩 페이지
-- 이예나 : <a>https://github.com/o0orang</a>
-  <br> => 메인 페이지 일부 / 로그인 페이지
-- 김태일 : <a>https://github.com/seumomo</a>
-  <br> => 메인 페이지 일부 / 회원가입 페이지
-- 이지수 : <a>https://github.com/jisulee97</a>
-  <br> => 메인 페이지 일부 / 아이디/비밀번호 찾기 페이지
-
-# 기술 스택
-
-## 환경
-
-<div align="center"><img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
-<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"><img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"></div>
-
-## 사용 기술
-
-<div align="center">
-  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=Sass&logoColor=white">
-  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-</div>
-
-## 소통
-
-<div align="center"><img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=black"></div>
-
-<h2 id="main">메인 페이지</h2>
-
-(팀 전원)
-
-<img src="./src/assets/images/TAING.png">
-
-<a href="#mainResult">결과물 보기</a>
-
-### 구역 분배
-
-- **강예나**
-  <br>header / visual 영역
-- **이예나**
-  <br>main 영역 (티빙에서 꼭 봐야 하는 콘텐츠, Quick VOD, 오직 티빙에만 있어요)
-- **김태일**
-  <br>main 영역 (실시간 인기 프로그램, 인기 LIVE 채널)
-- **이지수**
-  <br>main (배너 이미지, 이벤트) / footer 영역
-
-  <br>
-
-<h2 id="search"> 검색창</h2>
-
-(강예나)
-<a href="#searchResult">결과물 보기</a>
-
-<br>
-
-<h2 id="randing"> 랜딩 페이지</h2>
-
-(강예나)
-<a href="#randingResult">결과물 보기</a>
-
-<br>
-
-<h2 id="login"> 로그인 페이지</h2>
-
-(이예나)
-<a href="#loginResult">결과물 보기</a>
-
-<br>
-
-<h2 id="profile"> 프로필 전환 페이지</h2>
-
-(이예나)
-<a href="#profileResult">결과물 보기</a>
-
-<br>
-
-<h2 id="signUp"> 회원가입 페이지</h2>
-
-(김태일)
-<a href="#signUpResult">결과물 보기</a>
-
-<br>
-
-<h2 id="IDPW"> 아이디/비밀번호 찾기 페이지</h2>
-
-(이지수)
-<a href="#IDPWResult">결과물 보기</a>
-
-## 결과물
-
-<h2 id="mainResult">메인 페이지</h2>
-
-(팀 전원)
-
-### 어려웠거나 아쉬웠던 점
-
-- 강예나
-- 이예나
-
-  1. 반응형 구현이 예상보다 더 어려웠고 코드를 수정하면 연결되는 요소들이 바뀌어 신경써야할 점이 많았다. 학습이 많이 필요할 것 같다.
-  2. 기한 내 프로젝트를 하다보니 더 익숙한 flex만을 사용하고 grid를 활용해서 만들어보지 못해 아쉬웠다. 여러 레이아웃을 다른 방법으로 만들어보면서 공부해야겠다.
-
-- 김태일
-
-  1. 이미지를 배열할 때, `flex`와 `grid` 중에서 고민을 했었는데 `flex`가 서툴러서 어쩔 수 없이 `grid`를 선택하게 됐었다.
-  2. 반응형 웹에 대한 이해가 부족했어서 이미지를 자연스럽게 동작하게 만들었더니 주변의 폰트나 아이콘이 이미지의 바깥으로 벗어나는 등 모든 요소를 반응형으로 구현하는 데에 서툴렀다. 특히 단위에 대한 이해가 부족했다.
-  3. 1920px의 뷰포트에서 이미지가 일부 잘리고 있는데, 마우스로 드래그 해서 왼쪽으로 넘어갈 수 있게 구현하고 싶었으나 CSS로는 불가능한 것인지, 방법을 찾지 못했다.
-
-- 이지수
-  1. 메인페이지 안의 이벤트 부분을 이미지로 하나하나 넣었는데 자바스크립트를 사용해서 구현할 수 있었으면 더 좋았을걸 이라는 아쉬움이 있다.
-  2. 반응형으로 구현을 하긴 하였지만 유연한 단위를 사용하지 못 하고 각 구역별로 크기를 설정하여 크기가 바뀌게끔 구현하였는데 다음에는 vw 단위를 사용하여 좀 더 유연하게 만들어볼 생각이다.
-
-### 기억에 남거나 배운 점
-
-- 강예나
-- 이예나
-
-  1. 메인 영역을 다 같이 만들다보니 깃을 통해 합치고 충돌을 확인하는게 시간도 많이 소요되고 어려웠다. 깃에 대한 많은 공부가 필요하다.
-  2. 한달동안 배운 내용들을 프로젝트를 통해 활용할 수 있어서 재밌었다. 반응형을 만들기 위해 미디어 쿼리를 계속 사용해서 전보다 익숙해졌다.
-
-- 김태일
-
-  1. `grid`로 배열했던 이미지를 팀원과 `flex`로 배열하도록 통일시키며 사용하지 못하겠다고 생각했던 `flex`를 사용해보았다.
-  2. 폰트나 아이콘 등을 반응형으로 동작하게끔 만들면서 `vw`단위를 사용해보았다. 계산하는 것이 조금 헷갈리기도 했지만 다음에 조금 더 자신있게 쓸 수 있을 것 같다.
-
-- 이지수
-  1. sass를 사용하여 mixin 을 만들어 반응형을 구현하였는데 기존에 css로 작업할 때 보다 훨씬 간편하고 유용했다. 앞으로 페이지 구현 시 sass를 좀 더 많이 사용해보면 이번 프로젝트보다 더 잘 쓸 수 있을 것 같다.
-  2. 가장 많이 배운점은 협업의 중요성이다. 깃으로 팀원들과 코드를 공유하면서 많은 상황들을 겪었는데 아직 많이 부족하다는 것을 느꼈다. 많이 써보고 부딪혀보면서 익숙해져야겠다.
-
-<br>
-
-=======
 
 - 강예나 : <a>https://github.com/yenaf</a>
   <br> => 메인 페이지 일부 / 검색창 / 랜딩 페이지
@@ -390,17 +246,12 @@
 
 <br>
 
->>>>>>> develop
 <h2 id="searchResult">검색창</h2>
 
 (강예나)
 
 ### 어려웠거나 아쉬웠던 점
 
-<<<<<<< HEAD
-### 기억에 남거나 배운 점
-
-=======
 1. 원래 처음 계획했던 검색창 부분은 헤더안에 들어가 있었다.
 2. 헤더에 overflow:hidden을 주고 자바스크립트로 헤더의 높이만 늘리면 헤더안에 들어가 있던 검색 영역이 보이겠지?라고생각했지만.. 생각보다 쉽지않았다.
 3. 자바스크립트 연결이 됐는지도 잘 확인해야한다! 기본이 중요하다.
@@ -410,7 +261,6 @@
 1. 결국 검색영역을 따로만들어서transform: translateY 사용해서 위에서 아래로 내려오는 동작을 구현하였다.
 2. 몇개안되는 코드였지만 자바스크립트 코드를 선행학습해볼수 있는 경험이었다.
 
->>>>>>> develop
 <br>
 
 <h2 id="randingResult">랜딩 페이지</h2>
@@ -419,10 +269,6 @@
 
 ### 어려웠거나 아쉬웠던 점
 
-<<<<<<< HEAD
-### 기억에 남거나 배운 점
-
-=======
 1. 별다른 내용없이 이미지만 나열되어있는데 레이아웃은 어렵구나 하고 다시한번 생각했다.
 2. 이미지를 화면 안에 넣는것보다 화면 밖에 빼는 것이 어렵다.
 3. (이미지 잘리게 보이게하기+반응형+디바이스기기에따라 다른 이미지.....)
@@ -435,7 +281,6 @@
 1. picuture 태그와 source태그를 쓰는게 생소했다.
 2. 디바이스 크기별로 다른 소스를넣을수있는데 이부분을 반응형으로 쓸수있다는 것을 알았다.(하지만 소스의 사이즈 차이가 크다면... 너무 티난다..)
 
->>>>>>> develop
 <br>
 
 <h2 id="loginResult">로그인 페이지</h2>
@@ -475,10 +320,6 @@
 
 ### 어려웠거나 아쉬웠던 점
 
-<<<<<<< HEAD
-### 기억에 남거나 배운 점
-
-=======
 1. `flex`로 더 쉽게 배열할 수 있는 요소들을 처음에 margin만을 이용해서 더 어렵게 구현했던 것이 아쉽다.
 2. checkbox `input` 요소에 다른 이미지를 삽입하여 바꿀 때 분명히 가장 최근에 배웠던 것임에도 많이 헤맸고, input과 lable을 연결하지 않아서 텍스트를 클릭했는데도 체크되지 않는 것의 원인을 찾지 못했다.
 3. 어디서부터 어디까지 묶을지와 공통되게 스타일링할 부분에 공통된 클래스를 부여하는 것이 아직 서투르다는 것을 많이 느꼈다.
@@ -489,7 +330,6 @@
 2. checkbox에 이미지를 삽입하는 방법 중 한 가지의 70%정도는 익혔다.
 3. 조급해하지 않고 마크업을 더 고민하고 머리로 그려보고 작업하는 것이 더 짜임새 있게 된다는 것을 많이 느꼈다.
 
->>>>>>> develop
 <br>
 
 <h2 id="IDPWResult">아이디/비밀번호 찾기 페이지</h2>
