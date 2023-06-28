@@ -3,6 +3,7 @@
   "scripts": {
     "start": "run-p watch server",
     "sass": "sass src/scss:src/style",
+    "sass-compressed": "sass src/scss:src/style --style compressed",
     "watch": "npm run sass -- --watch",
     "server": "live-server src",
     "clear": "rimraf src/style",
