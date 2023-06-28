@@ -32,7 +32,7 @@
 
 ## 배포 주소
 
-<a target=_blank nooferrer noopener>taing-f4.netlify.app</a>
+<a target=_blank nooferrer noopener>https://taing-f4.netlify.app</a>
 
 ## **팀 구성**
 
