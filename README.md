@@ -116,7 +116,7 @@
 
 <br>
 
-<h2 id="singUp"> 회원가입 페이지</h2>
+<h2 id="signUp"> 회원가입 페이지</h2>
 
 (김태일)
 <a href="#singUpResult">결과물 보기</a>
@@ -171,7 +171,7 @@
 
 <br>
 
-<h2 id="mainResult">검색창</h2>
+<h2 id="searchResult">검색창</h2>
 
 (강예나)
 
@@ -181,7 +181,7 @@
 
 <br>
 
-<h2 id="mainResult">랜딩 페이지</h2>
+<h2 id="randingResult">랜딩 페이지</h2>
 
 (강예나)
 
@@ -191,7 +191,7 @@
 
 <br>
 
-<h2 id="mainResult">로그인 페이지</h2>
+<h2 id="loginResult">로그인 페이지</h2>
 
 (이예나)
 
@@ -207,7 +207,7 @@
 
 <br>
 
-<h2 id="mainResult">프로필 전환 페이지</h2>
+<h2 id="profileResult">프로필 전환 페이지</h2>
 
 (이예나)
 
@@ -222,7 +222,7 @@
 
 <br>
 
-<h2 id="mainResult">회원가입 페이지</h2>
+<h2 id="signUpResult">회원가입 페이지</h2>
 
 (김태일)
 
@@ -232,7 +232,7 @@
 
 <br>
 
-<h2 id="mainResult">아이디/비밀번호 찾기 페이지</h2>
+<h2 id="IDPWResult">아이디/비밀번호 찾기 페이지</h2>
 
 (이지수)
 
