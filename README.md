@@ -32,7 +32,7 @@
 
 ## 배포 주소
 
-## <a href="https://taing-f4.netlify.app" target="_blank" nooferrer noopener></a>
+## <a href="https://taing-f4.netlify.app" target="_blank" nooferrer noopener>https://taing-f4.netlify.app</a>
 
 ### 접근 방법
 
