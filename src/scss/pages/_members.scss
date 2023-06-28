@@ -3,12 +3,16 @@
 
 
 body {
-  @include autoMargin;
   background-color: $black;
 }
 
-.login.loginContainer {
-  margin-top: rem(170px);
+.loginBox {
+  width: 100%; 
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 
@@ -47,48 +51,86 @@ body {
 }
 
 
-.login {  
+.login {   
+  @include desktop{
+    width: rem(732px);
+    padding-top: rem(70px);
+    line-height: 250%;
+  }
+
+  @include tablet{
+    width: rem(416px);
+    padding-top: rem(44px);
+    line-height: 150%;
+
+
+  }
+
+  @include mobile{
+    width: rem(288px);
+    padding-top: rem(28px);
+    line-height: 100%;
+  }
+
+
   &__title {
+    margin-top: 70px;
+    margin-bottom: 60px;
     color: $white;
     font-size: rem(37.897px);
     font-weight: 700;
     text-align: center;
-    @include autoMargin;
-  }
-
-  &__container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-
 
     @include tablet{
-      @include marginX(176px)
+      width: rem(416px);
+      font-size: rem(28.43px);
+      margin-top: rem(44px);
+   
+    }
 
-    }
     @include mobile{
-      @include marginX(15.5px)
+      margin-top: rem(28px);
+      margin-bottom: rem(28px);
+      font-size: rem(16px);
     }
+    
   }
+
 
   &__input[type="email"],
   [type="password"] {
     color: $gray6;
+    padding-left: rem(24px);
+    
     font-size: rem(28.43px);
     width: rem(732px);
     height: rem(96px);
     background-color: $dark-bg-2;
     outline: none;
     border: 0;
-    padding-left: rem(10px);
+
+    @include tablet{
+      width: rem(416px);
+      height: rem(54px);
+      font-size: rem(16px);
+      
+      padding-left: rem(16px);
+    }
+
+    @include mobile{
+      width: rem(288px);
+      height: rem(46px);
+      font-size: rem(12.003px);
+      padding-left: rem(16px);
+      
+    }
+
+    
   }
 
   &__input[type="email"] {
-    margin-top: rem(60px);
     margin-bottom: rem(15px);
   }
-
  
 
   .checkboxContainer {
@@ -103,8 +145,8 @@ body {
 
   &__secret {
     position: absolute;
-    bottom: rem(30px);
-    right: rem(24px);
+    bottom: rem(5px);
+    right: rem(10px);
   }
 
   &__minibox {
@@ -115,7 +157,21 @@ body {
     height: rem(26px);
     padding: 3px;
     border: 0px solid #999;
-    vertical-align:-3px; 
+    vertical-align:-3px;
+
+    @include tablet{
+      width: rem(16px);
+      height: rem(16px);
+    }
+
+    @include mobile{
+      width: rem(16px);
+      height: rem(16px);
+    }
+    
+    
+
+
 
   }
 
@@ -129,6 +185,16 @@ body {
     color: $gray5;
     font-size: rem(21.328px);
     font-weight: 600;
+
+    @include tablet{
+      font-size: rem(12.003px);
+    }
+
+    @include mobile{
+      font-size: rem(12.003px);
+    }
+
+    
 
   }
 
@@ -146,21 +212,41 @@ body {
     font-weight: 600;
     color: $white;
 
+    @include tablet{
+      width: rem(416px);
+      height: rem(50px);
+      font-size: rem(16px);
+    }
+
+    @include mobile{
+      font-size: rem(12.003px);
+      width: rem(288px);
+      height: rem(42px);
+    }
   }
-
-
 }
 
-
-.search {
+.search {  
   &__id {
     color: $gray3;
     font-size: rem(21.328px);
+    @include tablet{
+      font-size: rem(16px);
+    }
+    @include mobile{
+      font-size: rem(12px);
+    }
   }
 
   &__pwd {
     color: $gray3;
     font-size: rem(21.328px);
+    @include tablet{
+      font-size: rem(16px);
+    }
+    @include mobile{
+      font-size: rem(12px);
+    }
   }
 
   &__find{
@@ -169,7 +255,12 @@ body {
     display: flex;
     @include autoMargin;
     justify-content: space-around;
-    
+    @include desktop{
+
+    }
+    @include mobile{
+
+    }
   }
 
   &__divider{
@@ -180,26 +271,34 @@ body {
   &__join{
     width: rem(732px);
     margin-top: rem(44px);
-    display: flex;
-    @include autoMargin;
-    justify-content: space-around;
+    text-align: center;
+   
+   
   }
   
   &__no {
     color: $gray5;
+      
     font-size: rem(21.328px);
+    @include tablet{
+      font-size: rem(16px);
+    }
+    @include mobile{
+      font-size: rem(12px);
+    }
   }
   
   &__new {
-    color: $gray3;
+    color: $gray3;   
     font-size: rem(21.328px);
+    @include tablet{
+      font-size: rem(16px);
+    }
+    @include mobile{
+      font-size: rem(12px);
+    }
   }
-
-
 }
-
-
-
 
 .footer{
     @include mobile{
