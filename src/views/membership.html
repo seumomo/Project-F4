@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAING 회원가입하기</title>
+    <link rel="stylesheet" href="/style/index.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
+  </head>
+  <body>
+    <header class="subHeader">
+      <div class="subHeader__inner">
+        <h1 class="subLogo">
+          <a href="/"><img src="/assets/icons/logo.png" alt="TAING" /></a>
+        </h1>
+      </div>
+    </header>
+
+    <main class="signupContainer">
+      <h2 class="signupContainer__title">티빙 회원가입</h2>
+      <p class="signupContainer__info">
+        아이디와 이메일로 간편하게 티빙을 시작하세요!
+      </p>
+
+      <form action="/">
+        <fieldset class="signUpForm">
+          <legend class="a11yHidden">회원가입 양식</legend>
+          <div class="inputId">
+            <label for="inputId" class="a11yHidden">아이디를 입력하세요</label>
+            <input
+              type="text"
+              required
+              name="id"
+              placeholder="아이디"
+              id="inputId"
+              class="inputId__box"
+              pattern="^(?=.*[A-Za-z])(?=.*[0-9]).{6,12}$" />
+            <p class="inputId__text">
+              영문 대문자 또는 소문자, 숫자 조합 6~12자리
+            </p>
+          </div>
+          <div class="inputPw">
+            <label for="inputPw" class="a11yHidden"
+              >비밀번호를 입력하세요</label
+            >
+            <input
+              type="password"
+              required
+              name="password"
+              placeholder="비밀번호"
+              id="inputPw"
+              class="inputPw__box"
+              pattern="^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[~!@#$%^&*]).{8,15}$" />
+            <p class="inputPw__text">
+              영문, 숫자, 특수문자(~!@#$%^&amp;*) 조합 8~15자리
+            </p>
+          </div>
+          <div class="inputPwAgain">
+            <label for="inputPwAgain" class="a11yHidden">
+              비밀번호를 한 번 더 입력하세요
+            </label>
+            <input
+              type="password"
+              required
+              name="passwordAgain"
+              placeholder="비밀번호"
+              id="inputPwAgain"
+              class="intputPwAgain__box"
+              pattern="^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[~!@#$%^&*]).{8,15}$" />
+          </div>
+          <div class="inputEmail">
+            <label for="inputEmail" class="a11yHidden"
+              >이메일을 입력하세요</label
+            >
+            <input
+              type="email"
+              required
+              name="email"
+              placeholder="이메일"
+              id="inputEmail"
+              class="inputEmail__box" />
+          </div>
+
+          <ul class="checkList">
+            <li class="allCheckContainer">
+              <div class="checkBoxContainer">
+                <input
+                  type="checkbox"
+                  name="allCheck"
+                  class="allCheckBox appearance-none"
+                  id="allAgree" /><label
+                  for="allAgree"
+                  class="checkList__text allCheck allCheckBoxDefault"
+                  >모두 동의합니다</label
+                >
+              </div>
+            </li>
+            <li>
+              <div class="checkBoxContainer">
+                <input
+                  type="checkbox"
+                  class="checkBox appearance-none"
+                  id="checkBox1" /><label
+                  for="checkBox1"
+                  class="checkList__text checkBoxDefault"
+                  >만 14세 이상입니다.</label
+                >
+              </div>
+            </li>
+            <li>
+              <div class="checkBoxContainer">
+                <input
+                  type="checkbox"
+                  required
+                  class="checkBox appearance-none"
+                  id="checkBox2" /><label
+                  for="checkBox2"
+                  class="checkList__text checkBoxDefault"
+                  >[필수] 서비스 이용약관 동의</label
+                >
+              </div>
+            </li>
+            <li>
+              <div class="checkBoxContainer">
+                <input
+                  type="checkbox"
+                  required
+                  class="checkBox appearance-none"
+                  id="checkBox3" /><label
+                  for="checkBox3"
+                  class="checkList__text checkBoxDefault"
+                  >[필수] 개인정보 수집 및 서비스 활용 동의</label
+                >
+              </div>
+            </li>
+            <li>
+              <div class="checkBoxContainer">
+                <input
+                  type="checkbox"
+                  required
+                  class="checkBox appearance-none"
+                  id="checkBox4" /><label
+                  for="checkBox4"
+                  class="checkList__text checkBoxDefault"
+                  >[필수] 채널 홈페이지 개인정보 제 3자 제공동의</label
+                >
+              </div>
+            </li>
+            <li>
+              <div class="checkBoxContainer">
+                <input
+                  type="checkbox"
+                  class="checkBox appearance-none"
+                  id="checkBox5" /><label
+                  for="checkBox5"
+                  class="checkList__text checkBoxDefault"
+                  >[선택] 개인정보 제 3자 제공동의</label
+                >
+              </div>
+            </li>
+            <li>
+              <div class="checkBoxContainer">
+                <input
+                  type="checkbox"
+                  class="checkBox appearance-none"
+                  id="checkBox6" /><label
+                  for="checkBox6"
+                  class="checkList__text checkBoxDefault"
+                  >[선택] 개인정보 수집 및 서비스 활용 동의</label
+                >
+              </div>
+              <ul class="secondList">
+                <li>
+                  <div class="checkBoxContainer">
+                    <input
+                      type="checkbox"
+                      class="checkBox appearance-none"
+                      id="checkBox7" /><label
+                      for="checkBox7"
+                      class="checkList__text checkBoxDefault sonList"
+                      >[선택] 마케팅 정보 SMS 수신동의</label
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="checkBoxContainer lastBox">
+                    <input
+                      type="checkbox"
+                      class="checkBox appearance-none"
+                      id="checkBox8" /><label
+                      for="checkBox8"
+                      class="checkList__text checkBoxDefault sonList"
+                      >[선택] 마케팅 정보 이메일 수신동의</label
+                    >
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="sign-up-box">가입하기</button>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <ul class="corpArea">
+        <li class="corpArea__list"><a href="/">고객센터</a></li>
+        <li class="corpArea__list"><a href="/">이용약관</a></li>
+        <li class="corpArea__list"><a href="/">개인정보처리방침</a></li>
+        <li class="corpArea__list"><a href="/">청소년 보호정책</a></li>
+        <li class="corpArea__list"><a href="/">법적고지</a></li>
+        <li class="corpArea__list"><a href="/">이벤트</a></li>
+        <li class="corpArea__list"><a href="/">인재채용</a></li>
+      </ul>
+
+      <address class="address">
+        <span class="address__box">
+          대표이사 : YANG JIEUL<span class="divider" aria-hidden="true"
+            >ㅣ</span
+          >
+          <a href="">사업자정보확인</a
+          ><span class="divider" aria-hidden="true">ㅣ</span> 사업자등록번호:
+          <a class="address__telephone" href="tel:022345678">02-234-5678</a
+          ><span class="divider" aria-hidden="true">ㅣ</span>
+          통신판매신고번호: 2020-서울마포-3641호
+        </span>
+        <span class="address__box">
+          사업장 : 서울특별시 마포구 상암산로 34, DMC디지털큐브
+          15층(상암동)<span class="divider" aria-hidden="true">ㅣ</span
+          >호스팅사업자 : 씨제이올리브네트웍스(주)
+        </span>
+        <span class="address__box">
+          <a href="/" class="customer">고객문의 바로가기</a
+          ><span class="divider" aria-hidden="true">ㅣ</span>
+          <span class="mail"
+            >대표메일:
+            <a class="address__link" href="mailto:tving@cj.net?subject=문의사항"
+              >tving@cj.net</a
+            >
+            <span class="divider" aria-hidden="true">ㅣ</span>
+            <span class="center"
+              ><a href="/"
+                >고객센터 : 1670-1525(평일/주말 09시~18시, 공휴일 휴무)</a
+              ></span
+            >
+          </span>
+        </span>
+        <span class="address__box">
+          ENM 시청자 상담실 (편성 문의 및 시청자 의견) : 080-080-0780<span
+            class="divider"
+            aria-hidden="true"
+            >ㅣ</span
+          >
+          Mnet 고객센터(반송편성문의) : 1855-1631
+        </span>
+      </address>
+
+      <ul class="footer__sns">
+        <li class="sns__youtube">
+          <a href="/" target="_blank" rel="noopener noreferrer"
+            ><img src="/assets/icons/Youtube.png" alt="Youtube"
+          /></a>
+        </li>
+        <li class="sns__insta">
+          <a href="/" target="_blank" rel="noopener noreferrer"
+            ><img src="/assets/icons/Instagram.png" alt="instagram"
+          /></a>
+        </li>
+        <li class="sns__twitter">
+          <a href="/" target="_blank" rel="noopener noreferrer"
+            ><img src="/assets/icons/Twitter.png" alt="twitter"
+          /></a>
+        </li>
+        <li class="sns__facebook">
+          <a href="/" target="_blank" rel="noopener noreferrer"
+            ><img src="/assets/icons/Facebook.png" alt="facebook"
+          /></a>
+        </li>
+      </ul>
+
+      <small class="copyrignt">
+        Copyright &copy; 주식회사 티빙 All right reserved.
+      </small>
+    </footer>
+  </body>
+</html>

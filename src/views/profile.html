@@ -1,137 +1,151 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/index.css" />
+    <title>프로필</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style/index.css" />
-  <title>프로필</title>
-</head>
-
-<body>
-  <header class="subHeader">
-    <div class="subHeader__inner">
-      <h1 class="subLogo">
-        <a href="/"><img src="/assets/icons/logo.png" alt="TAING" /></a>
-      </h1>
-    </div>
-  </header>
-
-  <div class="profile container">
-    <h1 class="profile__title">프로필 선택</h1>
-    <h2 class="profile__select">시청할 프로필을 선택해주세요.</h2>
-    <div class="profile__box">
-
-      <figure class="profile__image">
-        <div class="profile__self">
-        <img src="/assets/images/profile-1.png" alt="인물 캐릭터">
-        <div class="profile__secret">
-        <img src="/assets/icons/icon-lock.png" alt=""></div></div>
-        <figcaption class="profile__name">큰 예나</figcaption>
-      </figure>
-      <figure class="profile__image">
-        <div class="profile__self">
-        <img src="/assets/images/profile-2.png" alt="인물 캐릭터">
-        <div class="profile__secret">
-        <img src="/assets/icons/icon-lock.png" alt=""></div></div>
-        <figcaption class="profile__name">태일</figcaption>
-      </figure>
-      <figure class="profile__image">
-        <div class="profile__self">
-        <img src="/assets/images/profile-3.png" alt="인물 캐릭터">
-        <div class="profile__secret">
-        <img src="/assets/icons/icon-lock.png" alt=""></div></div>
-        <figcaption class="profile__name">지수</figcaption>
-      </figure>
-      <figure class="profile__image">
-        <div class="profile__self">
-        <img src="/assets/images/profile-4.png" alt="인물 캐릭터">
-        <div class="profile__secret">
-        <img src="/assets/icons/icon-lock.png" alt=""></div></div>
-        <figcaption class="profile__name">작은 예나</figcaption>
-      </figure>
-    </div>
-    <div class="profile__click">
-      <button type="submit" class="profile__button" onclick="location.href='./' "><span class="profile__edit">프로필 편집</span></button>
-    </div>
-  </div>
-
-
-  <footer class="footer">
-    <div class="info">
-      <h2 class="footer__info a11yHidden" aria-hidden="true">Information</h2>
-      <div class="info__notice">
-        <a href="/">
-          <h3 class="info__noticeTitle">공지사항</h3>
-          <p class="info__noticeContent">[안내] 합병보고 주주총회에 갈음하는 공고</p>
-        </a>
+  <body>
+    <header class="subHeader">
+      <div class="subHeader__inner">
+        <h1 class="subLogo">
+          <a href="/"><img src="/assets/icons/logo.png" alt="TAING" /></a>
+        </h1>
       </div>
+    </header>
 
-      <div class="infoLink">
-        <ul class="infoLink__click">
-          <li class="infoLink__brand">
-            <a href="">브랜드 바로가기<span class="infoLink__plusbtn" aria-hidden="true"><i class='bx bx-plus'></i></span></a>
-            <span class="infoLink__divider" aria-hidden="true">ㅣ</span>
-          </li>
-          <li class="infoLink__group">
-            <a href="">그룹 계열사 바로가기<span class="infoLink__plusbtn" aria-hidden="true"><i
-                  class='bx bx-plus'></i></span></a>
-          </li>
-        </ul>
+    <div class="profile container">
+      <h1 class="profile__title">프로필 선택</h1>
+      <h2 class="profile__select">시청할 프로필을 선택해주세요.</h2>
+      <div class="profile__box">
+        <figure class="profile__image">
+          <div class="profile__self">
+            <img src="/assets/images/profile-1.png" alt="인물 캐릭터" />
+            <div class="profile__secret">
+              <img src="/assets/icons/icon-lock.png" alt="" />
+            </div>
+          </div>
+          <figcaption class="profile__name">큰 예나</figcaption>
+        </figure>
+        <figure class="profile__image">
+          <div class="profile__self">
+            <img src="/assets/images/profile-2.png" alt="인물 캐릭터" />
+            <div class="profile__secret">
+              <img src="/assets/icons/icon-lock.png" alt="" />
+            </div>
+          </div>
+          <figcaption class="profile__name">태일</figcaption>
+        </figure>
+        <figure class="profile__image">
+          <div class="profile__self">
+            <img src="/assets/images/profile-3.png" alt="인물 캐릭터" />
+            <div class="profile__secret">
+              <img src="/assets/icons/icon-lock.png" alt="" />
+            </div>
+          </div>
+          <figcaption class="profile__name">지수</figcaption>
+        </figure>
+        <figure class="profile__image">
+          <div class="profile__self">
+            <img src="/assets/images/profile-4.png" alt="인물 캐릭터" />
+            <div class="profile__secret">
+              <img src="/assets/icons/icon-lock.png" alt="" />
+            </div>
+          </div>
+          <figcaption class="profile__name">작은 예나</figcaption>
+        </figure>
+      </div>
+      <div class="profile__click">
+        <button
+          type="submit"
+          class="profile__button"
+          onclick="location.href='./' ">
+          <span class="profile__edit">프로필 편집</span>
+        </button>
       </div>
     </div>
 
-    <ul class="corpArea">
-      <li class="corpArea__list"><a href="/">고객센터</a></li>
-      <li class="corpArea__list"><a href="/">이용약관</a></li>
-      <li class="corpArea__list"><a href="/">개인정보처리방침</a></li>
-      <li class="corpArea__list"><a href="/">청소년 보호정책</a></li>
-      <li class="corpArea__list"><a href="/">법적고지</a></li>
-      <li class="corpArea__list"><a href="/">이벤트</a></li>
-      <li class="corpArea__list"><a href="/">인재채용</a></li>
-    </ul>
+    <footer class="footer">
+      <ul class="corpArea">
+        <li class="corpArea__list"><a href="/">고객센터</a></li>
+        <li class="corpArea__list"><a href="/">이용약관</a></li>
+        <li class="corpArea__list"><a href="/">개인정보처리방침</a></li>
+        <li class="corpArea__list"><a href="/">청소년 보호정책</a></li>
+        <li class="corpArea__list"><a href="/">법적고지</a></li>
+        <li class="corpArea__list"><a href="/">이벤트</a></li>
+        <li class="corpArea__list"><a href="/">인재채용</a></li>
+      </ul>
 
-    <address class="address">
-      <span class="address__box">
-        대표이사 : YANG JIEUL<span class="divider" aria-hidden="true">ㅣ</span>
-        <a href="">사업자정보확인</a><span class="divider" aria-hidden="true">ㅣ</span>
-        사업자등록번호: <a class="address__telephone" href="tel:022345678">02-234-5678</a><span class="divider"
-          aria-hidden="true">ㅣ</span>
-        통신판매신고번호: 2020-서울마포-3641호
-      </span>
-      <span class="address__box">
-        사업장 : 서울특별시 마포구 상암산로 34, DMC디지털큐브 15층(상암동)<span class="divider" aria-hidden="true">ㅣ</span>호스팅사업자 :
-        씨제이올리브네트웍스(주)
-      </span>
-      <span class="address__box">
-        <a href="/" class="customer">고객문의 바로가기</a><span class="divider" aria-hidden="true">ㅣ</span>
-        <span class="mail">대표메일: <a class="address__link" href="mailto:tving@cj.net?subject=문의사항">tving@cj.net</a>
-          <span class="divider" aria-hidden="true">ㅣ</span>
-          <span class="center"><a href="/">고객센터 : 1670-1525(평일/주말 09시~18시, 공휴일 휴무)</a></span>
+      <address class="address">
+        <span class="address__box">
+          대표이사 : YANG JIEUL<span class="divider" aria-hidden="true"
+            >ㅣ</span
+          >
+          <a href="">사업자정보확인</a
+          ><span class="divider" aria-hidden="true">ㅣ</span> 사업자등록번호:
+          <a class="address__telephone" href="tel:022345678">02-234-5678</a
+          ><span class="divider" aria-hidden="true">ㅣ</span>
+          통신판매신고번호: 2020-서울마포-3641호
         </span>
-      </span>
-      <span class="address__box">
-        ENM 시청자 상담실 (편성 문의 및 시청자 의견) : 080-080-0780<span class="divider" aria-hidden="true">ㅣ</span>
-        Mnet 고객센터(반송편성문의) : 1855-1631
-      </span>
-    </address>
+        <span class="address__box">
+          사업장 : 서울특별시 마포구 상암산로 34, DMC디지털큐브
+          15층(상암동)<span class="divider" aria-hidden="true">ㅣ</span
+          >호스팅사업자 : 씨제이올리브네트웍스(주)
+        </span>
+        <span class="address__box">
+          <a href="/" class="customer">고객문의 바로가기</a
+          ><span class="divider" aria-hidden="true">ㅣ</span>
+          <span class="mail"
+            >대표메일:
+            <a class="address__link" href="mailto:tving@cj.net?subject=문의사항"
+              >tving@cj.net</a
+            >
+            <span class="divider" aria-hidden="true">ㅣ</span>
+            <span class="center"
+              ><a href="/"
+                >고객센터 : 1670-1525(평일/주말 09시~18시, 공휴일 휴무)</a
+              ></span
+            >
+          </span>
+        </span>
+        <span class="address__box">
+          ENM 시청자 상담실 (편성 문의 및 시청자 의견) : 080-080-0780<span
+            class="divider"
+            aria-hidden="true"
+            >ㅣ</span
+          >
+          Mnet 고객센터(반송편성문의) : 1855-1631
+        </span>
+      </address>
 
-    <ul class="footer__sns">
-      <li class="sns__youtube"><a href="/" target='_blank' rel="noopener noreferrer"><img
-            src="/assets/icons/Youtube.png" alt="Youtube" /></a></li>
-      <li class="sns__insta"><a href="/" target='_blank' rel="noopener noreferrer"><img
-            src="/assets/icons/Instagram.png" alt="instagram" /></a></li>
-      <li class="sns__twitter"><a href="/" target='_blank' rel="noopener noreferrer"><img
-            src="/assets/icons/Twitter.png" alt="twitter" /></a></li>
-      <li class="sns__facebook"><a href="/" target='_blank' rel="noopener noreferrer"><img
-            src="/assets/icons/Facebook.png" alt="facebook" /></a></li>
-    </ul>
+      <ul class="footer__sns">
+        <li class="sns__youtube">
+          <a href="/" target="_blank" rel="noopener noreferrer"
+            ><img src="/assets/icons/Youtube.png" alt="Youtube"
+          /></a>
+        </li>
+        <li class="sns__insta">
+          <a href="/" target="_blank" rel="noopener noreferrer"
+            ><img src="/assets/icons/Instagram.png" alt="instagram"
+          /></a>
+        </li>
+        <li class="sns__twitter">
+          <a href="/" target="_blank" rel="noopener noreferrer"
+            ><img src="/assets/icons/Twitter.png" alt="twitter"
+          /></a>
+        </li>
+        <li class="sns__facebook">
+          <a href="/" target="_blank" rel="noopener noreferrer"
+            ><img src="/assets/icons/Facebook.png" alt="facebook"
+          /></a>
+        </li>
+      </ul>
 
-    <small class="copyrignt">
-      Copyright &copy; 주식회사 티빙 All right reserved.
-    </small>
-  </footer>
-
-</body>
-
+      <small class="copyrignt">
+        Copyright &copy; 주식회사 티빙 All right reserved.
+      </small>
+    </footer>
+  </body>
 </html>
