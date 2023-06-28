@@ -12,13 +12,17 @@
 
 - 목차
 
-  1. <a href="#mainResult">메인 페이지</a>
-  2. <a href="#searchResult">검색창</a>
-  3. <a href="#randingResult">랜딩 페이지</a>
-  4. <a href="#loginResult">로그인 페이지</a>
-  5. <a href="#profileResult">프로필 전환 페이지</a>
-  6. <a href="#signUPResult">회원가입 페이지</a>
-  7. <a href="#IDPWResult">아이디/비밀번호 찾기 페이지</a>
+1. <a href="#headerResult">메인 페이지</a>
+   > 1. <a href="#headerResult">header / visual 영역</a>
+   > 2. <a href="#main1Result">main 영역 (티빙에서 꼭 봐야 하는 콘텐츠, Quick VOD, 오직 티빙에만 있어요)</a>
+   > 3. <a href="#main2Result">main 영역 (실시간 인기 프로그램, 인기 LIVE 채널)</a>
+   > 4. <a href="#footerResult">main, footer 영역 (배너 이미지, 이벤트)</a>
+2. <a href="#searchResult">검색창</a>
+3. <a href="#randingResult">랜딩 페이지</a>
+4. <a href="#loginResult">로그인 페이지</a>
+5. <a href="#profileResult">프로필 전환 페이지</a>
+6. <a href="#signUPResult">회원가입 페이지</a>
+7. <a href="#IDPWResult">아이디/비밀번호 찾기 페이지</a>
 
 - 기간 : 2023 / 06 / 23 ~ 2023 / 06 / 28
 
@@ -77,13 +81,13 @@
 
 ## 결과물
 
-<h2 id="mainResult">메인 페이지</h2>
+메인 페이지
 
 (팀 전원)
 
 <div align="center">
   
-  ## header와 visual 영역
+  ## <h2 id="headerResult">header와 visual 영역</h2>
   
   (강예나)
 
@@ -95,7 +99,7 @@
 
 <div align="center">
   
-## main 영역
+## <h2 id="main1Result">main 영역</h2>
 
 (티빙에서 꼭 봐야 하는 콘텐츠, Quick VOD, 오직 티빙에만 있어요)
 
@@ -109,7 +113,7 @@
 
 <div align="center">
   
-## main 영역
+## <h2 id="main2Result">main 영역</h2>
 
 (실시간 인기 프로그램, 인기 LIVE 채널)
 
@@ -123,7 +127,7 @@
 
 <div align="center">
   
-## main 영역과 footer 영역
+## <h2 id="footerResult">main 영역과 footer 영역</h2>
 
 (배너 이미지, 이벤트)
 
