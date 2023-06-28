@@ -1,0 +1,64 @@
+@use "./../utils" as *;
+@use "./../base" as *;
+
+.logout{
+  @include autoMargin();
+  width: rem(526px);
+  margin-top: rem(444px);
+  margin-bottom: rem(444px);
+  background: $dark-bg-2;
+  color: $white;
+  border-radius: rem(4px);
+
+  @include tablet {
+    width: rem(295px);
+    padding: rem(28px) rem(91px) rem(16px);
+    font-size: rem(12.003px);
+    }
+    @include mobile {
+    width: rem(196px);
+    margin-top: rem(289.5px);
+    padding: rem(20px) rem(41.5px) rem(12px);
+    font-size: rem(12.003px);
+    }
+
+  &__flex{
+    @include flexbox($justify: space-evenly);
+  }
+  &__message{
+    display: block;
+    padding-top: rem(36px);
+    padding-bottom: rem(36px);
+    text-align: center;
+
+    @include tablet {
+      padding-top: rem(0px);
+      padding-bottom: rem(0px);
+    }
+    @include mobile {
+    padding-top: rem(0px);
+    padding-bottom: rem(0px);
+    }
+
+  }
+   &__yes,
+   &__no{
+    display: inline-block;
+    padding-top: rem(24px);
+    padding-bottom: rem(24px);
+    text-align: center;
+    color: $gray3;
+
+    @include tablet {
+      width: rem(295px);
+      padding-bottom: rem(16px);
+      font-size: rem(12.003px);
+
+      }
+      @include mobile {
+        padding-bottom: rem(10.5px);
+      }
+   }
+
+   
+}
